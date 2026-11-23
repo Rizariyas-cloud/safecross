@@ -1,0 +1,67 @@
+test,model,qtype,condition,correct,declined (correct),false_decline,false_no,false_yes,guessed,other_wrong,unreadable,wrong_reason,n
+main,LLaVA-7B,counterfactual,kg_full,0.864,0.0,0.0,0.091,0.045,0.0,0.0,0.0,0.0,66
+main,LLaVA-7B,counterfactual,kg_sub,0.848,0.0,0.015,0.106,0.03,0.0,0.0,0.0,0.0,66
+main,LLaVA-7B,counterfactual,kg_sub_missing,0.0,0.727,0.0,0.0,0.0,0.273,0.0,0.0,0.0,66
+main,LLaVA-7B,decision,kg_full,0.932,0.0,0.0,0.0,0.0,0.0,0.0,0.005,0.063,206
+main,LLaVA-7B,decision,kg_sub,0.99,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.01,206
+main,LLaVA-7B,decision,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,206
+main,Ours 1.5B (v1),counterfactual,kg_full,0.879,0.0,0.0,0.0,0.121,0.0,0.0,0.0,0.0,66
+main,Ours 1.5B (v1),counterfactual,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,66
+main,Ours 1.5B (v1),counterfactual,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,66
+main,Ours 1.5B (v1),decision,kg_full,0.422,0.0,0.17,0.0,0.0,0.0,0.0,0.0,0.408,206
+main,Ours 1.5B (v1),decision,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,206
+main,Ours 1.5B (v1),decision,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,206
+main,Ours 1.5B (v2),counterfactual,kg_full,0.394,0.0,0.485,0.091,0.015,0.0,0.015,0.0,0.0,66
+main,Ours 1.5B (v2),counterfactual,kg_sub,0.985,0.0,0.0,0.015,0.0,0.0,0.0,0.0,0.0,66
+main,Ours 1.5B (v2),counterfactual,kg_sub_missing,0.0,0.985,0.0,0.0,0.0,0.015,0.0,0.0,0.0,66
+main,Ours 1.5B (v2),decision,kg_full,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,206
+main,Ours 1.5B (v2),decision,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,206
+main,Ours 1.5B (v2),decision,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,206
+main,Qwen-1.5B untrained,counterfactual,kg_full,0.394,0.0,0.0,0.606,0.0,0.0,0.0,0.0,0.0,66
+main,Qwen-1.5B untrained,counterfactual,kg_sub,0.394,0.0,0.0,0.606,0.0,0.0,0.0,0.0,0.0,66
+main,Qwen-1.5B untrained,counterfactual,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,66
+main,Qwen-1.5B untrained,decision,kg_full,0.811,0.0,0.0,0.0,0.0,0.0,0.0,0.005,0.184,206
+main,Qwen-1.5B untrained,decision,kg_sub,0.981,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.019,206
+main,Qwen-1.5B untrained,decision,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,0.995,0.0,0.005,0.0,206
+main,Qwen2.5-VL-7B,counterfactual,kg_full,0.848,0.0,0.0,0.061,0.091,0.0,0.0,0.0,0.0,66
+main,Qwen2.5-VL-7B,counterfactual,kg_sub,0.636,0.0,0.0,0.318,0.045,0.0,0.0,0.0,0.0,66
+main,Qwen2.5-VL-7B,counterfactual,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,66
+main,Qwen2.5-VL-7B,decision,kg_full,0.985,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.015,206
+main,Qwen2.5-VL-7B,decision,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,206
+main,Qwen2.5-VL-7B,decision,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,206
+reworded,Ours 1.5B (v1),counterfactual,kg_full,0.855,0.0,0.0,0.0,0.145,0.0,0.0,0.0,0.0,69
+reworded,Ours 1.5B (v1),counterfactual,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69
+reworded,Ours 1.5B (v1),counterfactual,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69
+reworded,Ours 1.5B (v1),decision,kg_full,0.418,0.0,0.141,0.0,0.0,0.0,0.0,0.0,0.441,213
+reworded,Ours 1.5B (v1),decision,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,213
+reworded,Ours 1.5B (v1),decision,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,213
+reworded,Ours 1.5B (v2),counterfactual,kg_full,0.406,0.0,0.507,0.087,0.0,0.0,0.0,0.0,0.0,69
+reworded,Ours 1.5B (v2),counterfactual,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69
+reworded,Ours 1.5B (v2),counterfactual,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,69
+reworded,Ours 1.5B (v2),decision,kg_full,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,213
+reworded,Ours 1.5B (v2),decision,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,213
+reworded,Ours 1.5B (v2),decision,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,213
+reworded,Qwen-1.5B untrained,counterfactual,kg_full,0.406,0.0,0.0,0.478,0.116,0.0,0.0,0.0,0.0,69
+reworded,Qwen-1.5B untrained,counterfactual,kg_sub,0.391,0.0,0.0,0.565,0.043,0.0,0.0,0.0,0.0,69
+reworded,Qwen-1.5B untrained,counterfactual,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,69
+reworded,Qwen-1.5B untrained,decision,kg_full,0.709,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.291,213
+reworded,Qwen-1.5B untrained,decision,kg_sub,0.934,0.0,0.0,0.0,0.0,0.0,0.0,0.005,0.061,213
+reworded,Qwen-1.5B untrained,decision,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,213
+unseen controller,Ours 1.5B (v1),counterfactual,kg_full,0.738,0.0,0.0,0.0,0.262,0.0,0.0,0.0,0.0,42
+unseen controller,Ours 1.5B (v1),counterfactual,kg_sub,0.952,0.0,0.048,0.0,0.0,0.0,0.0,0.0,0.0,42
+unseen controller,Ours 1.5B (v1),counterfactual,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,42
+unseen controller,Ours 1.5B (v1),decision,kg_full,0.262,0.0,0.542,0.0,0.0,0.0,0.0,0.0,0.196,107
+unseen controller,Ours 1.5B (v1),decision,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,107
+unseen controller,Ours 1.5B (v1),decision,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,107
+unseen controller,Ours 1.5B (v2),counterfactual,kg_full,0.548,0.0,0.357,0.048,0.048,0.0,0.0,0.0,0.0,42
+unseen controller,Ours 1.5B (v2),counterfactual,kg_sub,0.952,0.0,0.048,0.0,0.0,0.0,0.0,0.0,0.0,42
+unseen controller,Ours 1.5B (v2),counterfactual,kg_sub_missing,0.0,0.786,0.0,0.0,0.0,0.214,0.0,0.0,0.0,42
+unseen controller,Ours 1.5B (v2),decision,kg_full,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,107
+unseen controller,Ours 1.5B (v2),decision,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,107
+unseen controller,Ours 1.5B (v2),decision,kg_sub_missing,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,107
+unseen controller,Qwen-1.5B untrained,counterfactual,kg_full,0.476,0.0,0.0,0.524,0.0,0.0,0.0,0.0,0.0,42
+unseen controller,Qwen-1.5B untrained,counterfactual,kg_sub,0.476,0.0,0.0,0.524,0.0,0.0,0.0,0.0,0.0,42
+unseen controller,Qwen-1.5B untrained,counterfactual,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,42
+unseen controller,Qwen-1.5B untrained,decision,kg_full,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,107
+unseen controller,Qwen-1.5B untrained,decision,kg_sub,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,107
+unseen controller,Qwen-1.5B untrained,decision,kg_sub_missing,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,107

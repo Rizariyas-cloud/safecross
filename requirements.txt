@@ -1,0 +1,25 @@
+# Core (everyone)
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+pyyaml
+pillow
+pypdf
+requests
+opencv-python
+gradio>=6.0,<7
+pytest
+
+# Vision (YOLO, YOLO-World). On a Mac this also installs PyTorch with Apple GPU (MPS) support.
+ultralytics
+lap>=0.5.12          # needed for ByteTrack tracking
+# YOLO-World also needs CLIP. Ultralytics usually installs it automatically; if not:
+#   pip install git+https://github.com/ultralytics/CLIP.git
+
+# Optional: only for the Hugging Face backend (Ollama is easier)
+# transformers>=4.49
+# accelerate
+# bitsandbytes
+mlx-lm==0.32.2 ; sys_platform == "darwin"   # fine-tuned explainer (Apple MLX, Mac only)

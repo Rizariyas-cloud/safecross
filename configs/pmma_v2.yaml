@@ -1,0 +1,12 @@
+# Made by scripts/14_build_pmma_v2.py: train/val = video 1, test_same = video 2, test_new = video 3
+path: /Users/risafathima/Documents/safecross/data/pmma_v2
+train: images/train
+val: images/val
+test: images/test_new
+test_same: images/test_same
+test_new: images/test_new
+names:
+  0: pedestrian
+  1: wheelchair
+  2: rollator
+  3: cane

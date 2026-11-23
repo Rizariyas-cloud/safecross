@@ -1,0 +1,12 @@
+# Made by scripts/14b_build_augmented.py: train = video 1 clean + one darkened/blurred copy each
+path: /Users/risafathima/Documents/safecross/data/pmma_v2_aug
+train: images/train
+val: /Users/risafathima/Documents/safecross/data/pmma_v2/images/val
+test: /Users/risafathima/Documents/safecross/data/pmma_v2/images/test_new
+test_same: /Users/risafathima/Documents/safecross/data/pmma_v2/images/test_same
+test_new: /Users/risafathima/Documents/safecross/data/pmma_v2/images/test_new
+names:
+  0: pedestrian
+  1: wheelchair
+  2: rollator
+  3: cane

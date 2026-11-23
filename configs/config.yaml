@@ -1,0 +1,149 @@
+# =====================================================================
+# SafeCross main configuration
+# Every experiment reads its settings from here, so results can be
+# reproduced exactly. Change values here, not inside the code.
+# =====================================================================
+
+seed: 42                      # master random seed
+
+paths:
+  data_dir: data              # put downloaded datasets here
+  icg_dir: data/icg           # ICG Crossroad Camera Dataset (unzipped)
+  pmma_dir: data/pmma         # PMMA dataset (unzipped)
+  rag_docs_dir: data/rag_docs # put the Dubai Universal Design Code PDF here
+  results_dir: results        # all experiment outputs are written here
+  weights_dir: weights        # trained model weights
+
+# ---------------------------------------------------------------------
+# Simulated crossing (all distances in metres, times in seconds)
+# ---------------------------------------------------------------------
+crossing:
+  length_m: 12.0              # distance from entry line (kerb) to exit line
+  width_m: 4.0                # width of the zebra crossing
+  exit_margin_m: 0.3          # a person has "cleared" when y >= length - margin
+  dt: 0.1                     # simulation time step (10 steps per second)
+  horizon_s: 60.0             # simulate this long after the walk phase starts
+
+# Walking speeds used to GENERATE synthetic pedestrians (m/s).
+# These are configurable assumptions. Replace them with values from
+# your literature review or from PMMA trajectories (scripts/08).
+speeds:
+  pedestrian:   [1.0, 1.5]
+  wheelchair:   [0.6, 1.0]
+  rollator:     [0.5, 0.9]
+  crutches:     [0.5, 0.9]
+  cane:         [0.6, 1.0]
+
+scenario:
+  n_pedestrians: [2, 6]       # people per walk phase (min, max)
+  mobility_aid_share: 0.35    # chance that each person uses a mobility aid
+  walk_interval_s: 7.0        # people may start crossing during this time
+  late_arrival_share: 0.2     # share of people who start late in the walk interval
+
+# ---------------------------------------------------------------------
+# Signal controllers (both use the SAME limits, so the comparison is fair)
+# ---------------------------------------------------------------------
+controller:
+  design_speed_mps: 1.2       # speed used to compute the normal phase length
+  max_phase_s: 40.0           # hard maximum for the pedestrian phase
+  persistence_s: 1.0          # baseline: keep "occupied" this long after last detection
+  # Uncertainty-aware controller only:
+  assumed_slow_speed_mps: 0.5 # speed assumed for a lost person who may be slow
+  mobility_aid_threshold: 0.2 # share of frames labelled as mobility aid -> treat as slow
+  remaining_time_margin: 1.3  # safety factor on the estimated remaining time
+  safety_timeout_s: 20.0      # never hold for a lost track longer than this
+
+# ---------------------------------------------------------------------
+# Perception failures for Experiment B (decision sensitivity)
+# ---------------------------------------------------------------------
+failures:
+  recall: 1.0                 # share of frames in which a person is detected
+  miss_burst_frames: 8        # misses come in bursts of about this many frames
+  misclassification_prob: 0.0 # per-frame chance a mobility-aid user is labelled "pedestrian"
+  track_loss_prob: 0.0        # per-person chance of losing the track while crossing
+  track_loss_duration_s: [3.0, 15.0]  # how long a lost track stays lost
+  false_positive_rate: 0.0    # phantom detections per second on the crossing
+  false_positive_duration_s: [0.3, 1.5]
+
+experiment_b:
+  episodes: 200               # episodes per condition
+  recall_levels: [1.0, 0.95, 0.9, 0.8, 0.7, 0.5, 0.3]
+  misclassification_levels: [0.0, 0.05, 0.1, 0.2, 0.3]
+  track_loss_levels: [0.0, 0.05, 0.1, 0.2, 0.3]
+  false_positive_levels: [0.0, 0.05, 0.1, 0.2, 0.3]
+  false_extension_tolerance_s: 2.0
+  bootstrap_samples: 2000
+
+# ---------------------------------------------------------------------
+# Vision (Experiment A)
+# ---------------------------------------------------------------------
+vision:
+  device: auto                # auto = NVIDIA GPU, else Apple Silicon GPU (mps), else CPU
+  base_model: yolo11s.pt      # starting weights for fine-tuning on ICG
+  yolo_world_model: yolov8s-worldv2.pt
+  imgsz: 1280
+  iou_match: 0.5              # IoU needed to count a detection as correct
+  conf: 0.25
+  degradations: [darkness, blur, occlusion]
+  severities: [1, 2, 3]
+  # Text prompts for zero-shot YOLO-World. Keys must match the class
+  # names in the ICG dataset.yaml (scripts/01 prints them for you).
+  world_prompts:
+    pedestrian: "a pedestrian walking"
+    wheelchair: "a person in a wheelchair"
+    rollator: "a person walking with a rollator walker"
+    crutches: "a person walking with crutches"
+    cane: "a person walking with a walking cane"
+  mobility_aid_classes: [wheelchair, rollator, crutches, cane]
+  # Which dataset training (scripts/02), Experiment A (03) and visual questions (06b) use.
+  # scripts/01 makes icg_dataset.yaml; scripts/11 makes pmma_dataset.yaml and switches this line.
+  dataset_yaml: configs/pmma_dataset.yaml
+  # PMMA class names -> SafeCross classes (scripts/11). A class not listed here is left out.
+  # PushWheel1 = box around a whole pushed-wheelchair group, PushWheel2 = the person pushing,
+  # PushWheel3 = the seated person, PushWheelEmpty = someone pushing an empty chair.
+  pmma_class_map:
+    Ped: pedestrian
+    PushWheel2: pedestrian
+    WheelChair: wheelchair
+    PushWheel3: wheelchair
+    WalkerWalking: rollator
+    WalkerRest: rollator
+    Cane: cane
+  # Crossing Check -> accessibility barrier scan (YOLO-World, zero-shot).
+  # These are text prompts, not trained classes: results are unvalidated.
+  barrier_prompts:
+    stairs: "stairs or steps"
+    curb_ramp: "a curb ramp"
+    bollard: "a bollard"
+    pole: "a pole on the sidewalk"
+    parked_vehicle: "a car parked on the sidewalk"
+    construction_barrier: "a construction barrier"
+    pothole: "a pothole"
+
+# ---------------------------------------------------------------------
+# Explanations (MAAI902)
+# ---------------------------------------------------------------------
+explain:
+  backend: offline            # offline | ollama | hf
+  ollama_url: http://localhost:11434
+  ollama_model: qwen2.5vl:7b  # check the exact name with `ollama list`
+  hf_model: Qwen/Qwen2.5-VL-7B-Instruct
+  temperature: 0.0
+  rag_chunk_chars: 900
+  rag_chunk_overlap: 150
+  rag_top_k: 3
+  n_decision_episodes: 60     # simulated episodes used to make decision questions
+  n_visual_images: 150        # dataset images used to make visual questions
+
+# ---------------------------------------------------------------------
+# Dashboard (app only). These are display ASSUMPTIONS for the simulated
+# signal, not measurements. Change them to match the crossing you model.
+# ---------------------------------------------------------------------
+dashboard:
+  location_label: "Sample crossing"     # shown on the camera feed and alerts (no real place name)
+  cycle_time_s: 90                      # full signal cycle (pedestrian walk + vehicle phases)
+  vehicle_arrival_per_s: 0.25           # vehicles arriving at the stop line (queue model)
+  vehicle_discharge_per_s: 0.5          # vehicles leaving the queue once they get green
+  pedestrian_arrival_per_s: 0.06        # pedestrians arriving to wait during Don't Walk
+  demo_video: results/demo_video.mp4    # if this file exists, the dashboard tracks it at start-up
+  demo_video_seconds: 15

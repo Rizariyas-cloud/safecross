@@ -1,0 +1,2 @@
+gt_boxes,tracker_boxes,matched,FN,FP,IDSW,ignored_tracker_boxes,MOTA,IDF1,IDTP,recall,precision,gt_people,tracker_ids,fps,phantom_tracks,seconds_of_video,video,weights,tracker,identities
+200344,173625,158223,42121,15402,1999,2205,0.7029010102623487,0.23853314044747023,44602,0.7897566186159806,0.9112915766738661,123,2288,12.552496500233318,1552,1159.370966542751,3,pmma_v2_yolo11s_seed0.pt,bytetrack.yaml,"CVAT XML video_3_annotations.xml (offset 30000, 68 of 200344 boxes without a CVAT id)"

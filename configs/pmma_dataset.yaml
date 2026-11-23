@@ -1,0 +1,10 @@
+# Made by scripts/11_pmma_to_yolo.py from test.json + video_2_1.zip
+path: ../data/pmma_yolo
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: pedestrian
+  1: wheelchair
+  2: rollator
+  3: cane

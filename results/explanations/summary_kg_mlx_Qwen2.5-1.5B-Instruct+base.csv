@@ -1,0 +1,9 @@
+qtype,condition,factual_correct,controller_faithful,hallucinated_citation,abstained,answered,parsed,accuracy_when_answered
+decision,kg_full,0.811,0.704,0.0,0.0,0.995,0.995,0.815
+decision,kg_sub,0.981,0.947,0.034,0.0,1.0,1.0,0.981
+decision,kg_sub+checker,0.947,0.947,0.0,0.053,0.947,1.0,1.0
+decision,kg_sub_missing,0.0,0.0,0.015,0.0,0.995,0.995,0.0
+counterfactual,kg_full,0.394,0.394,0.0,0.0,1.0,1.0,0.394
+counterfactual,kg_sub,0.394,0.394,0.0,0.0,1.0,1.0,0.394
+counterfactual,kg_sub+checker,0.379,0.379,0.0,0.621,0.379,1.0,1.0
+counterfactual,kg_sub_missing,0.0,0.0,0.0,0.0,1.0,1.0,0.0

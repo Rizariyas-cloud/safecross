@@ -1,0 +1,33 @@
+# datasets and large files are never committed
+data/icg/
+data/pmma/
+data/rag_docs/*.pdf
+data/*.json
+weights/
+runs/
+*.pt
+results/questions/images/
+results/questions/real_images/
+results/experiment_a/examples/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+# extra safety: videos, archives, private and PMMA-derived files
+data/
+*.mp4
+*.zip
+*.jpg
+*.jpeg
+*.safetensors
+*.npz
+key.json
+**/key.json
+.env
+app/web/camera.jpg
+app/web/camera.json
+heval*/
+results/**/pmma*.png
+results/**/diag_*
+*.mov

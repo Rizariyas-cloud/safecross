@@ -1,0 +1,1119 @@
+phase,kind,error,is_true,sentence,minicheck_ok,numbers_ok
+97000_baseline,end,none (true),True,The walk phase ended at 22.8 s because the crossing was judged to be clear.,True,True
+97000_baseline,end,wrong_time,False,The walk phase ended at 25.8 s because the crossing was judged to be clear.,False,False
+97000_baseline,end,wrong_reason,False,The walk phase ended at 22.8 s because the maximum phase length was reached.,False,True
+97000_baseline,end,invented_rule,False,"The walk phase ended at 22.8 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97000_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97000_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97000_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97000_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97000_baseline,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 21.7 s, 11.3 m into the crossing, and did not reach the exit.",True,True
+97000_baseline,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 24.7 s, 11.3 m into the crossing, and did not reach the exit.",False,False
+97000_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 21.7 s, 11.3 m into the crossing, and did not reach the exit.",False,True
+97000_baseline,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 21.7 s, 11.3 m into the crossing, and then reached the exit.",False,True
+97000_baseline,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 21.7 s, 11.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97000_baseline,lost,none (true),True,"Track 7, labelled as a pedestrian, was last seen at 17.4 s, 1.3 m into the crossing, and did not reach the exit.",True,True
+97000_baseline,lost,wrong_time,False,"Track 7, labelled as a pedestrian, was last seen at 20.4 s, 1.3 m into the crossing, and did not reach the exit.",False,True
+97000_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 17.4 s, 1.3 m into the crossing, and did not reach the exit.",False,True
+97000_baseline,lost,wrong_outcome,False,"Track 7, labelled as a pedestrian, was last seen at 17.4 s, 1.3 m into the crossing, and then reached the exit.",False,True
+97000_baseline,lost,invented_rule,False,"Track 7, labelled as a pedestrian, was last seen at 17.4 s, 1.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97000_baseline,only,none (true),True,"Between 20.4 and 22.7 s, track 2 was the only track keeping the crossing occupied.",True,True
+97000_baseline,only,wrong_track,False,"Between 20.4 and 22.7 s, track 1 was the only track keeping the crossing occupied.",True,True
+97000_baseline,only,wrong_outcome,False,"Between 20.4 and 22.7 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97000_baseline,only,invented_rule,False,"Between 20.4 and 22.7 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97000_baseline,exit,none (true),True,Track 1 reached the exit at 18.2 s.,True,True
+97000_baseline,exit,wrong_time,False,Track 1 reached the exit at 21.2 s.,False,False
+97000_baseline,exit,wrong_track,False,Track 2 reached the exit at 18.2 s.,False,True
+97000_baseline,exit,invented_rule,False,"Track 1 reached the exit at 18.2 s, as required by the Dubai Universal Design guide.",False,True
+97000_uncertainty_aware,end,none (true),True,The walk phase ended at 37.5 s because the crossing was judged to be clear.,True,True
+97000_uncertainty_aware,end,wrong_time,False,The walk phase ended at 40.5 s because the crossing was judged to be clear.,False,False
+97000_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 37.5 s because the maximum phase length was reached.,False,True
+97000_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 37.5 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97000_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97000_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97000_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97000_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97000_uncertainty_aware,lost,none (true),True,"Track 7, labelled as a pedestrian, was last seen at 17.4 s, 1.3 m into the crossing, and did not reach the exit.",True,True
+97000_uncertainty_aware,lost,wrong_time,False,"Track 7, labelled as a pedestrian, was last seen at 20.4 s, 1.3 m into the crossing, and did not reach the exit.",False,False
+97000_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 17.4 s, 1.3 m into the crossing, and did not reach the exit.",False,True
+97000_uncertainty_aware,lost,wrong_outcome,False,"Track 7, labelled as a pedestrian, was last seen at 17.4 s, 1.3 m into the crossing, and then reached the exit.",False,True
+97000_uncertainty_aware,lost,invented_rule,False,"Track 7, labelled as a pedestrian, was last seen at 17.4 s, 1.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97000_uncertainty_aware,only,none (true),True,"Between 23.1 and 37.4 s, track 7 was the only track keeping the crossing occupied.",True,True
+97000_uncertainty_aware,only,wrong_track,False,"Between 23.1 and 37.4 s, track 1 was the only track keeping the crossing occupied.",False,True
+97000_uncertainty_aware,only,wrong_outcome,False,"Between 23.1 and 37.4 s, track 7 was one of several tracks keeping the crossing occupied.",False,True
+97000_uncertainty_aware,only,invented_rule,False,"Between 23.1 and 37.4 s, track 7 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97000_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 18.2 s.,True,True
+97000_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 21.2 s.,False,False
+97000_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 18.2 s.,False,True
+97000_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 18.2 s, as required by the Dubai Universal Design guide.",False,True
+97001_baseline,end,none (true),True,The walk phase ended at 18.5 s because the crossing was judged to be clear.,True,True
+97001_baseline,end,wrong_time,False,The walk phase ended at 21.5 s because the crossing was judged to be clear.,False,False
+97001_baseline,end,wrong_reason,False,The walk phase ended at 18.5 s because the maximum phase length was reached.,True,True
+97001_baseline,end,invented_rule,False,"The walk phase ended at 18.5 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97001_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97001_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97001_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97001_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97001_baseline,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 1.3 s, 0.5 m into the crossing, and did not reach the exit.",True,True
+97001_baseline,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 4.3 s, 0.5 m into the crossing, and did not reach the exit.",False,False
+97001_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 1.3 s, 0.5 m into the crossing, and did not reach the exit.",False,True
+97001_baseline,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 1.3 s, 0.5 m into the crossing, and then reached the exit.",False,True
+97001_baseline,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 1.3 s, 0.5 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97001_baseline,only,none (true),True,"Between 17.0 and 18.4 s, track 5 was the only track keeping the crossing occupied.",True,True
+97001_baseline,only,wrong_track,False,"Between 17.0 and 18.4 s, track 1 was the only track keeping the crossing occupied.",False,True
+97001_baseline,only,wrong_outcome,False,"Between 17.0 and 18.4 s, track 5 was one of several tracks keeping the crossing occupied.",False,True
+97001_baseline,only,invented_rule,False,"Between 17.0 and 18.4 s, track 5 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97001_baseline,exit,none (true),True,Track 1 reached the exit at 16.2 s.,True,True
+97001_baseline,exit,wrong_time,False,Track 1 reached the exit at 19.2 s.,False,False
+97001_baseline,exit,wrong_track,False,Track 2 reached the exit at 16.2 s.,False,True
+97001_baseline,exit,invented_rule,False,"Track 1 reached the exit at 16.2 s, as required by the Dubai Universal Design guide.",False,True
+97001_uncertainty_aware,end,none (true),True,The walk phase ended at 21.3 s because the crossing was judged to be clear.,True,True
+97001_uncertainty_aware,end,wrong_time,False,The walk phase ended at 24.3 s because the crossing was judged to be clear.,False,False
+97001_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 21.3 s because the maximum phase length was reached.,False,True
+97001_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 21.3 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97001_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97001_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97001_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97001_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97001_uncertainty_aware,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 1.3 s, 0.5 m into the crossing, and did not reach the exit.",True,True
+97001_uncertainty_aware,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 4.3 s, 0.5 m into the crossing, and did not reach the exit.",True,False
+97001_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 1.3 s, 0.5 m into the crossing, and did not reach the exit.",False,True
+97001_uncertainty_aware,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 1.3 s, 0.5 m into the crossing, and then reached the exit.",False,True
+97001_uncertainty_aware,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 1.3 s, 0.5 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97001_uncertainty_aware,only,none (true),True,"Between 17.5 and 21.2 s, track 4 was the only track keeping the crossing occupied.",True,True
+97001_uncertainty_aware,only,wrong_track,False,"Between 17.5 and 21.2 s, track 1 was the only track keeping the crossing occupied.",False,True
+97001_uncertainty_aware,only,wrong_outcome,False,"Between 17.5 and 21.2 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97001_uncertainty_aware,only,invented_rule,False,"Between 17.5 and 21.2 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97001_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 16.2 s.,True,True
+97001_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 19.2 s.,False,False
+97001_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 16.2 s.,False,True
+97001_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 16.2 s, as required by the Dubai Universal Design guide.",False,True
+97002_baseline,end,none (true),True,The walk phase ended at 21.6 s because the crossing was judged to be clear.,True,True
+97002_baseline,end,wrong_time,False,The walk phase ended at 24.6 s because the crossing was judged to be clear.,False,False
+97002_baseline,end,wrong_reason,False,The walk phase ended at 21.6 s because the maximum phase length was reached.,False,True
+97002_baseline,end,invented_rule,False,"The walk phase ended at 21.6 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97002_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97002_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97002_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97002_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97002_baseline,lost,none (true),True,"Track 1, labelled as a mobility-aid user, was last seen at 20.2 s, 10.5 m into the crossing, and did not reach the exit.",True,True
+97002_baseline,lost,wrong_time,False,"Track 1, labelled as a mobility-aid user, was last seen at 23.2 s, 10.5 m into the crossing, and did not reach the exit.",False,False
+97002_baseline,lost,wrong_track,False,"Track 2, labelled as a mobility-aid user, was last seen at 20.2 s, 10.5 m into the crossing, and did not reach the exit.",False,True
+97002_baseline,lost,wrong_outcome,False,"Track 1, labelled as a mobility-aid user, was last seen at 20.2 s, 10.5 m into the crossing, and then reached the exit.",False,True
+97002_baseline,lost,invented_rule,False,"Track 1, labelled as a mobility-aid user, was last seen at 20.2 s, 10.5 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97002_baseline,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 6.7 s, 6.0 m into the crossing, and did not reach the exit.",True,True
+97002_baseline,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 9.7 s, 6.0 m into the crossing, and did not reach the exit.",False,False
+97002_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 6.7 s, 6.0 m into the crossing, and did not reach the exit.",False,True
+97002_baseline,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 6.7 s, 6.0 m into the crossing, and then reached the exit.",False,True
+97002_baseline,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 6.7 s, 6.0 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97002_baseline,only,none (true),True,"Between 21.3 and 21.5 s, track 3 was the only track keeping the crossing occupied.",True,True
+97002_baseline,only,wrong_track,False,"Between 21.3 and 21.5 s, track 1 was the only track keeping the crossing occupied.",False,True
+97002_baseline,only,wrong_outcome,False,"Between 21.3 and 21.5 s, track 3 was one of several tracks keeping the crossing occupied.",False,True
+97002_baseline,only,invented_rule,False,"Between 21.3 and 21.5 s, track 3 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97002_baseline,exit,none (true),True,Track 2 reached the exit at 10.3 s.,True,True
+97002_baseline,exit,wrong_time,False,Track 2 reached the exit at 13.3 s.,False,False
+97002_baseline,exit,wrong_track,False,Track 1 reached the exit at 10.3 s.,False,True
+97002_baseline,exit,invented_rule,False,"Track 2 reached the exit at 10.3 s, as required by the Dubai Universal Design guide.",False,True
+97002_uncertainty_aware,end,none (true),True,The walk phase ended at 24.1 s because the crossing was judged to be clear.,True,True
+97002_uncertainty_aware,end,wrong_time,False,The walk phase ended at 27.1 s because the crossing was judged to be clear.,False,False
+97002_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 24.1 s because the maximum phase length was reached.,False,True
+97002_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 24.1 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97002_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97002_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97002_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97002_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97002_uncertainty_aware,lost,none (true),True,"Track 1, labelled as a mobility-aid user, was last seen at 20.2 s, 10.5 m into the crossing, and did not reach the exit.",True,True
+97002_uncertainty_aware,lost,wrong_time,False,"Track 1, labelled as a mobility-aid user, was last seen at 23.2 s, 10.5 m into the crossing, and did not reach the exit.",False,False
+97002_uncertainty_aware,lost,wrong_track,False,"Track 2, labelled as a mobility-aid user, was last seen at 20.2 s, 10.5 m into the crossing, and did not reach the exit.",False,True
+97002_uncertainty_aware,lost,wrong_outcome,False,"Track 1, labelled as a mobility-aid user, was last seen at 20.2 s, 10.5 m into the crossing, and then reached the exit.",False,True
+97002_uncertainty_aware,lost,invented_rule,False,"Track 1, labelled as a mobility-aid user, was last seen at 20.2 s, 10.5 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97002_uncertainty_aware,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 6.7 s, 6.0 m into the crossing, and did not reach the exit.",True,True
+97002_uncertainty_aware,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 9.7 s, 6.0 m into the crossing, and did not reach the exit.",False,False
+97002_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 6.7 s, 6.0 m into the crossing, and did not reach the exit.",False,True
+97002_uncertainty_aware,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 6.7 s, 6.0 m into the crossing, and then reached the exit.",True,True
+97002_uncertainty_aware,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 6.7 s, 6.0 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97002_uncertainty_aware,only,none (true),True,"Between 22.3 and 24.0 s, track 1 was the only track keeping the crossing occupied.",True,True
+97002_uncertainty_aware,only,wrong_track,False,"Between 22.3 and 24.0 s, track 2 was the only track keeping the crossing occupied.",True,True
+97002_uncertainty_aware,only,wrong_outcome,False,"Between 22.3 and 24.0 s, track 1 was one of several tracks keeping the crossing occupied.",True,True
+97002_uncertainty_aware,only,invented_rule,False,"Between 22.3 and 24.0 s, track 1 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97002_uncertainty_aware,exit,none (true),True,Track 2 reached the exit at 10.3 s.,True,True
+97002_uncertainty_aware,exit,wrong_time,False,Track 2 reached the exit at 13.3 s.,False,False
+97002_uncertainty_aware,exit,wrong_track,False,Track 1 reached the exit at 10.3 s.,False,True
+97002_uncertainty_aware,exit,invented_rule,False,"Track 2 reached the exit at 10.3 s, as required by the Dubai Universal Design guide.",False,True
+97003_baseline,end,none (true),True,The walk phase ended at 17.3 s because the crossing was judged to be clear.,True,True
+97003_baseline,end,wrong_time,False,The walk phase ended at 20.3 s because the crossing was judged to be clear.,False,False
+97003_baseline,end,wrong_reason,False,The walk phase ended at 17.3 s because the maximum phase length was reached.,False,True
+97003_baseline,end,invented_rule,False,"The walk phase ended at 17.3 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97003_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97003_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97003_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97003_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97003_baseline,lost,none (true),True,"Track 1, labelled as a mobility-aid user, was last seen at 14.7 s, 10.3 m into the crossing, and did not reach the exit.",True,True
+97003_baseline,lost,wrong_time,False,"Track 1, labelled as a mobility-aid user, was last seen at 17.7 s, 10.3 m into the crossing, and did not reach the exit.",False,False
+97003_baseline,lost,wrong_track,False,"Track 2, labelled as a mobility-aid user, was last seen at 14.7 s, 10.3 m into the crossing, and did not reach the exit.",False,True
+97003_baseline,lost,wrong_outcome,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.7 s, 10.3 m into the crossing, and then reached the exit.",False,True
+97003_baseline,lost,invented_rule,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.7 s, 10.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97003_baseline,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 14.9 s, 10.4 m into the crossing, and did not reach the exit.",True,True
+97003_baseline,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 17.9 s, 10.4 m into the crossing, and did not reach the exit.",False,False
+97003_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.9 s, 10.4 m into the crossing, and did not reach the exit.",False,True
+97003_baseline,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 14.9 s, 10.4 m into the crossing, and then reached the exit.",False,True
+97003_baseline,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 14.9 s, 10.4 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97003_baseline,only,none (true),True,"Between 17.0 and 17.2 s, track 3 was the only track keeping the crossing occupied.",True,True
+97003_baseline,only,wrong_track,False,"Between 17.0 and 17.2 s, track 1 was the only track keeping the crossing occupied.",False,True
+97003_baseline,only,wrong_outcome,False,"Between 17.0 and 17.2 s, track 3 was one of several tracks keeping the crossing occupied.",False,True
+97003_baseline,only,invented_rule,False,"Between 17.0 and 17.2 s, track 3 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97003_uncertainty_aware,end,none (true),True,The walk phase ended at 28.6 s because the crossing was judged to be clear.,True,True
+97003_uncertainty_aware,end,wrong_time,False,The walk phase ended at 31.6 s because the crossing was judged to be clear.,False,False
+97003_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 28.6 s because the maximum phase length was reached.,False,True
+97003_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 28.6 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97003_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97003_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97003_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97003_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97003_uncertainty_aware,lost,none (true),True,"Track 1, labelled as a mobility-aid user, was last seen at 14.7 s, 10.3 m into the crossing, and did not reach the exit.",True,True
+97003_uncertainty_aware,lost,wrong_time,False,"Track 1, labelled as a mobility-aid user, was last seen at 17.7 s, 10.3 m into the crossing, and did not reach the exit.",False,False
+97003_uncertainty_aware,lost,wrong_track,False,"Track 2, labelled as a mobility-aid user, was last seen at 14.7 s, 10.3 m into the crossing, and did not reach the exit.",False,True
+97003_uncertainty_aware,lost,wrong_outcome,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.7 s, 10.3 m into the crossing, and then reached the exit.",False,True
+97003_uncertainty_aware,lost,invented_rule,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.7 s, 10.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97003_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 14.9 s, 10.4 m into the crossing, and did not reach the exit.",True,True
+97003_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 17.9 s, 10.4 m into the crossing, and did not reach the exit.",False,False
+97003_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.9 s, 10.4 m into the crossing, and did not reach the exit.",False,True
+97003_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 14.9 s, 10.4 m into the crossing, and then reached the exit.",False,True
+97003_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 14.9 s, 10.4 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97003_uncertainty_aware,only,none (true),True,"Between 19.3 and 28.5 s, track 3 was the only track keeping the crossing occupied.",True,True
+97003_uncertainty_aware,only,wrong_track,False,"Between 19.3 and 28.5 s, track 1 was the only track keeping the crossing occupied.",True,True
+97003_uncertainty_aware,only,wrong_outcome,False,"Between 19.3 and 28.5 s, track 3 was one of several tracks keeping the crossing occupied.",False,True
+97003_uncertainty_aware,only,invented_rule,False,"Between 19.3 and 28.5 s, track 3 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97004_baseline,end,none (true),True,The walk phase ended at 21.1 s because the crossing was judged to be clear.,True,True
+97004_baseline,end,wrong_time,False,The walk phase ended at 24.1 s because the crossing was judged to be clear.,False,False
+97004_baseline,end,wrong_reason,False,The walk phase ended at 21.1 s because the maximum phase length was reached.,False,True
+97004_baseline,end,invented_rule,False,"The walk phase ended at 21.1 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97004_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97004_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97004_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97004_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97004_baseline,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 13.6 s, 7.1 m into the crossing, and did not reach the exit.",True,True
+97004_baseline,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 16.6 s, 7.1 m into the crossing, and did not reach the exit.",False,False
+97004_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 13.6 s, 7.1 m into the crossing, and did not reach the exit.",False,True
+97004_baseline,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 13.6 s, 7.1 m into the crossing, and then reached the exit.",False,True
+97004_baseline,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 13.6 s, 7.1 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97004_baseline,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 4.9 s, 2.2 m into the crossing, and did not reach the exit.",True,True
+97004_baseline,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 7.9 s, 2.2 m into the crossing, and did not reach the exit.",False,False
+97004_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 4.9 s, 2.2 m into the crossing, and did not reach the exit.",False,True
+97004_baseline,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 4.9 s, 2.2 m into the crossing, and then reached the exit.",False,True
+97004_baseline,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 4.9 s, 2.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97004_baseline,only,none (true),True,"Between 20.4 and 21.0 s, track 5 was the only track keeping the crossing occupied.",True,True
+97004_baseline,only,wrong_track,False,"Between 20.4 and 21.0 s, track 1 was the only track keeping the crossing occupied.",True,True
+97004_baseline,only,wrong_outcome,False,"Between 20.4 and 21.0 s, track 5 was one of several tracks keeping the crossing occupied.",False,True
+97004_baseline,only,invented_rule,False,"Between 20.4 and 21.0 s, track 5 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97004_baseline,exit,none (true),True,Track 1 reached the exit at 21.0 s.,True,True
+97004_baseline,exit,wrong_time,False,Track 1 reached the exit at 24.0 s.,False,False
+97004_baseline,exit,wrong_track,False,Track 2 reached the exit at 21.0 s.,False,True
+97004_baseline,exit,invented_rule,False,"Track 1 reached the exit at 21.0 s, as required by the Dubai Universal Design guide.",False,True
+97004_uncertainty_aware,end,none (true),True,The walk phase ended at 26.4 s because the crossing was judged to be clear.,True,True
+97004_uncertainty_aware,end,wrong_time,False,The walk phase ended at 29.4 s because the crossing was judged to be clear.,False,False
+97004_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 26.4 s because the maximum phase length was reached.,False,True
+97004_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 26.4 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97004_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97004_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,True
+97004_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97004_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97004_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 13.6 s, 7.1 m into the crossing, and did not reach the exit.",True,True
+97004_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 16.6 s, 7.1 m into the crossing, and did not reach the exit.",False,False
+97004_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 13.6 s, 7.1 m into the crossing, and did not reach the exit.",False,True
+97004_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 13.6 s, 7.1 m into the crossing, and then reached the exit.",False,True
+97004_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 13.6 s, 7.1 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97004_uncertainty_aware,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 4.9 s, 2.2 m into the crossing, and did not reach the exit.",True,True
+97004_uncertainty_aware,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 7.9 s, 2.2 m into the crossing, and did not reach the exit.",False,False
+97004_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 4.9 s, 2.2 m into the crossing, and did not reach the exit.",False,True
+97004_uncertainty_aware,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 4.9 s, 2.2 m into the crossing, and then reached the exit.",True,True
+97004_uncertainty_aware,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 4.9 s, 2.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97004_uncertainty_aware,only,none (true),True,"Between 24.9 and 26.3 s, track 2 was the only track keeping the crossing occupied.",True,True
+97004_uncertainty_aware,only,wrong_track,False,"Between 24.9 and 26.3 s, track 1 was the only track keeping the crossing occupied.",True,True
+97004_uncertainty_aware,only,wrong_outcome,False,"Between 24.9 and 26.3 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97004_uncertainty_aware,only,invented_rule,False,"Between 24.9 and 26.3 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97004_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 21.0 s.,True,True
+97004_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 24.0 s.,False,False
+97004_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 21.0 s.,False,True
+97004_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 21.0 s, as required by the Dubai Universal Design guide.",False,True
+97005_baseline,end,none (true),True,The walk phase ended at 21.6 s because the crossing was judged to be clear.,True,True
+97005_baseline,end,wrong_time,False,The walk phase ended at 24.6 s because the crossing was judged to be clear.,False,False
+97005_baseline,end,wrong_reason,False,The walk phase ended at 21.6 s because the maximum phase length was reached.,False,True
+97005_baseline,end,invented_rule,False,"The walk phase ended at 21.6 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97005_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97005_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97005_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97005_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97005_baseline,lost,none (true),True,"Track 5, labelled as a mobility-aid user, was last seen at 8.8 s, 6.2 m into the crossing, and did not reach the exit.",True,True
+97005_baseline,lost,wrong_time,False,"Track 5, labelled as a mobility-aid user, was last seen at 11.8 s, 6.2 m into the crossing, and did not reach the exit.",False,False
+97005_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 8.8 s, 6.2 m into the crossing, and did not reach the exit.",False,True
+97005_baseline,lost,wrong_outcome,False,"Track 5, labelled as a mobility-aid user, was last seen at 8.8 s, 6.2 m into the crossing, and then reached the exit.",False,True
+97005_baseline,lost,invented_rule,False,"Track 5, labelled as a mobility-aid user, was last seen at 8.8 s, 6.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97005_baseline,lost,none (true),True,"Track 7, labelled as a mobility-aid user, was last seen at 3.8 s, 2.3 m into the crossing, and did not reach the exit.",True,True
+97005_baseline,lost,wrong_time,False,"Track 7, labelled as a mobility-aid user, was last seen at 6.8 s, 2.3 m into the crossing, and did not reach the exit.",False,False
+97005_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 3.8 s, 2.3 m into the crossing, and did not reach the exit.",False,True
+97005_baseline,lost,wrong_outcome,False,"Track 7, labelled as a mobility-aid user, was last seen at 3.8 s, 2.3 m into the crossing, and then reached the exit.",False,True
+97005_baseline,lost,invented_rule,False,"Track 7, labelled as a mobility-aid user, was last seen at 3.8 s, 2.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97005_baseline,only,none (true),True,"Between 17.0 and 21.5 s, track 4 was the only track keeping the crossing occupied.",True,True
+97005_baseline,only,wrong_track,False,"Between 17.0 and 21.5 s, track 1 was the only track keeping the crossing occupied.",False,True
+97005_baseline,only,wrong_outcome,False,"Between 17.0 and 21.5 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97005_baseline,only,invented_rule,False,"Between 17.0 and 21.5 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97005_baseline,exit,none (true),True,Track 1 reached the exit at 11.5 s.,True,True
+97005_baseline,exit,wrong_time,False,Track 1 reached the exit at 14.5 s.,False,False
+97005_baseline,exit,wrong_track,False,Track 2 reached the exit at 11.5 s.,False,True
+97005_baseline,exit,invented_rule,False,"Track 1 reached the exit at 11.5 s, as required by the Dubai Universal Design guide.",False,True
+97005_uncertainty_aware,end,none (true),True,The walk phase ended at 23.9 s because the crossing was judged to be clear.,True,True
+97005_uncertainty_aware,end,wrong_time,False,The walk phase ended at 26.9 s because the crossing was judged to be clear.,False,False
+97005_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 23.9 s because the maximum phase length was reached.,False,True
+97005_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 23.9 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97005_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97005_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97005_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97005_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97005_uncertainty_aware,lost,none (true),True,"Track 5, labelled as a mobility-aid user, was last seen at 8.8 s, 6.2 m into the crossing, and did not reach the exit.",True,True
+97005_uncertainty_aware,lost,wrong_time,False,"Track 5, labelled as a mobility-aid user, was last seen at 11.8 s, 6.2 m into the crossing, and did not reach the exit.",False,False
+97005_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 8.8 s, 6.2 m into the crossing, and did not reach the exit.",False,True
+97005_uncertainty_aware,lost,wrong_outcome,False,"Track 5, labelled as a mobility-aid user, was last seen at 8.8 s, 6.2 m into the crossing, and then reached the exit.",False,True
+97005_uncertainty_aware,lost,invented_rule,False,"Track 5, labelled as a mobility-aid user, was last seen at 8.8 s, 6.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97005_uncertainty_aware,lost,none (true),True,"Track 7, labelled as a mobility-aid user, was last seen at 3.8 s, 2.3 m into the crossing, and did not reach the exit.",True,True
+97005_uncertainty_aware,lost,wrong_time,False,"Track 7, labelled as a mobility-aid user, was last seen at 6.8 s, 2.3 m into the crossing, and did not reach the exit.",False,False
+97005_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 3.8 s, 2.3 m into the crossing, and did not reach the exit.",False,True
+97005_uncertainty_aware,lost,wrong_outcome,False,"Track 7, labelled as a mobility-aid user, was last seen at 3.8 s, 2.3 m into the crossing, and then reached the exit.",False,True
+97005_uncertainty_aware,lost,invented_rule,False,"Track 7, labelled as a mobility-aid user, was last seen at 3.8 s, 2.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97005_uncertainty_aware,only,none (true),True,"Between 23.8 and 23.8 s, track 5 was the only track keeping the crossing occupied.",True,True
+97005_uncertainty_aware,only,wrong_time,False,"Between 23.8 and 26.8 s, track 5 was the only track keeping the crossing occupied.",False,False
+97005_uncertainty_aware,only,wrong_track,False,"Between 23.8 and 23.8 s, track 1 was the only track keeping the crossing occupied.",True,True
+97005_uncertainty_aware,only,wrong_outcome,False,"Between 23.8 and 23.8 s, track 5 was one of several tracks keeping the crossing occupied.",False,True
+97005_uncertainty_aware,only,invented_rule,False,"Between 23.8 and 23.8 s, track 5 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97005_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 11.5 s.,True,True
+97005_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 14.5 s.,False,False
+97005_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 11.5 s.,False,True
+97005_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 11.5 s, as required by the Dubai Universal Design guide.",False,True
+97006_baseline,end,none (true),True,The walk phase ended at 17.0 s because the crossing was judged to be clear.,True,True
+97006_baseline,end,wrong_time,False,The walk phase ended at 20.0 s because the crossing was judged to be clear.,False,False
+97006_baseline,end,wrong_reason,False,The walk phase ended at 17.0 s because the maximum phase length was reached.,False,True
+97006_baseline,end,invented_rule,False,"The walk phase ended at 17.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97006_baseline,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 11.6 s, 7.7 m into the crossing, and did not reach the exit.",True,True
+97006_baseline,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 14.6 s, 7.7 m into the crossing, and did not reach the exit.",False,False
+97006_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 11.6 s, 7.7 m into the crossing, and did not reach the exit.",False,True
+97006_baseline,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 11.6 s, 7.7 m into the crossing, and then reached the exit.",False,True
+97006_baseline,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 11.6 s, 7.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97006_baseline,lost,none (true),True,"Track 3, labelled as a pedestrian, was last seen at 5.6 s, 5.5 m into the crossing, and did not reach the exit.",True,True
+97006_baseline,lost,wrong_time,False,"Track 3, labelled as a pedestrian, was last seen at 8.6 s, 5.5 m into the crossing, and did not reach the exit.",False,False
+97006_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 5.6 s, 5.5 m into the crossing, and did not reach the exit.",False,True
+97006_baseline,lost,wrong_outcome,False,"Track 3, labelled as a pedestrian, was last seen at 5.6 s, 5.5 m into the crossing, and then reached the exit.",False,True
+97006_baseline,lost,invented_rule,False,"Track 3, labelled as a pedestrian, was last seen at 5.6 s, 5.5 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97006_baseline,exit,none (true),True,Track 1 reached the exit at 16.5 s.,True,True
+97006_baseline,exit,wrong_time,False,Track 1 reached the exit at 19.5 s.,False,False
+97006_baseline,exit,wrong_track,False,Track 2 reached the exit at 16.5 s.,False,True
+97006_baseline,exit,invented_rule,False,"Track 1 reached the exit at 16.5 s, as required by the Dubai Universal Design guide.",False,True
+97006_uncertainty_aware,end,none (true),True,The walk phase ended at 23.0 s because the crossing was judged to be clear.,True,True
+97006_uncertainty_aware,end,wrong_time,False,The walk phase ended at 26.0 s because the crossing was judged to be clear.,False,False
+97006_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 23.0 s because the maximum phase length was reached.,False,True
+97006_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 23.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97006_uncertainty_aware,extend,none (true),True,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",True,True
+97006_uncertainty_aware,extend,wrong_time,False,"The walk phase was extended at 20.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",False,False
+97006_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97006_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held, as required by the Dubai Universal Design guide.",False,True
+97006_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 11.6 s, 7.7 m into the crossing, and did not reach the exit.",True,True
+97006_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 14.6 s, 7.7 m into the crossing, and did not reach the exit.",False,False
+97006_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 11.6 s, 7.7 m into the crossing, and did not reach the exit.",False,True
+97006_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 11.6 s, 7.7 m into the crossing, and then reached the exit.",False,True
+97006_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 11.6 s, 7.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97006_uncertainty_aware,lost,none (true),True,"Track 3, labelled as a pedestrian, was last seen at 5.6 s, 5.5 m into the crossing, and did not reach the exit.",True,True
+97006_uncertainty_aware,lost,wrong_time,False,"Track 3, labelled as a pedestrian, was last seen at 8.6 s, 5.5 m into the crossing, and did not reach the exit.",False,False
+97006_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 5.6 s, 5.5 m into the crossing, and did not reach the exit.",True,True
+97006_uncertainty_aware,lost,wrong_outcome,False,"Track 3, labelled as a pedestrian, was last seen at 5.6 s, 5.5 m into the crossing, and then reached the exit.",False,True
+97006_uncertainty_aware,lost,invented_rule,False,"Track 3, labelled as a pedestrian, was last seen at 5.6 s, 5.5 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97006_uncertainty_aware,only,none (true),True,"Between 17.0 and 22.9 s, track 2 was the only track keeping the crossing occupied.",True,True
+97006_uncertainty_aware,only,wrong_track,False,"Between 17.0 and 22.9 s, track 1 was the only track keeping the crossing occupied.",False,True
+97006_uncertainty_aware,only,wrong_outcome,False,"Between 17.0 and 22.9 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97006_uncertainty_aware,only,invented_rule,False,"Between 17.0 and 22.9 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97006_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 16.5 s.,True,True
+97006_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 19.5 s.,False,False
+97006_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 16.5 s.,False,True
+97006_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 16.5 s, as required by the Dubai Universal Design guide.",False,True
+97007_baseline,end,none (true),True,The walk phase ended at 20.5 s because the crossing was judged to be clear.,True,True
+97007_baseline,end,wrong_time,False,The walk phase ended at 23.5 s because the crossing was judged to be clear.,False,False
+97007_baseline,end,wrong_reason,False,The walk phase ended at 20.5 s because the maximum phase length was reached.,False,True
+97007_baseline,end,invented_rule,False,"The walk phase ended at 20.5 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97007_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97007_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97007_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97007_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97007_baseline,lost,none (true),True,"Track 1, labelled as a pedestrian, was last seen at 2.2 s, 0.8 m into the crossing, and did not reach the exit.",True,True
+97007_baseline,lost,wrong_time,False,"Track 1, labelled as a pedestrian, was last seen at 5.2 s, 0.8 m into the crossing, and did not reach the exit.",False,False
+97007_baseline,lost,wrong_track,False,"Track 2, labelled as a pedestrian, was last seen at 2.2 s, 0.8 m into the crossing, and did not reach the exit.",False,True
+97007_baseline,lost,wrong_outcome,False,"Track 1, labelled as a pedestrian, was last seen at 2.2 s, 0.8 m into the crossing, and then reached the exit.",False,True
+97007_baseline,lost,invented_rule,False,"Track 1, labelled as a pedestrian, was last seen at 2.2 s, 0.8 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97007_baseline,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 8.2 s, 1.7 m into the crossing, and did not reach the exit.",True,True
+97007_baseline,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 11.2 s, 1.7 m into the crossing, and did not reach the exit.",False,False
+97007_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 8.2 s, 1.7 m into the crossing, and did not reach the exit.",False,True
+97007_baseline,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 8.2 s, 1.7 m into the crossing, and then reached the exit.",True,True
+97007_baseline,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 8.2 s, 1.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97007_baseline,only,none (true),True,"Between 19.4 and 20.4 s, track 3 was the only track keeping the crossing occupied.",True,True
+97007_baseline,only,wrong_track,False,"Between 19.4 and 20.4 s, track 1 was the only track keeping the crossing occupied.",False,True
+97007_baseline,only,wrong_outcome,False,"Between 19.4 and 20.4 s, track 3 was one of several tracks keeping the crossing occupied.",False,True
+97007_baseline,only,invented_rule,False,"Between 19.4 and 20.4 s, track 3 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97007_baseline,exit,none (true),True,Track 3 reached the exit at 20.5 s.,True,True
+97007_baseline,exit,wrong_time,False,Track 3 reached the exit at 23.5 s.,False,False
+97007_baseline,exit,wrong_track,False,Track 1 reached the exit at 20.5 s.,False,True
+97007_baseline,exit,invented_rule,False,"Track 3 reached the exit at 20.5 s, as required by the Dubai Universal Design guide.",False,True
+97007_uncertainty_aware,end,none (true),True,The walk phase ended at 28.2 s because the crossing was judged to be clear.,True,True
+97007_uncertainty_aware,end,wrong_time,False,The walk phase ended at 31.2 s because the crossing was judged to be clear.,False,False
+97007_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 28.2 s because the maximum phase length was reached.,False,True
+97007_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 28.2 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97007_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97007_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97007_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97007_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97007_uncertainty_aware,lost,none (true),True,"Track 1, labelled as a pedestrian, was last seen at 2.2 s, 0.8 m into the crossing, and did not reach the exit.",True,True
+97007_uncertainty_aware,lost,wrong_time,False,"Track 1, labelled as a pedestrian, was last seen at 5.2 s, 0.8 m into the crossing, and did not reach the exit.",False,False
+97007_uncertainty_aware,lost,wrong_track,False,"Track 2, labelled as a pedestrian, was last seen at 2.2 s, 0.8 m into the crossing, and did not reach the exit.",False,True
+97007_uncertainty_aware,lost,wrong_outcome,False,"Track 1, labelled as a pedestrian, was last seen at 2.2 s, 0.8 m into the crossing, and then reached the exit.",False,True
+97007_uncertainty_aware,lost,invented_rule,False,"Track 1, labelled as a pedestrian, was last seen at 2.2 s, 0.8 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97007_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 8.2 s, 1.7 m into the crossing, and did not reach the exit.",True,True
+97007_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 11.2 s, 1.7 m into the crossing, and did not reach the exit.",False,False
+97007_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 8.2 s, 1.7 m into the crossing, and did not reach the exit.",False,True
+97007_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 8.2 s, 1.7 m into the crossing, and then reached the exit.",True,True
+97007_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 8.2 s, 1.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97007_uncertainty_aware,only,none (true),True,"Between 26.3 and 28.1 s, track 2 was the only track keeping the crossing occupied.",True,True
+97007_uncertainty_aware,only,wrong_track,False,"Between 26.3 and 28.1 s, track 1 was the only track keeping the crossing occupied.",True,True
+97007_uncertainty_aware,only,wrong_outcome,False,"Between 26.3 and 28.1 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97007_uncertainty_aware,only,invented_rule,False,"Between 26.3 and 28.1 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97007_uncertainty_aware,exit,none (true),True,Track 3 reached the exit at 21.1 s.,True,True
+97007_uncertainty_aware,exit,wrong_time,False,Track 3 reached the exit at 24.1 s.,False,False
+97007_uncertainty_aware,exit,wrong_track,False,Track 1 reached the exit at 21.1 s.,False,True
+97007_uncertainty_aware,exit,invented_rule,False,"Track 3 reached the exit at 21.1 s, as required by the Dubai Universal Design guide.",False,True
+97008_baseline,end,none (true),True,The walk phase ended at 17.9 s because the crossing was judged to be clear.,True,True
+97008_baseline,end,wrong_time,False,The walk phase ended at 20.9 s because the crossing was judged to be clear.,False,False
+97008_baseline,end,wrong_reason,False,The walk phase ended at 17.9 s because the maximum phase length was reached.,False,True
+97008_baseline,end,invented_rule,False,"The walk phase ended at 17.9 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97008_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97008_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97008_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97008_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97008_baseline,lost,none (true),True,"Track 3, labelled as a mobility-aid user, was last seen at 9.3 s, 7.2 m into the crossing, and did not reach the exit.",True,True
+97008_baseline,lost,wrong_time,False,"Track 3, labelled as a mobility-aid user, was last seen at 12.3 s, 7.2 m into the crossing, and did not reach the exit.",False,False
+97008_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 9.3 s, 7.2 m into the crossing, and did not reach the exit.",False,True
+97008_baseline,lost,wrong_outcome,False,"Track 3, labelled as a mobility-aid user, was last seen at 9.3 s, 7.2 m into the crossing, and then reached the exit.",False,True
+97008_baseline,lost,invented_rule,False,"Track 3, labelled as a mobility-aid user, was last seen at 9.3 s, 7.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97008_baseline,lost,none (true),True,"Track 7, labelled as a pedestrian, was last seen at 7.3 s, 2.2 m into the crossing, and did not reach the exit.",True,True
+97008_baseline,lost,wrong_time,False,"Track 7, labelled as a pedestrian, was last seen at 10.3 s, 2.2 m into the crossing, and did not reach the exit.",False,False
+97008_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 7.3 s, 2.2 m into the crossing, and did not reach the exit.",True,True
+97008_baseline,lost,wrong_outcome,False,"Track 7, labelled as a pedestrian, was last seen at 7.3 s, 2.2 m into the crossing, and then reached the exit.",False,True
+97008_baseline,lost,invented_rule,False,"Track 7, labelled as a pedestrian, was last seen at 7.3 s, 2.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97008_baseline,only,none (true),True,"Between 17.0 and 17.8 s, track 2 was the only track keeping the crossing occupied.",True,True
+97008_baseline,only,wrong_track,False,"Between 17.0 and 17.8 s, track 1 was the only track keeping the crossing occupied.",False,True
+97008_baseline,only,wrong_outcome,False,"Between 17.0 and 17.8 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97008_baseline,only,invented_rule,False,"Between 17.0 and 17.8 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97008_baseline,exit,none (true),True,Track 1 reached the exit at 11.9 s.,True,True
+97008_baseline,exit,wrong_time,False,Track 1 reached the exit at 14.9 s.,False,False
+97008_baseline,exit,wrong_track,False,Track 2 reached the exit at 11.9 s.,False,True
+97008_baseline,exit,invented_rule,False,"Track 1 reached the exit at 11.9 s, as required by the Dubai Universal Design guide.",False,True
+97008_uncertainty_aware,end,none (true),True,The walk phase ended at 27.3 s because the crossing was judged to be clear.,True,True
+97008_uncertainty_aware,end,wrong_time,False,The walk phase ended at 30.3 s because the crossing was judged to be clear.,False,False
+97008_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 27.3 s because the maximum phase length was reached.,False,True
+97008_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 27.3 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97008_uncertainty_aware,extend,none (true),True,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",True,True
+97008_uncertainty_aware,extend,wrong_time,False,"The walk phase was extended at 20.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",False,False
+97008_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97008_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held, as required by the Dubai Universal Design guide.",False,True
+97008_uncertainty_aware,lost,none (true),True,"Track 3, labelled as a mobility-aid user, was last seen at 9.3 s, 7.2 m into the crossing, and did not reach the exit.",True,True
+97008_uncertainty_aware,lost,wrong_time,False,"Track 3, labelled as a mobility-aid user, was last seen at 12.3 s, 7.2 m into the crossing, and did not reach the exit.",False,False
+97008_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 9.3 s, 7.2 m into the crossing, and did not reach the exit.",False,True
+97008_uncertainty_aware,lost,wrong_outcome,False,"Track 3, labelled as a mobility-aid user, was last seen at 9.3 s, 7.2 m into the crossing, and then reached the exit.",False,True
+97008_uncertainty_aware,lost,invented_rule,False,"Track 3, labelled as a mobility-aid user, was last seen at 9.3 s, 7.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97008_uncertainty_aware,lost,none (true),True,"Track 7, labelled as a pedestrian, was last seen at 7.3 s, 2.2 m into the crossing, and did not reach the exit.",True,True
+97008_uncertainty_aware,lost,wrong_time,False,"Track 7, labelled as a pedestrian, was last seen at 10.3 s, 2.2 m into the crossing, and did not reach the exit.",False,False
+97008_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 7.3 s, 2.2 m into the crossing, and did not reach the exit.",False,True
+97008_uncertainty_aware,lost,wrong_outcome,False,"Track 7, labelled as a pedestrian, was last seen at 7.3 s, 2.2 m into the crossing, and then reached the exit.",False,True
+97008_uncertainty_aware,lost,invented_rule,False,"Track 7, labelled as a pedestrian, was last seen at 7.3 s, 2.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97008_uncertainty_aware,only,none (true),True,"Between 21.8 and 27.2 s, track 7 was the only track keeping the crossing occupied.",True,True
+97008_uncertainty_aware,only,wrong_track,False,"Between 21.8 and 27.2 s, track 1 was the only track keeping the crossing occupied.",False,True
+97008_uncertainty_aware,only,wrong_outcome,False,"Between 21.8 and 27.2 s, track 7 was one of several tracks keeping the crossing occupied.",False,True
+97008_uncertainty_aware,only,invented_rule,False,"Between 21.8 and 27.2 s, track 7 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97008_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 11.9 s.,True,True
+97008_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 14.9 s.,False,False
+97008_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 11.9 s.,False,True
+97008_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 11.9 s, as required by the Dubai Universal Design guide.",False,True
+97009_baseline,end,none (true),True,The walk phase ended at 17.2 s because the crossing was judged to be clear.,True,True
+97009_baseline,end,wrong_time,False,The walk phase ended at 20.2 s because the crossing was judged to be clear.,False,False
+97009_baseline,end,wrong_reason,False,The walk phase ended at 17.2 s because the maximum phase length was reached.,True,True
+97009_baseline,end,invented_rule,False,"The walk phase ended at 17.2 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97009_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97009_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97009_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97009_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97009_baseline,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 11.6 s, 10.7 m into the crossing, and did not reach the exit.",True,True
+97009_baseline,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 14.6 s, 10.7 m into the crossing, and did not reach the exit.",False,False
+97009_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 11.6 s, 10.7 m into the crossing, and did not reach the exit.",False,True
+97009_baseline,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 11.6 s, 10.7 m into the crossing, and then reached the exit.",False,True
+97009_baseline,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 11.6 s, 10.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97009_baseline,lost,none (true),True,"Track 4, labelled as a pedestrian, was last seen at 16.1 s, 3.9 m into the crossing, and did not reach the exit.",True,True
+97009_baseline,lost,wrong_time,False,"Track 4, labelled as a pedestrian, was last seen at 19.1 s, 3.9 m into the crossing, and did not reach the exit.",False,False
+97009_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 16.1 s, 3.9 m into the crossing, and did not reach the exit.",False,True
+97009_baseline,lost,wrong_outcome,False,"Track 4, labelled as a pedestrian, was last seen at 16.1 s, 3.9 m into the crossing, and then reached the exit.",False,True
+97009_baseline,lost,invented_rule,False,"Track 4, labelled as a pedestrian, was last seen at 16.1 s, 3.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97009_baseline,only,none (true),True,"Between 17.0 and 17.1 s, track 4 was the only track keeping the crossing occupied.",True,True
+97009_baseline,only,wrong_track,False,"Between 17.0 and 17.1 s, track 1 was the only track keeping the crossing occupied.",False,True
+97009_baseline,only,wrong_outcome,False,"Between 17.0 and 17.1 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97009_baseline,only,invented_rule,False,"Between 17.0 and 17.1 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97009_baseline,exit,none (true),True,Track 1 reached the exit at 11.4 s.,True,True
+97009_baseline,exit,wrong_time,False,Track 1 reached the exit at 14.4 s.,False,False
+97009_baseline,exit,wrong_track,False,Track 2 reached the exit at 11.4 s.,False,True
+97009_baseline,exit,invented_rule,False,"Track 1 reached the exit at 11.4 s, as required by the Dubai Universal Design guide.",False,True
+97009_uncertainty_aware,end,none (true),True,The walk phase ended at 36.1 s because the crossing was judged to be clear.,True,True
+97009_uncertainty_aware,end,wrong_time,False,The walk phase ended at 39.1 s because the crossing was judged to be clear.,False,False
+97009_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 36.1 s because the maximum phase length was reached.,True,True
+97009_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 36.1 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97009_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97009_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97009_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97009_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97009_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 11.6 s, 10.7 m into the crossing, and did not reach the exit.",True,True
+97009_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 14.6 s, 10.7 m into the crossing, and did not reach the exit.",False,False
+97009_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 11.6 s, 10.7 m into the crossing, and did not reach the exit.",True,True
+97009_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 11.6 s, 10.7 m into the crossing, and then reached the exit.",False,True
+97009_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 11.6 s, 10.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97009_uncertainty_aware,lost,none (true),True,"Track 4, labelled as a pedestrian, was last seen at 16.1 s, 3.9 m into the crossing, and did not reach the exit.",True,True
+97009_uncertainty_aware,lost,wrong_time,False,"Track 4, labelled as a pedestrian, was last seen at 19.1 s, 3.9 m into the crossing, and did not reach the exit.",False,False
+97009_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 16.1 s, 3.9 m into the crossing, and did not reach the exit.",False,True
+97009_uncertainty_aware,lost,wrong_outcome,False,"Track 4, labelled as a pedestrian, was last seen at 16.1 s, 3.9 m into the crossing, and then reached the exit.",False,True
+97009_uncertainty_aware,lost,invented_rule,False,"Track 4, labelled as a pedestrian, was last seen at 16.1 s, 3.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97009_uncertainty_aware,only,none (true),True,"Between 17.0 and 36.0 s, track 4 was the only track keeping the crossing occupied.",True,True
+97009_uncertainty_aware,only,wrong_track,False,"Between 17.0 and 36.0 s, track 1 was the only track keeping the crossing occupied.",False,True
+97009_uncertainty_aware,only,wrong_outcome,False,"Between 17.0 and 36.0 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97009_uncertainty_aware,only,invented_rule,False,"Between 17.0 and 36.0 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97009_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 11.4 s.,True,True
+97009_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 14.4 s.,False,False
+97009_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 11.4 s.,False,True
+97009_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 11.4 s, as required by the Dubai Universal Design guide.",False,True
+97010_baseline,end,none (true),True,The walk phase ended at 17.0 s because the crossing was judged to be clear.,True,True
+97010_baseline,end,wrong_time,False,The walk phase ended at 20.0 s because the crossing was judged to be clear.,False,False
+97010_baseline,end,wrong_reason,False,The walk phase ended at 17.0 s because the maximum phase length was reached.,False,True
+97010_baseline,end,invented_rule,False,"The walk phase ended at 17.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97010_baseline,lost,none (true),True,"Track 1, labelled as a pedestrian, was last seen at 5.1 s, 3.9 m into the crossing, and did not reach the exit.",True,True
+97010_baseline,lost,wrong_time,False,"Track 1, labelled as a pedestrian, was last seen at 8.1 s, 3.9 m into the crossing, and did not reach the exit.",False,False
+97010_baseline,lost,wrong_track,False,"Track 2, labelled as a pedestrian, was last seen at 5.1 s, 3.9 m into the crossing, and did not reach the exit.",False,True
+97010_baseline,lost,wrong_outcome,False,"Track 1, labelled as a pedestrian, was last seen at 5.1 s, 3.9 m into the crossing, and then reached the exit.",False,True
+97010_baseline,lost,invented_rule,False,"Track 1, labelled as a pedestrian, was last seen at 5.1 s, 3.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97010_baseline,exit,none (true),True,Track 2 reached the exit at 11.3 s.,True,True
+97010_baseline,exit,wrong_time,False,Track 2 reached the exit at 14.3 s.,False,False
+97010_baseline,exit,wrong_track,False,Track 1 reached the exit at 11.3 s.,False,True
+97010_baseline,exit,invented_rule,False,"Track 2 reached the exit at 11.3 s, as required by the Dubai Universal Design guide.",False,True
+97010_uncertainty_aware,end,none (true),True,The walk phase ended at 17.0 s because the crossing was judged to be clear.,True,True
+97010_uncertainty_aware,end,wrong_time,False,The walk phase ended at 20.0 s because the crossing was judged to be clear.,False,False
+97010_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 17.0 s because the maximum phase length was reached.,False,True
+97010_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 17.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97010_uncertainty_aware,lost,none (true),True,"Track 1, labelled as a pedestrian, was last seen at 5.1 s, 3.9 m into the crossing, and did not reach the exit.",True,True
+97010_uncertainty_aware,lost,wrong_time,False,"Track 1, labelled as a pedestrian, was last seen at 8.1 s, 3.9 m into the crossing, and did not reach the exit.",False,False
+97010_uncertainty_aware,lost,wrong_track,False,"Track 2, labelled as a pedestrian, was last seen at 5.1 s, 3.9 m into the crossing, and did not reach the exit.",True,True
+97010_uncertainty_aware,lost,wrong_outcome,False,"Track 1, labelled as a pedestrian, was last seen at 5.1 s, 3.9 m into the crossing, and then reached the exit.",False,True
+97010_uncertainty_aware,lost,invented_rule,False,"Track 1, labelled as a pedestrian, was last seen at 5.1 s, 3.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97010_uncertainty_aware,exit,none (true),True,Track 2 reached the exit at 11.3 s.,True,True
+97010_uncertainty_aware,exit,wrong_time,False,Track 2 reached the exit at 14.3 s.,False,False
+97010_uncertainty_aware,exit,wrong_track,False,Track 1 reached the exit at 11.3 s.,False,True
+97010_uncertainty_aware,exit,invented_rule,False,"Track 2 reached the exit at 11.3 s, as required by the Dubai Universal Design guide.",False,True
+97011_baseline,end,none (true),True,The walk phase ended at 23.5 s because the crossing was judged to be clear.,True,True
+97011_baseline,end,wrong_time,False,The walk phase ended at 26.5 s because the crossing was judged to be clear.,False,False
+97011_baseline,end,wrong_reason,False,The walk phase ended at 23.5 s because the maximum phase length was reached.,False,True
+97011_baseline,end,invented_rule,False,"The walk phase ended at 23.5 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97011_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97011_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97011_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97011_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97011_baseline,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 3.3 s, 0.9 m into the crossing, and did not reach the exit.",True,True
+97011_baseline,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 6.3 s, 0.9 m into the crossing, and did not reach the exit.",False,False
+97011_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 3.3 s, 0.9 m into the crossing, and did not reach the exit.",False,True
+97011_baseline,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 3.3 s, 0.9 m into the crossing, and then reached the exit.",False,True
+97011_baseline,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 3.3 s, 0.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97011_baseline,lost,none (true),True,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 9.8 m into the crossing, and did not reach the exit.",True,True
+97011_baseline,lost,wrong_time,False,"Track 6, labelled as a pedestrian, was last seen at 15.7 s, 9.8 m into the crossing, and did not reach the exit.",False,True
+97011_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 12.7 s, 9.8 m into the crossing, and did not reach the exit.",False,True
+97011_baseline,lost,wrong_outcome,False,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 9.8 m into the crossing, and then reached the exit.",False,True
+97011_baseline,lost,invented_rule,False,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 9.8 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97011_baseline,only,none (true),True,"Between 17.8 and 23.4 s, track 3 was the only track keeping the crossing occupied.",True,True
+97011_baseline,only,wrong_track,False,"Between 17.8 and 23.4 s, track 1 was the only track keeping the crossing occupied.",True,True
+97011_baseline,only,wrong_outcome,False,"Between 17.8 and 23.4 s, track 3 was one of several tracks keeping the crossing occupied.",False,True
+97011_baseline,only,invented_rule,False,"Between 17.8 and 23.4 s, track 3 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97011_baseline,exit,none (true),True,Track 1 reached the exit at 18.9 s.,True,True
+97011_baseline,exit,wrong_time,False,Track 1 reached the exit at 21.9 s.,False,False
+97011_baseline,exit,wrong_track,False,Track 2 reached the exit at 18.9 s.,False,True
+97011_baseline,exit,invented_rule,False,"Track 1 reached the exit at 18.9 s, as required by the Dubai Universal Design guide.",False,True
+97011_uncertainty_aware,end,none (true),True,The walk phase ended at 36.7 s because the crossing was judged to be clear.,True,True
+97011_uncertainty_aware,end,wrong_time,False,The walk phase ended at 39.7 s because the crossing was judged to be clear.,False,False
+97011_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 36.7 s because the maximum phase length was reached.,False,True
+97011_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 36.7 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97011_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97011_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97011_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97011_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97011_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a mobility-aid user, was last seen at 3.3 s, 0.9 m into the crossing, and did not reach the exit.",True,True
+97011_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a mobility-aid user, was last seen at 6.3 s, 0.9 m into the crossing, and did not reach the exit.",False,False
+97011_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 3.3 s, 0.9 m into the crossing, and did not reach the exit.",False,True
+97011_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a mobility-aid user, was last seen at 3.3 s, 0.9 m into the crossing, and then reached the exit.",False,True
+97011_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a mobility-aid user, was last seen at 3.3 s, 0.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97011_uncertainty_aware,lost,none (true),True,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 9.8 m into the crossing, and did not reach the exit.",True,True
+97011_uncertainty_aware,lost,wrong_time,False,"Track 6, labelled as a pedestrian, was last seen at 15.7 s, 9.8 m into the crossing, and did not reach the exit.",False,True
+97011_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 12.7 s, 9.8 m into the crossing, and did not reach the exit.",False,True
+97011_uncertainty_aware,lost,wrong_outcome,False,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 9.8 m into the crossing, and then reached the exit.",False,True
+97011_uncertainty_aware,lost,invented_rule,False,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 9.8 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97011_uncertainty_aware,only,none (true),True,"Between 23.3 and 36.6 s, track 7 was the only track keeping the crossing occupied.",True,True
+97011_uncertainty_aware,only,wrong_track,False,"Between 23.3 and 36.6 s, track 1 was the only track keeping the crossing occupied.",False,True
+97011_uncertainty_aware,only,wrong_outcome,False,"Between 23.3 and 36.6 s, track 7 was one of several tracks keeping the crossing occupied.",False,True
+97011_uncertainty_aware,only,invented_rule,False,"Between 23.3 and 36.6 s, track 7 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97011_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 18.9 s.,True,True
+97011_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 21.9 s.,False,False
+97011_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 18.9 s.,False,True
+97011_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 18.9 s, as required by the Dubai Universal Design guide.",False,True
+97012_baseline,end,none (true),True,The walk phase ended at 18.2 s because the crossing was judged to be clear.,True,True
+97012_baseline,end,wrong_time,False,The walk phase ended at 21.2 s because the crossing was judged to be clear.,False,False
+97012_baseline,end,wrong_reason,False,The walk phase ended at 18.2 s because the maximum phase length was reached.,True,True
+97012_baseline,end,invented_rule,False,"The walk phase ended at 18.2 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97012_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97012_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97012_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97012_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97012_baseline,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 2.4 s, 1.1 m into the crossing, and did not reach the exit.",True,True
+97012_baseline,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 5.4 s, 1.1 m into the crossing, and did not reach the exit.",False,False
+97012_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 2.4 s, 1.1 m into the crossing, and did not reach the exit.",True,True
+97012_baseline,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 2.4 s, 1.1 m into the crossing, and then reached the exit.",False,True
+97012_baseline,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 2.4 s, 1.1 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97012_baseline,only,none (true),True,"Between 17.0 and 18.1 s, track 4 was the only track keeping the crossing occupied.",True,True
+97012_baseline,only,wrong_track,False,"Between 17.0 and 18.1 s, track 1 was the only track keeping the crossing occupied.",False,True
+97012_baseline,only,wrong_outcome,False,"Between 17.0 and 18.1 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97012_baseline,only,invented_rule,False,"Between 17.0 and 18.1 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97012_baseline,exit,none (true),True,Track 1 reached the exit at 13.6 s.,True,True
+97012_baseline,exit,wrong_time,False,Track 1 reached the exit at 16.6 s.,False,False
+97012_baseline,exit,wrong_track,False,Track 2 reached the exit at 13.6 s.,False,True
+97012_baseline,exit,invented_rule,False,"Track 1 reached the exit at 13.6 s, as required by the Dubai Universal Design guide.",False,True
+97012_uncertainty_aware,end,none (true),True,The walk phase ended at 17.2 s because the crossing was judged to be clear.,True,True
+97012_uncertainty_aware,end,wrong_time,False,The walk phase ended at 20.2 s because the crossing was judged to be clear.,False,False
+97012_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 17.2 s because the maximum phase length was reached.,False,True
+97012_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 17.2 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97012_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97012_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97012_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97012_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97012_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 2.4 s, 1.1 m into the crossing, and did not reach the exit.",True,True
+97012_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 5.4 s, 1.1 m into the crossing, and did not reach the exit.",False,False
+97012_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 2.4 s, 1.1 m into the crossing, and did not reach the exit.",False,True
+97012_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 2.4 s, 1.1 m into the crossing, and then reached the exit.",False,True
+97012_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 2.4 s, 1.1 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97012_uncertainty_aware,only,none (true),True,"Between 17.0 and 17.1 s, track 4 was the only track keeping the crossing occupied.",True,True
+97012_uncertainty_aware,only,wrong_track,False,"Between 17.0 and 17.1 s, track 1 was the only track keeping the crossing occupied.",False,True
+97012_uncertainty_aware,only,wrong_outcome,False,"Between 17.0 and 17.1 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97012_uncertainty_aware,only,invented_rule,False,"Between 17.0 and 17.1 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97012_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 13.6 s.,True,True
+97012_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 16.6 s.,False,False
+97012_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 13.6 s.,False,True
+97012_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 13.6 s, as required by the Dubai Universal Design guide.",False,True
+97013_baseline,end,none (true),True,The walk phase ended at 28.0 s because the crossing was judged to be clear.,True,True
+97013_baseline,end,wrong_time,False,The walk phase ended at 31.0 s because the crossing was judged to be clear.,False,False
+97013_baseline,end,wrong_reason,False,The walk phase ended at 28.0 s because the maximum phase length was reached.,False,True
+97013_baseline,end,invented_rule,False,"The walk phase ended at 28.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97013_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97013_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97013_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97013_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97013_baseline,only,none (true),True,"Between 19.7 and 20.4 s, track 1 was the only track keeping the crossing occupied.",True,True
+97013_baseline,only,wrong_track,False,"Between 19.7 and 20.4 s, track 2 was the only track keeping the crossing occupied.",True,True
+97013_baseline,only,wrong_outcome,False,"Between 19.7 and 20.4 s, track 1 was one of several tracks keeping the crossing occupied.",False,True
+97013_baseline,only,invented_rule,False,"Between 19.7 and 20.4 s, track 1 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97013_baseline,exit,none (true),True,Track 1 reached the exit at 28.0 s.,True,True
+97013_baseline,exit,wrong_time,False,Track 1 reached the exit at 31.0 s.,False,False
+97013_baseline,exit,wrong_track,False,Track 2 reached the exit at 28.0 s.,False,True
+97013_baseline,exit,invented_rule,False,"Track 1 reached the exit at 28.0 s, as required by the Dubai Universal Design guide.",False,True
+97013_uncertainty_aware,end,none (true),True,The walk phase ended at 27.0 s because the crossing was judged to be clear.,True,True
+97013_uncertainty_aware,end,wrong_time,False,The walk phase ended at 30.0 s because the crossing was judged to be clear.,False,False
+97013_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 27.0 s because the maximum phase length was reached.,False,True
+97013_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 27.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97013_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97013_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97013_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97013_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97013_uncertainty_aware,only,none (true),True,"Between 22.6 and 26.9 s, track 1 was the only track keeping the crossing occupied.",True,True
+97013_uncertainty_aware,only,wrong_track,False,"Between 22.6 and 26.9 s, track 2 was the only track keeping the crossing occupied.",True,True
+97013_uncertainty_aware,only,wrong_outcome,False,"Between 22.6 and 26.9 s, track 1 was one of several tracks keeping the crossing occupied.",False,True
+97013_uncertainty_aware,only,invented_rule,False,"Between 22.6 and 26.9 s, track 1 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97013_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 27.0 s.,True,True
+97013_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 30.0 s.,False,False
+97013_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 27.0 s.,False,True
+97013_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 27.0 s, as required by the Dubai Universal Design guide.",False,True
+97014_baseline,end,none (true),True,The walk phase ended at 27.7 s because the crossing was judged to be clear.,True,True
+97014_baseline,end,wrong_time,False,The walk phase ended at 30.7 s because the crossing was judged to be clear.,False,False
+97014_baseline,end,wrong_reason,False,The walk phase ended at 27.7 s because the maximum phase length was reached.,False,True
+97014_baseline,end,invented_rule,False,"The walk phase ended at 27.7 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97014_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97014_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97014_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97014_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97014_baseline,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 5.0 s, 2.6 m into the crossing, and did not reach the exit.",True,True
+97014_baseline,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 8.0 s, 2.6 m into the crossing, and did not reach the exit.",False,False
+97014_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 5.0 s, 2.6 m into the crossing, and did not reach the exit.",False,True
+97014_baseline,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 5.0 s, 2.6 m into the crossing, and then reached the exit.",False,True
+97014_baseline,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 5.0 s, 2.6 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97014_baseline,lost,none (true),True,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 8.6 m into the crossing, and did not reach the exit.",True,True
+97014_baseline,lost,wrong_time,False,"Track 6, labelled as a pedestrian, was last seen at 15.7 s, 8.6 m into the crossing, and did not reach the exit.",False,False
+97014_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 12.7 s, 8.6 m into the crossing, and did not reach the exit.",False,True
+97014_baseline,lost,wrong_outcome,False,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 8.6 m into the crossing, and then reached the exit.",False,True
+97014_baseline,lost,invented_rule,False,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 8.6 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97014_baseline,only,none (true),True,"Between 18.9 and 27.6 s, track 3 was the only track keeping the crossing occupied.",True,True
+97014_baseline,only,wrong_track,False,"Between 18.9 and 27.6 s, track 1 was the only track keeping the crossing occupied.",False,True
+97014_baseline,only,wrong_outcome,False,"Between 18.9 and 27.6 s, track 3 was one of several tracks keeping the crossing occupied.",False,True
+97014_baseline,only,invented_rule,False,"Between 18.9 and 27.6 s, track 3 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97014_baseline,exit,none (true),True,Track 1 reached the exit at 16.3 s.,True,True
+97014_baseline,exit,wrong_time,False,Track 1 reached the exit at 19.3 s.,False,False
+97014_baseline,exit,wrong_track,False,Track 2 reached the exit at 16.3 s.,False,True
+97014_baseline,exit,invented_rule,False,"Track 1 reached the exit at 16.3 s, as required by the Dubai Universal Design guide.",False,True
+97014_uncertainty_aware,end,none (true),True,The walk phase ended at 26.7 s because the crossing was judged to be clear.,True,True
+97014_uncertainty_aware,end,wrong_time,False,The walk phase ended at 29.7 s because the crossing was judged to be clear.,False,False
+97014_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 26.7 s because the maximum phase length was reached.,False,True
+97014_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 26.7 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97014_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97014_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97014_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97014_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97014_uncertainty_aware,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 5.0 s, 2.6 m into the crossing, and did not reach the exit.",True,True
+97014_uncertainty_aware,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 8.0 s, 2.6 m into the crossing, and did not reach the exit.",False,False
+97014_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 5.0 s, 2.6 m into the crossing, and did not reach the exit.",False,True
+97014_uncertainty_aware,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 5.0 s, 2.6 m into the crossing, and then reached the exit.",False,True
+97014_uncertainty_aware,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 5.0 s, 2.6 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97014_uncertainty_aware,lost,none (true),True,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 8.6 m into the crossing, and did not reach the exit.",True,True
+97014_uncertainty_aware,lost,wrong_time,False,"Track 6, labelled as a pedestrian, was last seen at 15.7 s, 8.6 m into the crossing, and did not reach the exit.",False,False
+97014_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 12.7 s, 8.6 m into the crossing, and did not reach the exit.",False,True
+97014_uncertainty_aware,lost,wrong_outcome,False,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 8.6 m into the crossing, and then reached the exit.",False,True
+97014_uncertainty_aware,lost,invented_rule,False,"Track 6, labelled as a pedestrian, was last seen at 12.7 s, 8.6 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97014_uncertainty_aware,only,none (true),True,"Between 25.0 and 26.6 s, track 3 was the only track keeping the crossing occupied.",True,True
+97014_uncertainty_aware,only,wrong_track,False,"Between 25.0 and 26.6 s, track 1 was the only track keeping the crossing occupied.",True,True
+97014_uncertainty_aware,only,wrong_outcome,False,"Between 25.0 and 26.6 s, track 3 was one of several tracks keeping the crossing occupied.",True,True
+97014_uncertainty_aware,only,invented_rule,False,"Between 25.0 and 26.6 s, track 3 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97014_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 16.3 s.,True,True
+97014_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 19.3 s.,False,False
+97014_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 16.3 s.,False,True
+97014_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 16.3 s, as required by the Dubai Universal Design guide.",False,True
+97015_baseline,end,none (true),True,The walk phase ended at 17.0 s because the crossing was judged to be clear.,True,True
+97015_baseline,end,wrong_time,False,The walk phase ended at 20.0 s because the crossing was judged to be clear.,False,False
+97015_baseline,end,wrong_reason,False,The walk phase ended at 17.0 s because the maximum phase length was reached.,False,True
+97015_baseline,end,invented_rule,False,"The walk phase ended at 17.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97015_baseline,lost,none (true),True,"Track 1, labelled as a pedestrian, was last seen at 8.2 s, 10.4 m into the crossing, and did not reach the exit.",True,True
+97015_baseline,lost,wrong_time,False,"Track 1, labelled as a pedestrian, was last seen at 11.2 s, 10.4 m into the crossing, and did not reach the exit.",False,False
+97015_baseline,lost,wrong_track,False,"Track 2, labelled as a pedestrian, was last seen at 8.2 s, 10.4 m into the crossing, and did not reach the exit.",False,True
+97015_baseline,lost,wrong_outcome,False,"Track 1, labelled as a pedestrian, was last seen at 8.2 s, 10.4 m into the crossing, and then reached the exit.",False,True
+97015_baseline,lost,invented_rule,False,"Track 1, labelled as a pedestrian, was last seen at 8.2 s, 10.4 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97015_baseline,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 8.1 s, 9.1 m into the crossing, and did not reach the exit.",True,True
+97015_baseline,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 11.1 s, 9.1 m into the crossing, and did not reach the exit.",False,False
+97015_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 8.1 s, 9.1 m into the crossing, and did not reach the exit.",False,True
+97015_baseline,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 8.1 s, 9.1 m into the crossing, and then reached the exit.",False,True
+97015_baseline,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 8.1 s, 9.1 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97015_uncertainty_aware,end,none (true),True,The walk phase ended at 29.9 s because the crossing was judged to be clear.,True,True
+97015_uncertainty_aware,end,wrong_time,False,The walk phase ended at 32.9 s because the crossing was judged to be clear.,False,False
+97015_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 29.9 s because the maximum phase length was reached.,False,True
+97015_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 29.9 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97015_uncertainty_aware,extend,none (true),True,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",True,True
+97015_uncertainty_aware,extend,wrong_time,False,"The walk phase was extended at 20.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",False,False
+97015_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97015_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held, as required by the Dubai Universal Design guide.",False,True
+97015_uncertainty_aware,lost,none (true),True,"Track 1, labelled as a pedestrian, was last seen at 8.2 s, 10.4 m into the crossing, and did not reach the exit.",True,True
+97015_uncertainty_aware,lost,wrong_time,False,"Track 1, labelled as a pedestrian, was last seen at 11.2 s, 10.4 m into the crossing, and did not reach the exit.",False,False
+97015_uncertainty_aware,lost,wrong_track,False,"Track 2, labelled as a pedestrian, was last seen at 8.2 s, 10.4 m into the crossing, and did not reach the exit.",False,True
+97015_uncertainty_aware,lost,wrong_outcome,False,"Track 1, labelled as a pedestrian, was last seen at 8.2 s, 10.4 m into the crossing, and then reached the exit.",False,True
+97015_uncertainty_aware,lost,invented_rule,False,"Track 1, labelled as a pedestrian, was last seen at 8.2 s, 10.4 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97015_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 8.1 s, 9.1 m into the crossing, and did not reach the exit.",True,True
+97015_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 11.1 s, 9.1 m into the crossing, and did not reach the exit.",False,True
+97015_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 8.1 s, 9.1 m into the crossing, and did not reach the exit.",False,True
+97015_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 8.1 s, 9.1 m into the crossing, and then reached the exit.",False,True
+97015_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 8.1 s, 9.1 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97015_uncertainty_aware,only,none (true),True,"Between 17.0 and 29.8 s, track 4 was the only track keeping the crossing occupied.",True,True
+97015_uncertainty_aware,only,wrong_track,False,"Between 17.0 and 29.8 s, track 1 was the only track keeping the crossing occupied.",False,True
+97015_uncertainty_aware,only,wrong_outcome,False,"Between 17.0 and 29.8 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97015_uncertainty_aware,only,invented_rule,False,"Between 17.0 and 29.8 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97016_baseline,end,none (true),True,The walk phase ended at 29.0 s because the crossing was judged to be clear.,True,True
+97016_baseline,end,wrong_time,False,The walk phase ended at 32.0 s because the crossing was judged to be clear.,False,False
+97016_baseline,end,wrong_reason,False,The walk phase ended at 29.0 s because the maximum phase length was reached.,False,True
+97016_baseline,end,invented_rule,False,"The walk phase ended at 29.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97016_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97016_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97016_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97016_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97016_baseline,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 9.9 s, 7.1 m into the crossing, and did not reach the exit.",True,True
+97016_baseline,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 12.9 s, 7.1 m into the crossing, and did not reach the exit.",False,False
+97016_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 9.9 s, 7.1 m into the crossing, and did not reach the exit.",False,True
+97016_baseline,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 9.9 s, 7.1 m into the crossing, and then reached the exit.",False,True
+97016_baseline,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 9.9 s, 7.1 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97016_baseline,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 14.2 s, 8.9 m into the crossing, and did not reach the exit.",True,True
+97016_baseline,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 17.2 s, 8.9 m into the crossing, and did not reach the exit.",False,False
+97016_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.2 s, 8.9 m into the crossing, and did not reach the exit.",False,True
+97016_baseline,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 14.2 s, 8.9 m into the crossing, and then reached the exit.",False,True
+97016_baseline,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 14.2 s, 8.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97016_baseline,only,none (true),True,"Between 17.0 and 28.9 s, track 8 was the only track keeping the crossing occupied.",True,True
+97016_baseline,only,wrong_track,False,"Between 17.0 and 28.9 s, track 1 was the only track keeping the crossing occupied.",False,True
+97016_baseline,only,wrong_outcome,False,"Between 17.0 and 28.9 s, track 8 was one of several tracks keeping the crossing occupied.",False,True
+97016_baseline,only,invented_rule,False,"Between 17.0 and 28.9 s, track 8 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97016_baseline,exit,none (true),True,Track 1 reached the exit at 16.0 s.,True,True
+97016_baseline,exit,wrong_time,False,Track 1 reached the exit at 19.0 s.,False,False
+97016_baseline,exit,wrong_track,False,Track 2 reached the exit at 16.0 s.,False,True
+97016_baseline,exit,invented_rule,False,"Track 1 reached the exit at 16.0 s, as required by the Dubai Universal Design guide.",False,True
+97016_uncertainty_aware,end,none (true),True,The walk phase ended at 32.2 s because the crossing was judged to be clear.,True,True
+97016_uncertainty_aware,end,wrong_time,False,The walk phase ended at 35.2 s because the crossing was judged to be clear.,False,False
+97016_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 32.2 s because the maximum phase length was reached.,False,True
+97016_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 32.2 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97016_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97016_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97016_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97016_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97016_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 9.9 s, 7.1 m into the crossing, and did not reach the exit.",True,True
+97016_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 12.9 s, 7.1 m into the crossing, and did not reach the exit.",False,False
+97016_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 9.9 s, 7.1 m into the crossing, and did not reach the exit.",False,True
+97016_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 9.9 s, 7.1 m into the crossing, and then reached the exit.",False,True
+97016_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 9.9 s, 7.1 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97016_uncertainty_aware,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 14.2 s, 8.9 m into the crossing, and did not reach the exit.",True,True
+97016_uncertainty_aware,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 17.2 s, 8.9 m into the crossing, and did not reach the exit.",False,False
+97016_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.2 s, 8.9 m into the crossing, and did not reach the exit.",False,True
+97016_uncertainty_aware,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 14.2 s, 8.9 m into the crossing, and then reached the exit.",True,True
+97016_uncertainty_aware,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 14.2 s, 8.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97016_uncertainty_aware,only,none (true),True,"Between 30.1 and 32.1 s, track 7 was the only track keeping the crossing occupied.",True,True
+97016_uncertainty_aware,only,wrong_track,False,"Between 30.1 and 32.1 s, track 1 was the only track keeping the crossing occupied.",True,True
+97016_uncertainty_aware,only,wrong_outcome,False,"Between 30.1 and 32.1 s, track 7 was one of several tracks keeping the crossing occupied.",False,True
+97016_uncertainty_aware,only,invented_rule,False,"Between 30.1 and 32.1 s, track 7 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97016_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 16.0 s.,True,True
+97016_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 19.0 s.,False,False
+97016_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 16.0 s.,False,True
+97016_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 16.0 s, as required by the Dubai Universal Design guide.",False,True
+97017_baseline,end,none (true),True,The walk phase ended at 17.4 s because the crossing was judged to be clear.,True,True
+97017_baseline,end,wrong_time,False,The walk phase ended at 20.4 s because the crossing was judged to be clear.,False,False
+97017_baseline,end,wrong_reason,False,The walk phase ended at 17.4 s because the maximum phase length was reached.,False,True
+97017_baseline,end,invented_rule,False,"The walk phase ended at 17.4 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97017_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97017_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97017_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97017_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97017_baseline,lost,none (true),True,"Track 3, labelled as a mobility-aid user, was last seen at 10.9 s, 5.3 m into the crossing, and did not reach the exit.",True,True
+97017_baseline,lost,wrong_time,False,"Track 3, labelled as a mobility-aid user, was last seen at 13.9 s, 5.3 m into the crossing, and did not reach the exit.",False,False
+97017_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 10.9 s, 5.3 m into the crossing, and did not reach the exit.",False,True
+97017_baseline,lost,wrong_outcome,False,"Track 3, labelled as a mobility-aid user, was last seen at 10.9 s, 5.3 m into the crossing, and then reached the exit.",False,True
+97017_baseline,lost,invented_rule,False,"Track 3, labelled as a mobility-aid user, was last seen at 10.9 s, 5.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97017_baseline,lost,none (true),True,"Track 5, labelled as a pedestrian, was last seen at 0.2 s, 0.7 m into the crossing, and did not reach the exit.",True,True
+97017_baseline,lost,wrong_time,False,"Track 5, labelled as a pedestrian, was last seen at 3.2 s, 0.7 m into the crossing, and did not reach the exit.",False,False
+97017_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 0.2 s, 0.7 m into the crossing, and did not reach the exit.",True,True
+97017_baseline,lost,wrong_outcome,False,"Track 5, labelled as a pedestrian, was last seen at 0.2 s, 0.7 m into the crossing, and then reached the exit.",False,True
+97017_baseline,lost,invented_rule,False,"Track 5, labelled as a pedestrian, was last seen at 0.2 s, 0.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97017_baseline,only,none (true),True,"Between 17.0 and 17.3 s, track 2 was the only track keeping the crossing occupied.",True,True
+97017_baseline,only,wrong_track,False,"Between 17.0 and 17.3 s, track 1 was the only track keeping the crossing occupied.",False,True
+97017_baseline,only,wrong_outcome,False,"Between 17.0 and 17.3 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97017_baseline,only,invented_rule,False,"Between 17.0 and 17.3 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97017_baseline,exit,none (true),True,Track 1 reached the exit at 9.2 s.,True,True
+97017_baseline,exit,wrong_time,False,Track 1 reached the exit at 12.2 s.,False,False
+97017_baseline,exit,wrong_track,False,Track 2 reached the exit at 9.2 s.,False,True
+97017_baseline,exit,invented_rule,False,"Track 1 reached the exit at 9.2 s, as required by the Dubai Universal Design guide.",False,True
+97017_uncertainty_aware,end,none (true),True,The walk phase ended at 28.4 s because the crossing was judged to be clear.,True,True
+97017_uncertainty_aware,end,wrong_time,False,The walk phase ended at 31.4 s because the crossing was judged to be clear.,False,False
+97017_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 28.4 s because the maximum phase length was reached.,False,True
+97017_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 28.4 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97017_uncertainty_aware,extend,none (true),True,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",True,True
+97017_uncertainty_aware,extend,wrong_time,False,"The walk phase was extended at 20.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",False,False
+97017_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97017_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held, as required by the Dubai Universal Design guide.",False,True
+97017_uncertainty_aware,lost,none (true),True,"Track 3, labelled as a mobility-aid user, was last seen at 10.9 s, 5.3 m into the crossing, and did not reach the exit.",True,True
+97017_uncertainty_aware,lost,wrong_time,False,"Track 3, labelled as a mobility-aid user, was last seen at 13.9 s, 5.3 m into the crossing, and did not reach the exit.",False,False
+97017_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 10.9 s, 5.3 m into the crossing, and did not reach the exit.",False,True
+97017_uncertainty_aware,lost,wrong_outcome,False,"Track 3, labelled as a mobility-aid user, was last seen at 10.9 s, 5.3 m into the crossing, and then reached the exit.",False,True
+97017_uncertainty_aware,lost,invented_rule,False,"Track 3, labelled as a mobility-aid user, was last seen at 10.9 s, 5.3 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97017_uncertainty_aware,lost,none (true),True,"Track 5, labelled as a pedestrian, was last seen at 0.2 s, 0.7 m into the crossing, and did not reach the exit.",True,True
+97017_uncertainty_aware,lost,wrong_time,False,"Track 5, labelled as a pedestrian, was last seen at 3.2 s, 0.7 m into the crossing, and did not reach the exit.",False,False
+97017_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 0.2 s, 0.7 m into the crossing, and did not reach the exit.",True,True
+97017_uncertainty_aware,lost,wrong_outcome,False,"Track 5, labelled as a pedestrian, was last seen at 0.2 s, 0.7 m into the crossing, and then reached the exit.",False,True
+97017_uncertainty_aware,lost,invented_rule,False,"Track 5, labelled as a pedestrian, was last seen at 0.2 s, 0.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97017_uncertainty_aware,only,none (true),True,"Between 20.2 and 28.3 s, track 3 was the only track keeping the crossing occupied.",True,True
+97017_uncertainty_aware,only,wrong_track,False,"Between 20.2 and 28.3 s, track 1 was the only track keeping the crossing occupied.",False,True
+97017_uncertainty_aware,only,wrong_outcome,False,"Between 20.2 and 28.3 s, track 3 was one of several tracks keeping the crossing occupied.",False,True
+97017_uncertainty_aware,only,invented_rule,False,"Between 20.2 and 28.3 s, track 3 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97017_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 9.2 s.,True,True
+97017_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 12.2 s.,False,False
+97017_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 9.2 s.,False,True
+97017_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 9.2 s, as required by the Dubai Universal Design guide.",False,True
+97018_baseline,end,none (true),True,The walk phase ended at 17.7 s because the crossing was judged to be clear.,True,True
+97018_baseline,end,wrong_time,False,The walk phase ended at 20.7 s because the crossing was judged to be clear.,False,False
+97018_baseline,end,wrong_reason,False,The walk phase ended at 17.7 s because the maximum phase length was reached.,True,True
+97018_baseline,end,invented_rule,False,"The walk phase ended at 17.7 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97018_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97018_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97018_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97018_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97018_baseline,lost,none (true),True,"Track 1, labelled as a mobility-aid user, was last seen at 6.7 s, 4.9 m into the crossing, and did not reach the exit.",True,True
+97018_baseline,lost,wrong_time,False,"Track 1, labelled as a mobility-aid user, was last seen at 9.7 s, 4.9 m into the crossing, and did not reach the exit.",False,False
+97018_baseline,lost,wrong_track,False,"Track 2, labelled as a mobility-aid user, was last seen at 6.7 s, 4.9 m into the crossing, and did not reach the exit.",False,True
+97018_baseline,lost,wrong_outcome,False,"Track 1, labelled as a mobility-aid user, was last seen at 6.7 s, 4.9 m into the crossing, and then reached the exit.",False,True
+97018_baseline,lost,invented_rule,False,"Track 1, labelled as a mobility-aid user, was last seen at 6.7 s, 4.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97018_baseline,lost,none (true),True,"Track 5, labelled as a pedestrian, was last seen at 2.6 s, 2.6 m into the crossing, and did not reach the exit.",True,True
+97018_baseline,lost,wrong_time,False,"Track 5, labelled as a pedestrian, was last seen at 5.6 s, 2.6 m into the crossing, and did not reach the exit.",False,False
+97018_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 2.6 s, 2.6 m into the crossing, and did not reach the exit.",False,True
+97018_baseline,lost,wrong_outcome,False,"Track 5, labelled as a pedestrian, was last seen at 2.6 s, 2.6 m into the crossing, and then reached the exit.",False,True
+97018_baseline,lost,invented_rule,False,"Track 5, labelled as a pedestrian, was last seen at 2.6 s, 2.6 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97018_baseline,only,none (true),True,"Between 17.0 and 17.6 s, track 6 was the only track keeping the crossing occupied.",True,True
+97018_baseline,only,wrong_track,False,"Between 17.0 and 17.6 s, track 1 was the only track keeping the crossing occupied.",False,True
+97018_baseline,only,wrong_outcome,False,"Between 17.0 and 17.6 s, track 6 was one of several tracks keeping the crossing occupied.",False,True
+97018_baseline,only,invented_rule,False,"Between 17.0 and 17.6 s, track 6 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97018_baseline,exit,none (true),True,Track 2 reached the exit at 17.0 s.,True,True
+97018_baseline,exit,wrong_time,False,Track 2 reached the exit at 20.0 s.,False,False
+97018_baseline,exit,wrong_track,False,Track 1 reached the exit at 17.0 s.,False,True
+97018_baseline,exit,invented_rule,False,"Track 2 reached the exit at 17.0 s, as required by the Dubai Universal Design guide.",False,True
+97018_uncertainty_aware,end,none (true),True,The walk phase ended at 36.3 s because the crossing was judged to be clear.,True,True
+97018_uncertainty_aware,end,wrong_time,False,The walk phase ended at 39.3 s because the crossing was judged to be clear.,False,False
+97018_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 36.3 s because the maximum phase length was reached.,False,True
+97018_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 36.3 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97018_uncertainty_aware,extend,none (true),True,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",True,True
+97018_uncertainty_aware,extend,wrong_time,False,"The walk phase was extended at 20.0 s because a person was lost by the tracker while still on the crossing, so the phase was held.",False,False
+97018_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97018_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was lost by the tracker while still on the crossing, so the phase was held, as required by the Dubai Universal Design guide.",False,True
+97018_uncertainty_aware,lost,none (true),True,"Track 1, labelled as a mobility-aid user, was last seen at 6.7 s, 4.9 m into the crossing, and did not reach the exit.",True,True
+97018_uncertainty_aware,lost,wrong_time,False,"Track 1, labelled as a mobility-aid user, was last seen at 9.7 s, 4.9 m into the crossing, and did not reach the exit.",False,False
+97018_uncertainty_aware,lost,wrong_track,False,"Track 2, labelled as a mobility-aid user, was last seen at 6.7 s, 4.9 m into the crossing, and did not reach the exit.",False,True
+97018_uncertainty_aware,lost,wrong_outcome,False,"Track 1, labelled as a mobility-aid user, was last seen at 6.7 s, 4.9 m into the crossing, and then reached the exit.",False,True
+97018_uncertainty_aware,lost,invented_rule,False,"Track 1, labelled as a mobility-aid user, was last seen at 6.7 s, 4.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97018_uncertainty_aware,lost,none (true),True,"Track 5, labelled as a pedestrian, was last seen at 2.6 s, 2.6 m into the crossing, and did not reach the exit.",True,True
+97018_uncertainty_aware,lost,wrong_time,False,"Track 5, labelled as a pedestrian, was last seen at 5.6 s, 2.6 m into the crossing, and did not reach the exit.",False,False
+97018_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 2.6 s, 2.6 m into the crossing, and did not reach the exit.",False,True
+97018_uncertainty_aware,lost,wrong_outcome,False,"Track 5, labelled as a pedestrian, was last seen at 2.6 s, 2.6 m into the crossing, and then reached the exit.",False,True
+97018_uncertainty_aware,lost,invented_rule,False,"Track 5, labelled as a pedestrian, was last seen at 2.6 s, 2.6 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97018_uncertainty_aware,only,none (true),True,"Between 17.0 and 23.1 s, track 1 was the only track keeping the crossing occupied.",True,True
+97018_uncertainty_aware,only,wrong_track,False,"Between 17.0 and 23.1 s, track 2 was the only track keeping the crossing occupied.",True,True
+97018_uncertainty_aware,only,wrong_outcome,False,"Between 17.0 and 23.1 s, track 1 was one of several tracks keeping the crossing occupied.",False,True
+97018_uncertainty_aware,only,invented_rule,False,"Between 17.0 and 23.1 s, track 1 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97018_uncertainty_aware,only,none (true),True,"Between 25.3 and 29.1 s, track 8 was the only track keeping the crossing occupied.",True,True
+97018_uncertainty_aware,only,wrong_track,False,"Between 25.3 and 29.1 s, track 1 was the only track keeping the crossing occupied.",False,True
+97018_uncertainty_aware,only,wrong_outcome,False,"Between 25.3 and 29.1 s, track 8 was one of several tracks keeping the crossing occupied.",False,True
+97018_uncertainty_aware,only,invented_rule,False,"Between 25.3 and 29.1 s, track 8 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97018_uncertainty_aware,exit,none (true),True,Track 2 reached the exit at 18.6 s.,True,True
+97018_uncertainty_aware,exit,wrong_time,False,Track 2 reached the exit at 21.6 s.,False,False
+97018_uncertainty_aware,exit,wrong_track,False,Track 1 reached the exit at 18.6 s.,False,True
+97018_uncertainty_aware,exit,invented_rule,False,"Track 2 reached the exit at 18.6 s, as required by the Dubai Universal Design guide.",False,True
+97019_baseline,end,none (true),True,The walk phase ended at 17.0 s because the crossing was judged to be clear.,True,True
+97019_baseline,end,wrong_time,False,The walk phase ended at 20.0 s because the crossing was judged to be clear.,False,False
+97019_baseline,end,wrong_reason,False,The walk phase ended at 17.0 s because the maximum phase length was reached.,False,True
+97019_baseline,end,invented_rule,False,"The walk phase ended at 17.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97019_baseline,exit,none (true),True,Track 1 reached the exit at 16.2 s.,True,True
+97019_baseline,exit,wrong_time,False,Track 1 reached the exit at 19.2 s.,False,False
+97019_baseline,exit,wrong_track,False,Track 2 reached the exit at 16.2 s.,False,True
+97019_baseline,exit,invented_rule,False,"Track 1 reached the exit at 16.2 s, as required by the Dubai Universal Design guide.",False,True
+97019_uncertainty_aware,end,none (true),True,The walk phase ended at 17.0 s because the crossing was judged to be clear.,True,True
+97019_uncertainty_aware,end,wrong_time,False,The walk phase ended at 20.0 s because the crossing was judged to be clear.,False,False
+97019_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 17.0 s because the maximum phase length was reached.,False,True
+97019_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 17.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97019_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 16.2 s.,True,True
+97019_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 19.2 s.,False,False
+97019_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 16.2 s.,False,True
+97019_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 16.2 s, as required by the Dubai Universal Design guide.",False,True
+97020_baseline,end,none (true),True,The walk phase ended at 25.3 s because the crossing was judged to be clear.,True,True
+97020_baseline,end,wrong_time,False,The walk phase ended at 28.3 s because the crossing was judged to be clear.,False,False
+97020_baseline,end,wrong_reason,False,The walk phase ended at 25.3 s because the maximum phase length was reached.,False,True
+97020_baseline,end,invented_rule,False,"The walk phase ended at 25.3 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97020_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97020_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97020_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97020_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97020_baseline,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 6.4 s, 2.9 m into the crossing, and did not reach the exit.",True,True
+97020_baseline,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 9.4 s, 2.9 m into the crossing, and did not reach the exit.",False,False
+97020_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 6.4 s, 2.9 m into the crossing, and did not reach the exit.",False,True
+97020_baseline,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 6.4 s, 2.9 m into the crossing, and then reached the exit.",False,True
+97020_baseline,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 6.4 s, 2.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97020_baseline,only,none (true),True,"Between 20.5 and 20.6 s, track 2 was the only track keeping the crossing occupied.",True,True
+97020_baseline,only,wrong_track,False,"Between 20.5 and 20.6 s, track 1 was the only track keeping the crossing occupied.",False,True
+97020_baseline,only,wrong_outcome,False,"Between 20.5 and 20.6 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97020_baseline,only,invented_rule,False,"Between 20.5 and 20.6 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97020_baseline,only,none (true),True,"Between 24.6 and 25.2 s, track 5 was the only track keeping the crossing occupied.",True,True
+97020_baseline,only,wrong_track,False,"Between 24.6 and 25.2 s, track 1 was the only track keeping the crossing occupied.",False,True
+97020_baseline,only,wrong_outcome,False,"Between 24.6 and 25.2 s, track 5 was one of several tracks keeping the crossing occupied.",False,True
+97020_baseline,only,invented_rule,False,"Between 24.6 and 25.2 s, track 5 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97020_baseline,exit,none (true),True,Track 1 reached the exit at 10.0 s.,True,True
+97020_baseline,exit,wrong_time,False,Track 1 reached the exit at 13.0 s.,False,False
+97020_baseline,exit,wrong_track,False,Track 2 reached the exit at 10.0 s.,False,True
+97020_baseline,exit,invented_rule,False,"Track 1 reached the exit at 10.0 s, as required by the Dubai Universal Design guide.",False,True
+97020_uncertainty_aware,end,none (true),True,The walk phase ended at 26.4 s because the crossing was judged to be clear.,True,True
+97020_uncertainty_aware,end,wrong_time,False,The walk phase ended at 29.4 s because the crossing was judged to be clear.,False,False
+97020_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 26.4 s because the maximum phase length was reached.,False,True
+97020_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 26.4 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97020_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97020_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97020_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97020_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97020_uncertainty_aware,lost,none (true),True,"Track 4, labelled as a mobility-aid user, was last seen at 6.4 s, 2.9 m into the crossing, and did not reach the exit.",True,True
+97020_uncertainty_aware,lost,wrong_time,False,"Track 4, labelled as a mobility-aid user, was last seen at 9.4 s, 2.9 m into the crossing, and did not reach the exit.",False,False
+97020_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 6.4 s, 2.9 m into the crossing, and did not reach the exit.",False,True
+97020_uncertainty_aware,lost,wrong_outcome,False,"Track 4, labelled as a mobility-aid user, was last seen at 6.4 s, 2.9 m into the crossing, and then reached the exit.",True,True
+97020_uncertainty_aware,lost,invented_rule,False,"Track 4, labelled as a mobility-aid user, was last seen at 6.4 s, 2.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97020_uncertainty_aware,only,none (true),True,"Between 24.8 and 26.3 s, track 4 was the only track keeping the crossing occupied.",True,True
+97020_uncertainty_aware,only,wrong_track,False,"Between 24.8 and 26.3 s, track 1 was the only track keeping the crossing occupied.",False,True
+97020_uncertainty_aware,only,wrong_outcome,False,"Between 24.8 and 26.3 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97020_uncertainty_aware,only,invented_rule,False,"Between 24.8 and 26.3 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97020_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 10.0 s.,True,True
+97020_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 13.0 s.,False,False
+97020_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 10.0 s.,False,True
+97020_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 10.0 s, as required by the Dubai Universal Design guide.",False,True
+97021_baseline,end,none (true),True,The walk phase ended at 17.0 s because the crossing was judged to be clear.,True,True
+97021_baseline,end,wrong_time,False,The walk phase ended at 20.0 s because the crossing was judged to be clear.,False,False
+97021_baseline,end,wrong_reason,False,The walk phase ended at 17.0 s because the maximum phase length was reached.,False,True
+97021_baseline,end,invented_rule,False,"The walk phase ended at 17.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97021_baseline,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 10.3 s, 10.7 m into the crossing, and did not reach the exit.",True,True
+97021_baseline,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 13.3 s, 10.7 m into the crossing, and did not reach the exit.",False,False
+97021_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 10.3 s, 10.7 m into the crossing, and did not reach the exit.",False,True
+97021_baseline,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 10.3 s, 10.7 m into the crossing, and then reached the exit.",False,True
+97021_baseline,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 10.3 s, 10.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97021_baseline,exit,none (true),True,Track 1 reached the exit at 14.9 s.,True,True
+97021_baseline,exit,wrong_time,False,Track 1 reached the exit at 17.9 s.,False,False
+97021_baseline,exit,wrong_track,False,Track 2 reached the exit at 14.9 s.,False,True
+97021_baseline,exit,invented_rule,False,"Track 1 reached the exit at 14.9 s, as required by the Dubai Universal Design guide.",False,True
+97021_uncertainty_aware,end,none (true),True,The walk phase ended at 17.0 s because the crossing was judged to be clear.,True,True
+97021_uncertainty_aware,end,wrong_time,False,The walk phase ended at 20.0 s because the crossing was judged to be clear.,False,False
+97021_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 17.0 s because the maximum phase length was reached.,False,True
+97021_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 17.0 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97021_uncertainty_aware,lost,none (true),True,"Track 2, labelled as a pedestrian, was last seen at 10.3 s, 10.7 m into the crossing, and did not reach the exit.",True,True
+97021_uncertainty_aware,lost,wrong_time,False,"Track 2, labelled as a pedestrian, was last seen at 13.3 s, 10.7 m into the crossing, and did not reach the exit.",False,False
+97021_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 10.3 s, 10.7 m into the crossing, and did not reach the exit.",False,True
+97021_uncertainty_aware,lost,wrong_outcome,False,"Track 2, labelled as a pedestrian, was last seen at 10.3 s, 10.7 m into the crossing, and then reached the exit.",False,True
+97021_uncertainty_aware,lost,invented_rule,False,"Track 2, labelled as a pedestrian, was last seen at 10.3 s, 10.7 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97021_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 14.9 s.,True,True
+97021_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 17.9 s.,False,False
+97021_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 14.9 s.,False,True
+97021_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 14.9 s, as required by the Dubai Universal Design guide.",False,True
+97022_baseline,end,none (true),True,The walk phase ended at 20.8 s because the crossing was judged to be clear.,True,True
+97022_baseline,end,wrong_time,False,The walk phase ended at 23.8 s because the crossing was judged to be clear.,False,False
+97022_baseline,end,wrong_reason,False,The walk phase ended at 20.8 s because the maximum phase length was reached.,False,True
+97022_baseline,end,invented_rule,False,"The walk phase ended at 20.8 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97022_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97022_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97022_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97022_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97022_baseline,only,none (true),True,"Between 17.0 and 20.7 s, track 2 was the only track keeping the crossing occupied.",True,True
+97022_baseline,only,wrong_track,False,"Between 17.0 and 20.7 s, track 1 was the only track keeping the crossing occupied.",False,True
+97022_baseline,only,wrong_outcome,False,"Between 17.0 and 20.7 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97022_baseline,only,invented_rule,False,"Between 17.0 and 20.7 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97022_baseline,exit,none (true),True,Track 1 reached the exit at 11.1 s.,True,True
+97022_baseline,exit,wrong_time,False,Track 1 reached the exit at 14.1 s.,False,False
+97022_baseline,exit,wrong_track,False,Track 2 reached the exit at 11.1 s.,False,True
+97022_baseline,exit,invented_rule,False,"Track 1 reached the exit at 11.1 s, as required by the Dubai Universal Design guide.",False,True
+97022_uncertainty_aware,end,none (true),True,The walk phase ended at 19.8 s because the crossing was judged to be clear.,True,True
+97022_uncertainty_aware,end,wrong_time,False,The walk phase ended at 22.8 s because the crossing was judged to be clear.,False,False
+97022_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 19.8 s because the maximum phase length was reached.,False,True
+97022_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 19.8 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97022_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97022_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97022_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97022_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97022_uncertainty_aware,only,none (true),True,"Between 17.0 and 19.7 s, track 2 was the only track keeping the crossing occupied.",True,True
+97022_uncertainty_aware,only,wrong_track,False,"Between 17.0 and 19.7 s, track 1 was the only track keeping the crossing occupied.",False,True
+97022_uncertainty_aware,only,wrong_outcome,False,"Between 17.0 and 19.7 s, track 2 was one of several tracks keeping the crossing occupied.",False,True
+97022_uncertainty_aware,only,invented_rule,False,"Between 17.0 and 19.7 s, track 2 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97022_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 11.1 s.,True,True
+97022_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 14.1 s.,False,False
+97022_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 11.1 s.,False,True
+97022_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 11.1 s, as required by the Dubai Universal Design guide.",False,True
+97023_baseline,end,none (true),True,The walk phase ended at 20.8 s because the crossing was judged to be clear.,True,True
+97023_baseline,end,wrong_time,False,The walk phase ended at 23.8 s because the crossing was judged to be clear.,False,False
+97023_baseline,end,wrong_reason,False,The walk phase ended at 20.8 s because the maximum phase length was reached.,False,True
+97023_baseline,end,invented_rule,False,"The walk phase ended at 20.8 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97023_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97023_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97023_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97023_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97023_baseline,lost,none (true),True,"Track 4, labelled as a pedestrian, was last seen at 8.1 s, 8.9 m into the crossing, and did not reach the exit.",True,True
+97023_baseline,lost,wrong_time,False,"Track 4, labelled as a pedestrian, was last seen at 11.1 s, 8.9 m into the crossing, and did not reach the exit.",False,False
+97023_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 8.1 s, 8.9 m into the crossing, and did not reach the exit.",False,True
+97023_baseline,lost,wrong_outcome,False,"Track 4, labelled as a pedestrian, was last seen at 8.1 s, 8.9 m into the crossing, and then reached the exit.",False,True
+97023_baseline,lost,invented_rule,False,"Track 4, labelled as a pedestrian, was last seen at 8.1 s, 8.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97023_baseline,lost,none (true),True,"Track 5, labelled as a mobility-aid user, was last seen at 14.2 s, 10.4 m into the crossing, and did not reach the exit.",True,True
+97023_baseline,lost,wrong_time,False,"Track 5, labelled as a mobility-aid user, was last seen at 17.2 s, 10.4 m into the crossing, and did not reach the exit.",False,False
+97023_baseline,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.2 s, 10.4 m into the crossing, and did not reach the exit.",False,True
+97023_baseline,lost,wrong_outcome,False,"Track 5, labelled as a mobility-aid user, was last seen at 14.2 s, 10.4 m into the crossing, and then reached the exit.",False,True
+97023_baseline,lost,invented_rule,False,"Track 5, labelled as a mobility-aid user, was last seen at 14.2 s, 10.4 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97023_baseline,only,none (true),True,"Between 17.8 and 20.7 s, track 1 was the only track keeping the crossing occupied.",True,True
+97023_baseline,only,wrong_track,False,"Between 17.8 and 20.7 s, track 2 was the only track keeping the crossing occupied.",True,True
+97023_baseline,only,wrong_outcome,False,"Between 17.8 and 20.7 s, track 1 was one of several tracks keeping the crossing occupied.",False,True
+97023_baseline,only,invented_rule,False,"Between 17.8 and 20.7 s, track 1 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97023_baseline,exit,none (true),True,Track 1 reached the exit at 20.7 s.,True,True
+97023_baseline,exit,wrong_time,False,Track 1 reached the exit at 23.7 s.,False,False
+97023_baseline,exit,wrong_track,False,Track 2 reached the exit at 20.7 s.,False,True
+97023_baseline,exit,invented_rule,False,"Track 1 reached the exit at 20.7 s, as required by the Dubai Universal Design guide.",False,True
+97023_uncertainty_aware,end,none (true),True,The walk phase ended at 19.8 s because the crossing was judged to be clear.,True,True
+97023_uncertainty_aware,end,wrong_time,False,The walk phase ended at 22.8 s because the crossing was judged to be clear.,False,False
+97023_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 19.8 s because the maximum phase length was reached.,False,True
+97023_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 19.8 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97023_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97023_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,False,False
+97023_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97023_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97023_uncertainty_aware,lost,none (true),True,"Track 4, labelled as a pedestrian, was last seen at 8.1 s, 8.9 m into the crossing, and did not reach the exit.",True,True
+97023_uncertainty_aware,lost,wrong_time,False,"Track 4, labelled as a pedestrian, was last seen at 11.1 s, 8.9 m into the crossing, and did not reach the exit.",False,True
+97023_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 8.1 s, 8.9 m into the crossing, and did not reach the exit.",False,True
+97023_uncertainty_aware,lost,wrong_outcome,False,"Track 4, labelled as a pedestrian, was last seen at 8.1 s, 8.9 m into the crossing, and then reached the exit.",False,True
+97023_uncertainty_aware,lost,invented_rule,False,"Track 4, labelled as a pedestrian, was last seen at 8.1 s, 8.9 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97023_uncertainty_aware,lost,none (true),True,"Track 5, labelled as a mobility-aid user, was last seen at 14.2 s, 10.4 m into the crossing, and did not reach the exit.",True,True
+97023_uncertainty_aware,lost,wrong_time,False,"Track 5, labelled as a mobility-aid user, was last seen at 17.2 s, 10.4 m into the crossing, and did not reach the exit.",False,False
+97023_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a mobility-aid user, was last seen at 14.2 s, 10.4 m into the crossing, and did not reach the exit.",False,True
+97023_uncertainty_aware,lost,wrong_outcome,False,"Track 5, labelled as a mobility-aid user, was last seen at 14.2 s, 10.4 m into the crossing, and then reached the exit.",False,True
+97023_uncertainty_aware,lost,invented_rule,False,"Track 5, labelled as a mobility-aid user, was last seen at 14.2 s, 10.4 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97023_uncertainty_aware,only,none (true),True,"Between 18.3 and 19.7 s, track 1 was the only track keeping the crossing occupied.",True,True
+97023_uncertainty_aware,only,wrong_track,False,"Between 18.3 and 19.7 s, track 2 was the only track keeping the crossing occupied.",True,True
+97023_uncertainty_aware,only,wrong_outcome,False,"Between 18.3 and 19.7 s, track 1 was one of several tracks keeping the crossing occupied.",False,True
+97023_uncertainty_aware,only,invented_rule,False,"Between 18.3 and 19.7 s, track 1 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97023_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 19.8 s.,True,True
+97023_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 22.8 s.,False,False
+97023_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 19.8 s.,False,True
+97023_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 19.8 s, as required by the Dubai Universal Design guide.",False,True
+97024_baseline,end,none (true),True,The walk phase ended at 21.1 s because the crossing was judged to be clear.,True,True
+97024_baseline,end,wrong_time,False,The walk phase ended at 24.1 s because the crossing was judged to be clear.,False,False
+97024_baseline,end,wrong_reason,False,The walk phase ended at 21.1 s because the maximum phase length was reached.,False,True
+97024_baseline,end,invented_rule,False,"The walk phase ended at 21.1 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",False,True
+97024_baseline,extend,none (true),True,The walk phase was extended at 17.0 s because a person was detected on the crossing.,True,True
+97024_baseline,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person was detected on the crossing.,False,False
+97024_baseline,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97024_baseline,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97024_baseline,lost,none (true),True,"Track 5, labelled as a pedestrian, was last seen at 19.4 s, 6.2 m into the crossing, and did not reach the exit.",True,True
+97024_baseline,lost,wrong_time,False,"Track 5, labelled as a pedestrian, was last seen at 22.4 s, 6.2 m into the crossing, and did not reach the exit.",False,False
+97024_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 19.4 s, 6.2 m into the crossing, and did not reach the exit.",False,True
+97024_baseline,lost,wrong_outcome,False,"Track 5, labelled as a pedestrian, was last seen at 19.4 s, 6.2 m into the crossing, and then reached the exit.",False,True
+97024_baseline,lost,invented_rule,False,"Track 5, labelled as a pedestrian, was last seen at 19.4 s, 6.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97024_baseline,lost,none (true),True,"Track 6, labelled as a pedestrian, was last seen at 11.7 s, 10.6 m into the crossing, and did not reach the exit.",True,True
+97024_baseline,lost,wrong_time,False,"Track 6, labelled as a pedestrian, was last seen at 14.7 s, 10.6 m into the crossing, and did not reach the exit.",False,False
+97024_baseline,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 11.7 s, 10.6 m into the crossing, and did not reach the exit.",False,True
+97024_baseline,lost,wrong_outcome,False,"Track 6, labelled as a pedestrian, was last seen at 11.7 s, 10.6 m into the crossing, and then reached the exit.",False,True
+97024_baseline,lost,invented_rule,False,"Track 6, labelled as a pedestrian, was last seen at 11.7 s, 10.6 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97024_baseline,only,none (true),True,"Between 17.0 and 18.0 s, track 4 was the only track keeping the crossing occupied.",True,True
+97024_baseline,only,wrong_track,False,"Between 17.0 and 18.0 s, track 1 was the only track keeping the crossing occupied.",False,True
+97024_baseline,only,wrong_outcome,False,"Between 17.0 and 18.0 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97024_baseline,only,invented_rule,False,"Between 17.0 and 18.0 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",False,True
+97024_baseline,exit,none (true),True,Track 1 reached the exit at 13.3 s.,True,True
+97024_baseline,exit,wrong_time,False,Track 1 reached the exit at 16.3 s.,False,False
+97024_baseline,exit,wrong_track,False,Track 2 reached the exit at 13.3 s.,False,True
+97024_baseline,exit,invented_rule,False,"Track 1 reached the exit at 13.3 s, as required by the Dubai Universal Design guide.",False,True
+97024_uncertainty_aware,end,none (true),True,The walk phase ended at 34.6 s because the crossing was judged to be clear.,True,True
+97024_uncertainty_aware,end,wrong_time,False,The walk phase ended at 37.6 s because the crossing was judged to be clear.,False,False
+97024_uncertainty_aware,end,wrong_reason,False,The walk phase ended at 34.6 s because the maximum phase length was reached.,False,True
+97024_uncertainty_aware,end,invented_rule,False,"The walk phase ended at 34.6 s because the crossing was judged to be clear, as required by the Dubai Universal Design guide.",True,True
+97024_uncertainty_aware,extend,none (true),True,The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97024_uncertainty_aware,extend,wrong_time,False,The walk phase was extended at 20.0 s because a person using a mobility aid was detected on the crossing.,True,True
+97024_uncertainty_aware,extend,wrong_reason,False,The walk phase was extended at 17.0 s because the maximum phase length was reached.,False,True
+97024_uncertainty_aware,extend,invented_rule,False,"The walk phase was extended at 17.0 s because a person using a mobility aid was detected on the crossing, as required by the Dubai Universal Design guide.",False,True
+97024_uncertainty_aware,lost,none (true),True,"Track 5, labelled as a pedestrian, was last seen at 19.4 s, 6.2 m into the crossing, and did not reach the exit.",True,True
+97024_uncertainty_aware,lost,wrong_time,False,"Track 5, labelled as a pedestrian, was last seen at 22.4 s, 6.2 m into the crossing, and did not reach the exit.",False,False
+97024_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 19.4 s, 6.2 m into the crossing, and did not reach the exit.",False,True
+97024_uncertainty_aware,lost,wrong_outcome,False,"Track 5, labelled as a pedestrian, was last seen at 19.4 s, 6.2 m into the crossing, and then reached the exit.",False,True
+97024_uncertainty_aware,lost,invented_rule,False,"Track 5, labelled as a pedestrian, was last seen at 19.4 s, 6.2 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97024_uncertainty_aware,lost,none (true),True,"Track 6, labelled as a pedestrian, was last seen at 11.7 s, 10.6 m into the crossing, and did not reach the exit.",True,True
+97024_uncertainty_aware,lost,wrong_time,False,"Track 6, labelled as a pedestrian, was last seen at 14.7 s, 10.6 m into the crossing, and did not reach the exit.",False,False
+97024_uncertainty_aware,lost,wrong_track,False,"Track 1, labelled as a pedestrian, was last seen at 11.7 s, 10.6 m into the crossing, and did not reach the exit.",False,True
+97024_uncertainty_aware,lost,wrong_outcome,False,"Track 6, labelled as a pedestrian, was last seen at 11.7 s, 10.6 m into the crossing, and then reached the exit.",False,True
+97024_uncertainty_aware,lost,invented_rule,False,"Track 6, labelled as a pedestrian, was last seen at 11.7 s, 10.6 m into the crossing, and did not reach the exit, as required by the Dubai Universal Design guide.",False,True
+97024_uncertainty_aware,only,none (true),True,"Between 17.0 and 18.0 s, track 4 was the only track keeping the crossing occupied.",True,True
+97024_uncertainty_aware,only,wrong_track,False,"Between 17.0 and 18.0 s, track 1 was the only track keeping the crossing occupied.",False,True
+97024_uncertainty_aware,only,wrong_outcome,False,"Between 17.0 and 18.0 s, track 4 was one of several tracks keeping the crossing occupied.",False,True
+97024_uncertainty_aware,only,invented_rule,False,"Between 17.0 and 18.0 s, track 4 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97024_uncertainty_aware,only,none (true),True,"Between 20.1 and 34.5 s, track 5 was the only track keeping the crossing occupied.",True,True
+97024_uncertainty_aware,only,wrong_track,False,"Between 20.1 and 34.5 s, track 1 was the only track keeping the crossing occupied.",False,True
+97024_uncertainty_aware,only,wrong_outcome,False,"Between 20.1 and 34.5 s, track 5 was one of several tracks keeping the crossing occupied.",False,True
+97024_uncertainty_aware,only,invented_rule,False,"Between 20.1 and 34.5 s, track 5 was the only track keeping the crossing occupied, as required by the Dubai Universal Design guide.",True,True
+97024_uncertainty_aware,exit,none (true),True,Track 1 reached the exit at 13.3 s.,True,True
+97024_uncertainty_aware,exit,wrong_time,False,Track 1 reached the exit at 16.3 s.,False,False
+97024_uncertainty_aware,exit,wrong_track,False,Track 2 reached the exit at 13.3 s.,False,True
+97024_uncertainty_aware,exit,invented_rule,False,"Track 1 reached the exit at 13.3 s, as required by the Dubai Universal Design guide.",False,True

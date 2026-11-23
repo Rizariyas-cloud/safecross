@@ -1,0 +1,84 @@
+{
+  "note": "Measured on real PMMA video with the trained detector + ByteTrack. Values per group. 'failures_for_experiment_b' uses the MOBILITY-AID group because Experiment B measures cut-offs of mobility-aid users. False positives are counted over the whole image, not only on a crossing, so the phantom rate is an upper bound for the simulation.",
+  "mobility_aid": {
+    "people": 81,
+    "frames": 98302,
+    "recall": 0.5021057557323351,
+    "mean_miss_burst_s": 2.49146625176669,
+    "median_miss_burst_s": 0.31866171003717475,
+    "mean_mid_track_miss_burst_s": 1.8613958395312036,
+    "share_of_bursts_longer_than_persistence": 0.2281150159744409,
+    "longest_miss_s": 160.047843866171,
+    "misclassification_prob": 0.41469837661799175,
+    "share_people_with_id_change": 0.2839506172839506,
+    "id_changes_per_person": 8.209876543209877,
+    "id_change_gap_s_p25_p75": [
+      0.0,
+      1.5933085501858737
+    ]
+  },
+  "pedestrian": {
+    "people": 42,
+    "frames": 102042,
+    "recall": 0.5017737794241587,
+    "mean_miss_burst_s": 2.334403651050427,
+    "median_miss_burst_s": 0.31866171003717475,
+    "mean_mid_track_miss_burst_s": 2.1073123267349483,
+    "share_of_bursts_longer_than_persistence": 0.2282420749279539,
+    "longest_miss_s": 111.05360594795539,
+    "misclassification_prob": 0.8715595150625718,
+    "share_people_with_id_change": 0.5,
+    "id_changes_per_person": 14.5,
+    "id_change_gap_s_p25_p75": [
+      0.07966542750929369,
+      2.947620817843866
+    ]
+  },
+  "all": {
+    "people": 123,
+    "frames": 200344,
+    "recall": 0.5019366689294413,
+    "mean_miss_burst_s": 2.4088893995719274,
+    "median_miss_burst_s": 0.31866171003717475,
+    "mean_mid_track_miss_burst_s": 1.9925358620544809,
+    "share_of_bursts_longer_than_persistence": 0.22818181818181818,
+    "longest_miss_s": 160.047843866171,
+    "misclassification_prob": 0.6533299863983341,
+    "share_people_with_id_change": 0.35772357723577236,
+    "id_changes_per_person": 10.357723577235772,
+    "id_change_gap_s_p25_p75": [
+      0.0,
+      2.230631970260223
+    ]
+  },
+  "failures_for_experiment_b": {
+    "recall": 0.502,
+    "miss_burst_frames": 24.9,
+    "misclassification_prob": 0.415,
+    "track_loss_prob": 0.284,
+    "track_loss_duration_s": [
+      0.1,
+      1.59
+    ],
+    "false_positive_rate": 0.6193,
+    "false_positive_duration_s": [
+      0.16,
+      0.56
+    ]
+  },
+  "simulation_assumptions_before": {
+    "miss_burst_s": 0.8,
+    "track_loss_duration_s": [
+      3.0,
+      15.0
+    ]
+  },
+  "measured_on": {
+    "video": 3,
+    "weights": "pmma_v2_aug_yolo11s_seed1.pt",
+    "tracker": "bytetrack.yaml",
+    "frames": 14553,
+    "fps": 12.552496500233318,
+    "identities": "CVAT XML video_3_annotations.xml (offset 30000, 68 of 200344 boxes without a CVAT id)"
+  }
+}

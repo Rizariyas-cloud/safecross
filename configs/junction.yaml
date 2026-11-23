@@ -1,0 +1,42 @@
+# =====================================================================
+# Simulated junction around the SafeCross crossing (follow-up study, scripts/13)
+# These are configurable ASSUMPTIONS, not measurements. Change them here.
+#
+# Layout: a 4-way junction with two signal stages.
+#   Stage A: the PARALLEL road has green, and our pedestrian walk phase runs at the same time.
+#            Cars from the parallel road may TURN into the cross road; they drive over our crossing.
+#   Stage B: the CROSS road has green. Its cars drive straight over our crossing.
+#   Between the stages there is an all-red clearance time (intergreen).
+# =====================================================================
+cycle_s: 90.0                 # normal cycle length (A + clearance + B + clearance)
+intergreen_s: 3.0             # all-red clearance between the stages
+parallel_green_s: 25.0        # normal length of stage A (the walk phase runs inside it)
+min_green_cross_s: 15.0       # stage B can never be shorter than this (protects the cross road)
+startup_s: 2.0                # time for the first cross-road car to reach the crossing after green
+
+cross_road:
+  arrival_vph: 700            # cars per hour per lane arriving on the cross road
+  saturation_vph: 1800        # cars per hour per lane that can leave when the light is green
+
+turning:
+  arrival_vph: 240            # cars per hour turning from the parallel road over our crossing
+  headway_s: 2.5              # seconds between two turning cars leaving the queue
+  leading_interval_s: 3.0     # gated mode: turn arrow stays red for this long at the start of the walk phase
+
+# Turning-car modes compared in the study:
+#   permissive : turning cars go whenever they arrive and must give way (common today)
+#   gated      : the turn arrow is green only while the controller reports the crossing as CLEAR
+turn_modes: [permissive, gated]
+
+experiment:
+  episodes: 200
+  recall_levels: [1.0, 0.9, 0.7, 0.5, 0.3]
+  false_positive_levels: [0.0, 0.1, 0.3]
+  track_loss_levels: [0.0, 0.1, 0.3]
+  controllers: [baseline, uncertainty_aware, uncertainty_aware_filtered]
+  bootstrap_samples: 1000
+
+# Ghost filter of the third controller (uncertainty_aware_filtered)
+ghost_filter:
+  confirm_min_s: 0.5          # a track must be seen for this long ...
+  confirm_min_move_m: 0.3     # ... and move at least this far before it counts as a person

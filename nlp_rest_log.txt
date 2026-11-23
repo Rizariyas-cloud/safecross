@@ -1,0 +1,186 @@
+ERROR TYPES on the main test (share of answers; 1.0 = 100%):
+error                                              correct  declined (correct)  false_decline  false_no  false_yes  guessed  other_wrong  unreadable  wrong_reason    n
+model               qtype          condition                                                                                                                           
+LLaVA-7B            counterfactual kg_full           0.864               0.000          0.000     0.091      0.045    0.000        0.000       0.000         0.000   66
+                                   kg_sub            0.848               0.000          0.015     0.106      0.030    0.000        0.000       0.000         0.000   66
+                                   kg_sub_missing    0.000               0.727          0.000     0.000      0.000    0.273        0.000       0.000         0.000   66
+                    decision       kg_full           0.932               0.000          0.000     0.000      0.000    0.000        0.000       0.005         0.063  206
+                                   kg_sub            0.990               0.000          0.000     0.000      0.000    0.000        0.000       0.000         0.010  206
+                                   kg_sub_missing    0.000               0.000          0.000     0.000      0.000    1.000        0.000       0.000         0.000  206
+Ours 1.5B (v1)      counterfactual kg_full           0.879               0.000          0.000     0.000      0.121    0.000        0.000       0.000         0.000   66
+                                   kg_sub            1.000               0.000          0.000     0.000      0.000    0.000        0.000       0.000         0.000   66
+                                   kg_sub_missing    0.000               1.000          0.000     0.000      0.000    0.000        0.000       0.000         0.000   66
+                    decision       kg_full           0.422               0.000          0.170     0.000      0.000    0.000        0.000       0.000         0.408  206
+                                   kg_sub            1.000               0.000          0.000     0.000      0.000    0.000        0.000       0.000         0.000  206
+                                   kg_sub_missing    0.000               1.000          0.000     0.000      0.000    0.000        0.000       0.000         0.000  206
+Ours 1.5B (v2)      counterfactual kg_full           0.394               0.000          0.485     0.091      0.015    0.000        0.015       0.000         0.000   66
+                                   kg_sub            0.985               0.000          0.000     0.015      0.000    0.000        0.000       0.000         0.000   66
+                                   kg_sub_missing    0.000               0.985          0.000     0.000      0.000    0.015        0.000       0.000         0.000   66
+                    decision       kg_full           1.000               0.000          0.000     0.000      0.000    0.000        0.000       0.000         0.000  206
+                                   kg_sub            1.000               0.000          0.000     0.000      0.000    0.000        0.000       0.000         0.000  206
+                                   kg_sub_missing    0.000               1.000          0.000     0.000      0.000    0.000        0.000       0.000         0.000  206
+Qwen-1.5B untrained counterfactual kg_full           0.394               0.000          0.000     0.606      0.000    0.000        0.000       0.000         0.000   66
+                                   kg_sub            0.394               0.000          0.000     0.606      0.000    0.000        0.000       0.000         0.000   66
+                                   kg_sub_missing    0.000               0.000          0.000     0.000      0.000    1.000        0.000       0.000         0.000   66
+                    decision       kg_full           0.811               0.000          0.000     0.000      0.000    0.000        0.000       0.005         0.184  206
+                                   kg_sub            0.981               0.000          0.000     0.000      0.000    0.000        0.000       0.000         0.019  206
+                                   kg_sub_missing    0.000               0.000          0.000     0.000      0.000    0.995        0.000       0.005         0.000  206
+Qwen2.5-VL-7B       counterfactual kg_full           0.848               0.000          0.000     0.061      0.091    0.000        0.000       0.000         0.000   66
+                                   kg_sub            0.636               0.000          0.000     0.318      0.045    0.000        0.000       0.000         0.000   66
+                                   kg_sub_missing    0.000               0.000          0.000     0.000      0.000    1.000        0.000       0.000         0.000   66
+                    decision       kg_full           0.985               0.000          0.000     0.000      0.000    0.000        0.000       0.000         0.015  206
+                                   kg_sub            1.000               0.000          0.000     0.000      0.000    0.000        0.000       0.000         0.000  206
+                                   kg_sub_missing    0.000               0.000          0.000     0.000      0.000    1.000        0.000       0.000         0.000  206
+
+RISK-COVERAGE (pool = answerable questions + the same questions with facts removed):
+             test               model  checker  coverage  risk  wrong_answers  guesses_without_facts   n
+             main            LLaVA-7B    False     0.996 0.475             11                    224 272
+             main            LLaVA-7B     True     0.949 0.019              0                      5 272
+             main      Ours 1.5B (v1)    False     1.000 0.000              0                      0 272
+             main      Ours 1.5B (v1)     True     1.000 0.000              0                      0 272
+             main      Ours 1.5B (v2)    False     1.000 0.007              1                      1 272
+             main      Ours 1.5B (v2)     True     0.993 0.000              0                      0 272
+             main Qwen-1.5B untrained    False     1.000 0.580             44                    271 272
+             main Qwen-1.5B untrained     True     0.809 0.000              0                      0 272
+             main       Qwen2.5-VL-7B    False     1.000 0.544             24                    272 272
+             main       Qwen2.5-VL-7B     True     0.757 0.000              0                      0 272
+         reworded      Ours 1.5B (v1)    False     1.000 0.000              0                      0 282
+         reworded      Ours 1.5B (v1)     True     1.000 0.000              0                      0 282
+         reworded      Ours 1.5B (v2)    False     1.000 0.000              0                      0 282
+         reworded      Ours 1.5B (v2)     True     1.000 0.000              0                      0 282
+         reworded Qwen-1.5B untrained    False     0.996 0.599             55                    282 282
+         reworded Qwen-1.5B untrained     True     0.759 0.000              0                      0 282
+unseen controller      Ours 1.5B (v1)    False     0.987 0.000              0                      0 149
+unseen controller      Ours 1.5B (v1)     True     0.960 0.000              0                      0 149
+unseen controller      Ours 1.5B (v2)    False     0.987 0.058              0                      9 149
+unseen controller      Ours 1.5B (v2)     True     0.987 0.000              0                      0 149
+unseen controller Qwen-1.5B untrained    False     1.000 0.574             22                    149 149
+unseen controller Qwen-1.5B untrained     True     0.758 0.000              0                      0 149
+
+Saved to /Users/risafathima/Documents/safecross/results/explanations/error_analysis (error_types.csv, risk_coverage.csv, risk_coverage.png)
+178 camera what-if questions {'uncertainty_aware:earlier': 54, 'uncertainty_aware:same': 54, 'baseline:later': 35, 'baseline:same': 35}
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 4857.73it/s]
+  20/178 questions
+  40/178 questions
+  60/178 questions
+  80/178 questions
+  100/178 questions
+  120/178 questions
+  140/178 questions
+  160/178 questions
+
+mlx:Qwen2.5-1.5B-Instruct+lora: share correct / declined, by controller and condition
+                             correct  abstained  cites_the_track  hallucinated_citation
+condition controller                                                                   
+kg_full   baseline               0.0        0.0            0.229                    0.0
+          uncertainty_aware      0.0        0.0            0.315                    0.0
+kg_sub    baseline               0.0        0.0            1.000                    0.0
+          uncertainty_aware      0.0        0.0            0.972                    0.0
+
+What it answered vs the truth (kg_sub):
+given    earlier  no  yes
+truth                    
+earlier        0   0   54
+later          1  25    9
+same           1  84    4
+178 camera what-if questions {'uncertainty_aware:earlier': 54, 'uncertainty_aware:same': 54, 'baseline:later': 35, 'baseline:same': 35}
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 5006.84it/s]
+  20/178 questions
+  40/178 questions
+  60/178 questions
+  80/178 questions
+  100/178 questions
+  120/178 questions
+  140/178 questions
+  160/178 questions
+
+mlx:Qwen2.5-1.5B-Instruct+base: share correct / declined, by controller and condition
+                             correct  abstained  cites_the_track  hallucinated_citation
+condition controller                                                                   
+kg_full   baseline               0.0        0.0            0.686                  0.000
+          uncertainty_aware      0.5        0.0            0.704                  0.000
+kg_sub    baseline               0.0        0.0            0.943                  0.029
+          uncertainty_aware      0.5        0.0            0.870                  0.000
+
+What it answered vs the truth (kg_sub):
+given    earlier
+truth           
+earlier       54
+later         35
+same          89
+178 camera what-if questions {'uncertainty_aware:earlier': 54, 'uncertainty_aware:same': 54, 'baseline:later': 35, 'baseline:same': 35}
+  20/178 questions
+  40/178 questions
+  60/178 questions
+  80/178 questions
+  100/178 questions
+  120/178 questions
+  140/178 questions
+  160/178 questions
+
+ollama:qwen2.5vl:7b: share correct / declined, by controller and condition
+                             correct  abstained  cites_the_track  hallucinated_citation
+condition controller                                                                   
+kg_full   baseline             0.143        0.0            0.729                  0.014
+          uncertainty_aware    0.519        0.0            0.843                  0.009
+kg_sub    baseline             0.014        0.0            0.914                  0.000
+          uncertainty_aware    0.500        0.0            0.991                  0.000
+
+What it answered vs the truth (kg_sub):
+given    earlier  same
+truth                 
+earlier       54     0
+later         31     4
+same          88     1
+178 camera what-if questions {'uncertainty_aware:earlier': 54, 'uncertainty_aware:same': 54, 'baseline:later': 35, 'baseline:same': 35}
+  20/178 questions
+  40/178 questions
+Traceback (most recent call last):
+  File "/Users/risafathima/Documents/safecross/scripts/22_camera_counterfactual.py", line 150, in <module>
+    main()
+  File "/Users/risafathima/Documents/safecross/scripts/22_camera_counterfactual.py", line 127, in main
+    raw = backend.generate(SYSTEM_KG, build_kg_prompt(it["question"], it[cond], it["fields"]), None,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/risafathima/Documents/safecross/safecross/explain/backends.py", line 47, in generate
+    r.raise_for_status()
+  File "/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http://localhost:11434/api/chat
+178 camera what-if questions {'uncertainty_aware:earlier': 54, 'uncertainty_aware:same': 54, 'baseline:later': 35, 'baseline:same': 35}
+                         model condition  correct  abstained  accuracy_when_answered  cites_the_track  hallucinated_citation   n
+mlx_Qwen2.5-1.5B-Instruct+base   kg_full    0.303        0.0                   0.303            0.697                  0.000 178
+mlx_Qwen2.5-1.5B-Instruct+base    kg_sub    0.303        0.0                   0.303            0.899                  0.011 178
+mlx_Qwen2.5-1.5B-Instruct+lora   kg_full    0.000        0.0                   0.000            0.281                  0.000 178
+mlx_Qwen2.5-1.5B-Instruct+lora    kg_sub    0.000        0.0                   0.000            0.983                  0.000 178
+           ollama_qwen2.5vl_7b   kg_full    0.371        0.0                   0.371            0.798                  0.011 178
+           ollama_qwen2.5vl_7b    kg_sub    0.309        0.0                   0.309            0.961                  0.000 178
+  planted-error test: 10/50 walk phases, 237 sentences, 0.2s each
+  planted-error test: 20/50 walk phases, 490 sentences, 0.2s each
+  planted-error test: 30/50 walk phases, 694 sentences, 0.2s each
+  planted-error test: 40/50 walk phases, 906 sentences, 0.2s each
+  planted-error test: 50/50 walk phases, 1118 sentences, 0.2s each
+
+Part 1 - planted-error test: share ACCEPTED as supported (true sentences should be near 1, false ones near 0)
+               minicheck_ok  numbers_ok    n
+error                                       
+invented_rule         0.138       1.000  260
+none (true)           1.000       1.000  260
+wrong_outcome         0.066       1.000  122
+wrong_reason          0.054       1.000   92
+wrong_time            0.009       0.032  216
+wrong_track           0.131       1.000  168
+
+  checker  true_sentences_accepted  false_sentences_caught  balanced_accuracy
+minicheck                      1.0                   0.915              0.957
+  numbers                      1.0                   0.244              0.622
+  reports: 10/50
+  reports: 20/50
+  reports: 30/50
+  reports: 40/50
+  reports: 50/50
+
+Part 2 - 50 reports by ollama:qwen2.5vl:7b: 213 sentences, 93.9% supported by MiniCheck; 76.0% of reports fully supported; 0.0% of reports cite a fact id that does not exist
+Example:
+The walk phase was extended at 17.0 seconds due to confirmed occupancy by tracks 1, 2, and 5, which were detected on the crossing in the last 1.0 second. The walk phase ended at 22.8 seconds because the crossing was judged to be clear. During this phase, the camera lost track 7, which was not seen after 17.4 seconds and did not reach the exit. The walk phase was extended by tracks 1, 2, 5, and 7, and it was ended by the crossing being clear.
+
+Saved to /Users/risafathima/Documents/safecross/results/explanations/reports

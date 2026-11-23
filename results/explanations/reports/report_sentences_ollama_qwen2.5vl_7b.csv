@@ -1,0 +1,214 @@
+phase,sentence,minicheck_ok
+97000_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by tracks 1, 2, and 5, which were detected on the crossing in the last 1.0 second.",True
+97000_baseline,The walk phase ended at 22.8 seconds because the crossing was judged to be clear.,True
+97000_baseline,"During this phase, the camera lost track 7, which was not seen after 17.4 seconds and did not reach the exit.",True
+97000_baseline,"The walk phase was extended by tracks 1, 2, 5, and 7, and it was ended by the crossing being clear.",True
+97000_uncertainty_aware,The walk phase was extended by the uncertainty-aware controller due to the detection of a person using a mobility aid on the crossing at 17.0 seconds (L2 EXTEND).,True
+97000_uncertainty_aware,"This extension was caused by tracks 1, 2, 5, and 6, which were identified as mobility-aid users.",True
+97000_uncertainty_aware,"The phase was further extended by track 7, which was lost by the camera at 17.4 seconds and did not reach the exit, holding the phase until 37.4 seconds (L3 HOLD, L4 HOLD, L5 HOLD).",True
+97000_uncertainty_aware,The walk phase ended at 37.5 seconds because the crossing was judged to be clear (L6 PHASE END).,True
+97001_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 5, which was labeled as a mobility-aid user (92% of frames).",True
+97001_baseline,"The walk phase ended at 18.5 seconds because the crossing was judged to be clear, as indicated by the end of the phase at that time.",True
+97001_baseline,"The camera lost track 4, which was a mobility-aid user (100% of frames) and was last seen at 1.3 seconds at y=0.5 m of 12 m, and did not reach the exit.",True
+97001_uncertainty_aware,The walk phase was extended at 17.0 seconds due to the detection of a person using a mobility aid on the crossing (fact).,True
+97001_uncertainty_aware,"This extension was caused by track 5, which was labelled as a mobility-aid user (fact).",True
+97001_uncertainty_aware,"The phase was further extended at 17.5 seconds when track 4, also a mobility-aid user, was lost by the camera while still on the crossing (fact).",True
+97001_uncertainty_aware,"This caused the phase to be held until 21.3 seconds (fact), as the uncertainty-aware controller held the phase until the crossing was judged to be clear (fact).",True
+97001_uncertainty_aware,The walk phase ended at 21.3 seconds because the crossing was clear (fact).,True
+97001_uncertainty_aware,"No other track kept the crossing occupied after the normal length of 17.0 seconds, except for track 4, which was held until the end of the phase (fact).",True
+97002_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 3, which was a mobility-aid user.",True
+97002_baseline,"The phase ended at 21.6 seconds because the crossing was judged to be clear, as indicated by track 3 being the only occupant during the extended period.",True
+97002_baseline,"The camera lost track 1, which was also a mobility-aid user, after it had been crossing the road for 20.2 seconds.",True
+97002_baseline,This track did not reach the exit and was not seen after that time.,True
+97002_uncertainty_aware,The walk phase was extended at 17.0 seconds due to the detection of a person using a mobility aid on the crossing (track 1 and track 3).,True
+97002_uncertainty_aware,"The phase was further extended at 21.3 seconds when track 1 was lost by the camera while still on the crossing, causing the phase to be held until 24.1 seconds.",True
+97002_uncertainty_aware,The walk phase ended at 24.1 seconds because the crossing was judged to be clear.,True
+97002_uncertainty_aware,"No other track kept the crossing occupied after the normal length of 17.0 seconds, and track 1 was the only occupant during the extended period.",True
+97003_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy, as indicated by track 3, which was detected on the crossing in the last 1.0 second.",True
+97003_baseline,"The walk phase ended at 17.3 seconds because the crossing was judged to be clear, as per the rule that the walk phase ends when the crossing is not occupied after 17.0 seconds.",True
+97003_baseline,"During this walk phase, the camera lost track 1, which was a mobility-aid user, after 14.7 seconds and did not reach the exit.",True
+97003_baseline,"Similarly, track 2, also a mobility-aid user, was lost after 14.9 seconds and did not reach the exit.",True
+97003_baseline,"Track 3, a pedestrian, was the only occupant of the crossing from 17.0 to 17.2 seconds, extending the walk phase by this time.",True
+97003_uncertainty_aware,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 3, which was detected on the crossing.",True
+97003_uncertainty_aware,"The phase was further extended by track 1, which was a mobility-aid user and was held until 19.2 seconds, keeping the crossing occupied for an additional 2.2 seconds beyond the normal walk interval.",True
+97003_uncertainty_aware,"Similarly, track 2, another mobility-aid user, was held until 19.0 seconds, extending the phase by 2.0 seconds.",True
+97003_uncertainty_aware,"The walk phase ended at 28.6 seconds because the crossing was judged to be clear, as indicated by the phase end at time 28.6 seconds.",True
+97003_uncertainty_aware,"The camera lost track 3, which was the only occupant of the crossing from 19.3 seconds until the end of the phase at 28.6 seconds.",True
+97004_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by pedestrian track 1, which was detected on the crossing in the last 1.0 second.",True
+97004_baseline,"The walk phase was further extended by pedestrian track 5, which kept the crossing occupied from 17.0 to 21.0 seconds.",True
+97004_baseline,The walk phase ended at 21.1 seconds because the crossing was judged to be clear.,True
+97004_baseline,"During this walk phase, the camera lost track 2, which was a mobility-aid user, after it was last seen at 13.6 seconds at y=7.1 m of 12 m.",True
+97004_uncertainty_aware,"The walk phase was extended by track 1, which was a pedestrian, from 17.0 to 19.3 seconds, and by track 2, a mobility-aid user, from 17.0 to 26.3 seconds.",True
+97004_uncertainty_aware,"The phase was also extended by track 4, a mobility-aid user, from 17.0 to 24.8 seconds, and by track 5, another mobility-aid user, from 17.0 to 20.0 seconds.",True
+97004_uncertainty_aware,The walk phase ended at 26.4 seconds due to the crossing being judged clear.,True
+97004_uncertainty_aware,"The camera lost track 2, which was a mobility-aid user, at 13.6 seconds, and track 4, another mobility-aid user, at 4.9 seconds.",True
+97004_uncertainty_aware,Both tracks were still on the crossing at the time of the loss.,True
+97005_baseline,"The walk phase was extended at 17.0 seconds due to the confirmed occupancy of the crossing by track 4, which was a mobility-aid user (87% of frames).",True
+97005_baseline,"The walk phase ended at 21.6 seconds because the crossing was judged to be clear, as indicated by the end of the extended phase.",True
+97005_baseline,"During this walk phase, the camera lost track 5, which was a mobility-aid user (89% of frames) and was last seen at 8.8 seconds at y=6.2 m of 12 m.",True
+97005_baseline,"Additionally, track 7, another mobility-aid user (95% of frames), was lost by the camera after 3.8 seconds at y=2.3 m of 12 m.",True
+97005_uncertainty_aware,"The walk phase was extended at 17.0 seconds due to the detection of a person using a mobility aid on the crossing (track 4, confidence 0.99).",True
+97005_uncertainty_aware,"This extension was caused by track 4, which kept the crossing occupied for an additional 3.5 seconds beyond the normal walk interval.",True
+97005_uncertainty_aware,"The phase was further extended at 20.6 seconds when another person using a mobility aid (track 5, confidence 0.22) was lost by the tracker while still on the crossing, causing the phase to be held until 23.9 seconds.",True
+97005_uncertainty_aware,Track 5 was the only occupant of the crossing during this hold period.,True
+97005_uncertainty_aware,The walk phase ended at 23.9 seconds because the crossing was judged to be clear.,True
+97005_uncertainty_aware,No pedestrians were lost on the crossing during the walk phase.,False
+97006_baseline,"The walk phase for the pedestrian traffic signal ended at 17.0 seconds due to the crossing being judged clear, as indicated by the timing rule.",True
+97006_baseline,"The walk phase was extended by the baseline controller to the normal length of 17.0 seconds, as the crossing was not occupied at some moment after this duration.",True
+97006_baseline,"The camera lost track of pedestrian 2 at 11.6 seconds and pedestrian 3 at 5.6 seconds, as they did not reach the exit and were not seen after these times.",True
+97006_uncertainty_aware,"The walk phase of the pedestrian traffic signal was extended at 17.0 seconds due to the loss of track 2, which was a mobility-aid user.",True
+97006_uncertainty_aware,"The phase was held until 22.9 seconds, during which time track 2 kept the crossing occupied.",True
+97006_uncertainty_aware,The walk phase ended at 23.0 seconds because the crossing was judged to be clear.,True
+97006_uncertainty_aware,"The camera lost track 2 while it was still on the crossing, which caused the phase to be extended.",True
+97006_uncertainty_aware,No other track kept the crossing occupied during the extended period.,True
+97007_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by tracks 3 and 5, which were mobility-aid users.",True
+97007_baseline,The walk phase ended at 20.5 seconds because the crossing was judged to be clear.,True
+97007_baseline,"During this walk phase, the camera lost track 1, which was a pedestrian, after 2.2 seconds and did not reach the exit.",True
+97007_baseline,"Additionally, track 4, another mobility-aid user, was lost after 6.3 seconds and did not reach the exit.",True
+97007_uncertainty_aware,"The walk phase was extended by track 2, which was a mobility-aid user, at 17.0 seconds due to the detection of a person using a mobility aid on the crossing.",True
+97007_uncertainty_aware,"The phase was further extended by track 3, another mobility-aid user, at 19.4 seconds, and by track 4, a mobility-aid user, at 26.2 seconds.",True
+97007_uncertainty_aware,The walk phase ended at 28.2 seconds because the crossing was judged to be clear.,True
+97007_uncertainty_aware,"During this phase, the camera lost track 2 at 8.2 seconds and track 5 at 14.9 seconds, both of which were mobility-aid users.",True
+97008_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 2, which was a mobility-aid user (92% of frames).",True
+97008_baseline,"The phase ended at 17.9 seconds because the crossing was judged to be clear, as indicated by the end of the walk phase at that time.",True
+97008_baseline,"During the extended walk phase, track 2 was the only occupant of the crossing, keeping it occupied from 17.0 to 17.8 seconds.",True
+97008_baseline,"The camera lost track 7, which was a pedestrian, after it was last seen at 7.3 seconds at y=2.2 m of 12 m, and it did not reach the exit.",True
+97008_uncertainty_aware,"The walk phase was extended at 17.0 seconds due to the loss of track 7, which was detected on the crossing and was being held.",True
+97008_uncertainty_aware,"The phase was extended until 27.3 seconds, when the crossing was judged to be clear, and the walk phase ended.",True
+97008_uncertainty_aware,"Track 7 was the only pedestrian that kept the crossing occupied during the extended period, from 17.0 to 27.2 seconds.",True
+97008_uncertainty_aware,"The camera lost track 7 after 7.3 seconds, and it did not reach the exit.",True
+97009_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy, as indicated by track 4, which was detected on the crossing in the last 1.0 second.",True
+97009_baseline,"The walk phase ended at 17.2 seconds because the crossing was judged to be clear, as per the rule that the walk phase ends when the crossing is not occupied after 17.0 seconds.",True
+97009_baseline,"During this walk phase, the camera lost track 2, which was last seen at 11.6 seconds at y=10.7 m of 12 m and did not reach the exit.",True
+97009_uncertainty_aware,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 4, which was detected on the crossing.",True
+97009_uncertainty_aware,"The phase was then held at 17.2 seconds due to uncertain occupancy lost track, with track 4 being the cause.",True
+97009_uncertainty_aware,The phase ended at 36.1 seconds because the crossing was judged to be clear.,True
+97009_uncertainty_aware,"During this phase, the camera lost track 2, which was still on the crossing at 11.6 seconds and did not reach the exit.",True
+97010_baseline,"The walk phase for the pedestrian traffic signal ended at 17.0 seconds due to the crossing being judged clear, as indicated by the timing rule.",True
+97010_baseline,"The walk phase was initially set to last for 17.0 seconds, which is the normal length for the walk phase, but it was extended to 40 seconds because the crossing was not occupied at some moment after 17.0 seconds, as per the rule.",True
+97010_baseline,"The camera lost track of pedestrian 1, which was first seen at 0.5 seconds and last seen at 5.1 seconds at y=3.9 m of 12 m, and did not reach the exit.",True
+97010_uncertainty_aware,"The walk phase for the pedestrian crossing was extended to 17.0 seconds due to the crossing being judged clear at that time, as per rule.",True
+97010_uncertainty_aware,"This extension was normal, as it adhered to the standard walk interval plus the crossing length divided by the design speed, as per rule.",True
+97010_uncertainty_aware,"The walk phase ended at 17.0 seconds because the crossing was judged clear, as per rule.",True
+97010_uncertainty_aware,"The camera lost track of pedestrian 1, which was labelled as a pedestrian and was first seen at 0.5 seconds, last seen at 5.1 seconds at y=3.9 m of 12 m, and held until 15.1 seconds, as per rule.",True
+97011_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 1 and track 7, which were both mobility-aid users.",True
+97011_baseline,"The walk phase ended at 23.5 seconds because the crossing was judged to be clear, as indicated by the end of the extended phase.",True
+97011_baseline,"During this period, track 1 and track 7 kept the crossing occupied beyond the normal walk interval, extending the walk phase.",True
+97011_baseline,"The camera lost track 2 after 3.3 seconds and track 7 after 16.7 seconds, as they did not reach the exit and were not seen after their respective last seen times.",True
+97011_uncertainty_aware,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 7, which was a pedestrian using a mobility aid.",False
+97011_uncertainty_aware,"The phase was further extended at 17.3 seconds by track 7 and track 3, both also using mobility aids.",True
+97011_uncertainty_aware,The phase was held until 22.5 seconds due to uncertain occupancy lost track by track 7.,True
+97011_uncertainty_aware,The walk phase ended at 36.7 seconds because the crossing was judged to be clear.,True
+97011_uncertainty_aware,"The camera lost track 7 at 16.7 seconds, and track 7 was the only occupant of the crossing from 17.0 to 36.6 seconds.",True
+97012_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy, as indicated by track 4, which was detected on the crossing for the entire 17.0-18.1 seconds.",True
+97012_baseline,"The walk phase ended at 18.2 seconds because the crossing was judged to be clear, as per the rule that the walk phase ends when the crossing is not occupied after 17.0 seconds.",True
+97012_baseline,"The camera lost track 2, which was last seen at 2.4 seconds at y=1.1 m of 12 m and did not reach the exit.",True
+97012_uncertainty_aware,"The walk phase was extended at 17.0 seconds due to the detection of a person using a mobility aid on the crossing, as indicated by track 4, which was labelled as a mobility-aid user with a confidence of 0.70.",True
+97012_uncertainty_aware,"The walk phase ended at 17.2 seconds because the crossing was judged to be clear, as per the timing rules.",True
+97012_uncertainty_aware,"The camera lost track 2, which was a pedestrian, after 2.4 seconds and did not reach the exit, indicating it was held until 15.9 seconds.",True
+97013_baseline,"The walk phase was extended by track 2 at 17.0 seconds, as a person was detected on the crossing, confirming occupancy.",True
+97013_baseline,"The phase was further extended by track 1 from 17.0 to 27.9 seconds, and by track 3 from 17.0 to 17.2 seconds.",True
+97013_baseline,The walk phase ended at 28.0 seconds due to the crossing being judged clear.,True
+97013_baseline,No person was lost on the crossing during the walk phase.,False
+97013_uncertainty_aware,The walk phase for the pedestrian crossing was extended due to the detection of a mobility-aid user on the crossing.,True
+97013_uncertainty_aware,"This extension was initiated at 17.0 seconds, as per the rule that the walk phase ends when the crossing is not occupied after 17.0 seconds.",True
+97013_uncertainty_aware,"The walk phase was extended by track 1, which was a mobility-aid user, and track 2, which was also a mobility-aid user.",True
+97013_uncertainty_aware,Both tracks kept the crossing occupied for 17.0 seconds beyond the normal walk phase length.,True
+97013_uncertainty_aware,"The walk phase ended at 27.0 seconds because the crossing was judged to be clear, as indicated by the phase end event at that time.",True
+97013_uncertainty_aware,"No track was lost on the crossing during this walk phase, as all tracks were accounted for and kept the crossing occupied within the extended period.",False
+97014_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by tracks 2, 3, and 5, which kept the crossing occupied beyond the normal length of 17.0 seconds.",True
+97014_baseline,"The walk phase ended at 27.7 seconds because the crossing was judged to be clear, as indicated by the end of the extended phase.",True
+97014_baseline,"The camera lost track 4 after 5.0 seconds, as it did not reach the exit and was not seen after that time.",True
+97014_uncertainty_aware,"The walk phase of the pedestrian traffic signal was controlled by an uncertainty-aware controller and was initially set to last for 17.0 seconds, as per the rule for the walk interval plus the crossing length divided by the design speed.",True
+97014_uncertainty_aware,"However, the walk phase was extended due to the detection of a person using a mobility aid on the crossing, as indicated by tracks 2, 3, and 5.",True
+97014_uncertainty_aware,"The extension was confirmed by the uncertainty-aware controller, which held the lost track until it could have finished crossing at its speed or up to 20 seconds, whichever was less.",True
+97014_uncertainty_aware,"The walk phase ended at 26.7 seconds because the crossing was judged to be clear, as per the rule.",True
+97014_uncertainty_aware,"During this walk phase, the camera lost track 4, which was a pedestrian using a mobility aid, after it had been on the crossing for 17.0 seconds and was estimated to have reached the exit at 5.0 seconds.",False
+97015_baseline,"The walk phase for the pedestrian traffic signal was controlled by the baseline controller and was initially set to last for 17.0 seconds, as per the rule for the walk interval plus crossing length divided by the design speed.",True
+97015_baseline,"However, the walk phase was extended beyond its normal length of 17.0 seconds due to the crossing being judged as clear at the end of the 17.0 seconds, as per rule and.",False
+97015_baseline,"The walk phase ended at 17.0 seconds because the crossing was judged to be clear, as indicated by rule.",True
+97015_baseline,"During this walk phase, the camera lost track of two pedestrians: one was track 1, which was first seen at 0.1 seconds and last seen at 8.2 seconds at y=10.4 m of 12 m, and the other was track 2, which was first seen at 0.0 seconds and last seen at 8.1 seconds at y=9.1 m of 12 m.",True
+97015_baseline,"Both tracks were lost by the camera after they did not reach the exit, as per rule and.",True
+97015_uncertainty_aware,"The walk phase for the pedestrian crossing was controlled by an uncertainty-aware controller and was initially set to last for 17.0 seconds, as per the rule for the walk interval plus the crossing length divided by the design speed.",True
+97015_uncertainty_aware,"However, the phase was extended due to the loss of track 4, which was detected on the crossing and was being held until it could have finished crossing at its speed, or 0.5 m/s if it was a mobility-aid user or its speed was unknown, multiplied by 1.3, with a maximum of 20 seconds.",True
+97015_uncertainty_aware,"The phase ended at 29.9 seconds because the crossing was judged to be clear, as per the rule for crossing clear.",True
+97015_uncertainty_aware,"The camera lost track 4, which was the only occupant of the crossing during the extended period from 17.0 to 29.8 seconds.",True
+97016_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 8, which was labeled as a mobility-aid user (91% of frames).",True
+97016_baseline,The walk phase ended at 29.0 seconds because the crossing was judged to be clear.,True
+97016_baseline,"During this walk phase, the camera lost track 2, which was a pedestrian and was last seen at 9.9 seconds at y=7.1 m of 12 m.",True
+97016_baseline,"Additionally, track 6, which was a pedestrian, was lost after 9.1 seconds at y=10.8 m of 12 m.",True
+97016_uncertainty_aware,"The walk phase was extended at 17.0 seconds due to the detection of a person using a mobility aid on the crossing (track 8, confidence 0.77).",True
+97016_uncertainty_aware,"This extension was caused by track 8, which kept the crossing occupied for 17.0 to 30.0 seconds.",True
+97016_uncertainty_aware,The walk phase ended at 32.2 seconds because the crossing was judged to be clear (phase end at 32.2 s due to crossing_clear).,True
+97016_uncertainty_aware,"Throughout the walk phase, the camera lost track 7, which was a mobility-aid user, at 12.2 seconds and did not reach the exit.",True
+97017_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 2, which was a mobility-aid user (90% of frames).",True
+97017_baseline,"The phase ended at 17.4 seconds because the crossing was judged to be clear, as indicated by the end of the walk phase at that time.",True
+97017_baseline,"During the extended walk phase, track 2 was the only occupant of the crossing, keeping it occupied from 17.0 to 17.3 seconds.",True
+97017_baseline,"The camera lost track 3, which was also a mobility-aid user (90% of frames), after it last appeared at 10.9 seconds at y=5.3 m of 12 m.",True
+97017_baseline,"Additionally, track 5, a pedestrian, was lost by the camera after it last appeared at 0.2 seconds at y=0.7 m of 12 m.",True
+97017_uncertainty_aware,"The walk phase was extended at 17.0 seconds due to the loss of track 3, which was a mobility-aid user.",True
+97017_uncertainty_aware,"The phase was held until 28.3 seconds, during which time track 3 kept the crossing occupied.",True
+97017_uncertainty_aware,The walk phase ended at 28.4 seconds because the crossing was judged to be clear.,True
+97017_uncertainty_aware,"The camera lost track 5, which was a pedestrian, after 0.2 seconds and did not reach the exit.",True
+97018_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 6, which was detected on the crossing in the last 1.0 second.",True
+97018_baseline,"The walk phase ended at 17.7 seconds because the crossing was judged to be clear, as indicated by the end of the walk phase at that time.",True
+97018_baseline,"The camera lost track 5, which was not seen after 2.6 seconds and did not reach the exit.",True
+97018_uncertainty_aware,"The walk phase of the pedestrian traffic signal was controlled by an uncertainty-aware controller and was initially set to last for 17.0 seconds, as per the rule for the walk interval plus the crossing length divided by the design speed.",True
+97018_uncertainty_aware,"The phase was extended by track 1, which was a mobility-aid user, and held until 25.2 seconds due to the tracker losing the person while they were still on the crossing.",True
+97018_uncertainty_aware,"This extension was confirmed by track 8, which was also lost by the tracker while still on the crossing, extending the phase until 36.3 seconds.",True
+97018_uncertainty_aware,"The walk phase ended at 36.3 seconds because the crossing was judged to be clear, as indicated by the phase end event at 36.3 seconds.",True
+97018_uncertainty_aware,"Throughout the phase, the camera lost track 1 after 6.7 seconds and track 8 after 24.1 seconds, both of which were mobility-aid users.",False
+97019_baseline,"The walk phase for the pedestrian traffic signal ended at 17.0 seconds as the crossing was judged to be clear, as indicated by the timing rule.",True
+97019_baseline,"The walk phase was extended to its normal length of 17.0 seconds due to the crossing being occupied by pedestrians, as per the baseline controller's operation.",False
+97019_baseline,"The pedestrian traffic signal did not extend the walk phase beyond its maximum length of 40 seconds, as per the rule.",True
+97019_baseline,"The camera did not lose any pedestrians on the crossing during the walk phase, as all pedestrians were detected and exited the crossing within the walk phase duration.",True
+97019_baseline,"The pedestrian tracks 1, 2, and 3 were all accounted for and exited the crossing at 16.2, 11.8, and 11.3 seconds, respectively, all within the walk phase duration.",True
+97019_uncertainty_aware,"The walk phase for the pedestrian crossing was extended to 17.0 seconds due to the crossing being judged as clear at that time, as indicated by the event L2 PHASE_END at 17.0 seconds.",True
+97019_uncertainty_aware,"This extension was within the normal length of 17.0 seconds, as per the rule.",True
+97019_uncertainty_aware,"No pedestrian tracks were lost on the crossing during this walk phase, as all tracks were accounted for and held until they could have finished crossing at their estimated speeds or until the maximum hold time of 20 seconds.",True
+97019_uncertainty_aware,"The pedestrian tracks that were present and accounted for included track 1, which reached the exit at 16.2 seconds with an estimated speed of 1.37 m/s, track 2, which reached the exit at 11.8 seconds with an estimated speed of 1.13 m/s, and track 3, which reached the exit at 11.3 seconds with an estimated speed of 1.48 m/s.",True
+97020_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 2, which was a mobility-aid user.",True
+97020_baseline,"The phase was further extended by track 5, a mobility-aid user, from 17.0 to 20.4 seconds and again from 20.7 to 25.2 seconds, as it was the only occupant of the crossing during these intervals.",True
+97020_baseline,The walk phase ended at 25.3 seconds because the crossing was judged to be clear.,True
+97020_baseline,"The camera lost track 4, a mobility-aid user, after 6.4 seconds and did not reach the exit.",True
+97020_uncertainty_aware,The walk phase was extended by track 2 at 17.0 seconds due to the detection of a mobility-aid user on the crossing.,True
+97020_uncertainty_aware,This extension was confirmed with a confidence of 0.99 and was caused by tracks 2 and 5.,True
+97020_uncertainty_aware,"The phase was further extended by track 4, which was a mobility-aid user, from 17.0 to 26.4 seconds, holding the crossing occupied for 26.4 seconds.",True
+97020_uncertainty_aware,"The phase ended at 26.4 seconds because the crossing was judged to be clear, as indicated by track 4 being the only occupant of the crossing during that time.",True
+97020_uncertainty_aware,"The camera lost track 4 after 6.4 seconds, and track 5, which was also a mobility-aid user, was lost by the tracker while still on the crossing, resulting in a hold of the phase from 17.0 to 24.2 seconds.",False
+97021_baseline,The walk phase for the pedestrian traffic signal ended at 17.0 seconds due to the crossing being judged clear (fact G10).,True
+97021_baseline,"This occurred because the baseline controller, which controls the walk phase, extended the walk phase to its normal length of 17.0 seconds (fact G2) and then ended it at this time because the crossing was not occupied (fact G4).",True
+97021_baseline,The walk phase was extended to its maximum length of 40 seconds (fact G3) but did not reach this duration.,False
+97021_baseline,"The camera lost track 2, which was a pedestrian, at 10.3 seconds and did not reach the exit (fact G18).",False
+97021_baseline,The pedestrian track 1 was first seen at 0.0 seconds and reached the exit at 14.9 seconds (facts G13 and G14).,True
+97021_uncertainty_aware,"The walk phase for the pedestrian crossing was extended to 17.0 seconds due to the crossing being judged as clear at that time, as per rule.",True
+97021_uncertainty_aware,"This extension was normal and adhered to the standard walk interval plus crossing length divided by the design speed, as per rule.",True
+97021_uncertainty_aware,"No pedestrian was lost on the crossing during this phase, as all tracks were accounted for and held until they could have finished crossing or until the maximum hold time of 20 seconds, as per rule.",False
+97021_uncertainty_aware,"The pedestrian track 1 successfully completed the crossing at a speed of 1.17 m/s, reaching the exit at 14.9 seconds, while track 2 was lost by the camera after 10.3 seconds and did not reach the exit, held until 11.6 seconds, as per rule.",True
+97022_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 2, which was a mobility-aid user.",True
+97022_baseline,"The extension lasted until 20.8 seconds, when the crossing was judged to be clear, ending the walk phase.",True
+97022_baseline,"During this extended period, track 2 was the only occupant of the crossing, and it kept the crossing occupied for 17.0 to 20.7 seconds.",True
+97022_baseline,The camera did not lose any person on the crossing during this walk phase.,False
+97022_uncertainty_aware,"The walk phase for the pedestrian crossing was controlled by an uncertainty-aware controller and was initially set to last for 17.0 seconds, as per the rule for walk interval plus crossing length divided by design speed.",True
+97022_uncertainty_aware,"However, the walk phase was extended by 2.8 seconds due to the detection of a mobility-aid user on the crossing, as indicated by track 2.",True
+97022_uncertainty_aware,The extension was confirmed with a confidence level of 0.96 and was caused by track 2.,True
+97022_uncertainty_aware,"The walk phase ended at 19.8 seconds because the crossing was judged to be clear, as per the rule for phase end.",True
+97022_uncertainty_aware,"No other track kept the crossing occupied during the extended period, and track 2 was the only occupant of the crossing during the extended walk phase.",True
+97023_baseline,"The walk phase was extended at 17.0 seconds due to confirmed occupancy by track 1, which was labeled as a mobility-aid user.",True
+97023_baseline,The walk phase ended at 20.8 seconds because the crossing was judged to be clear.,True
+97023_baseline,"During this walk phase, the camera lost track 4, which was a pedestrian and last seen at 8.1 seconds at y=8.9 m of 12 m.",True
+97023_baseline,"Additionally, track 5, also a mobility-aid user, was lost by the camera at 14.2 seconds at y=10.4 m of 12 m.",True
+97023_uncertainty_aware,"The walk phase was extended by track 1, which was a mobility-aid user, at 17.0 seconds due to the detection of a person using a mobility aid on the crossing.",True
+97023_uncertainty_aware,The walk phase ended at 19.8 seconds because the crossing was judged to be clear.,True
+97023_uncertainty_aware,"During this walk phase, the camera lost track 4, which was a pedestrian, after 8.1 seconds and did not reach the exit.",True
+97023_uncertainty_aware,The pedestrian was estimated to be moving at a speed of 1.35 m/s.,True
+97024_baseline,"The walk phase was extended by track 4 at 17.0 seconds, as it was detected on the crossing and the occupancy was confirmed.",True
+97024_baseline,The walk phase ended at 21.1 seconds due to the crossing being judged clear.,True
+97024_baseline,"During this walk phase, the camera lost track 5, which was last seen at 19.4 seconds at y=6.2 m of 12 m and did not reach the exit.",True
+97024_baseline,"The walk phase was also extended by track 5, which kept the crossing occupied from 18.1 to 20.4 seconds.",True
+97024_uncertainty_aware,The walk phase was extended at 17.0 seconds due to the detection of a person using a mobility aid on the crossing (rule).,True
+97024_uncertainty_aware,"This extension was caused by track 4, which kept the crossing occupied for an additional 3 seconds beyond the normal walk interval (rule).",True
+97024_uncertainty_aware,"The walk phase was further extended at 20.1 seconds when a pedestrian was detected on the crossing (rule), with track 5 being the cause (rule).",True
+97024_uncertainty_aware,"The phase was held until 20.5 seconds due to the loss of track 5 by the camera while still on the crossing (rule), with a confidence of 0.93 (rule).",True
+97024_uncertainty_aware,The walk phase ended at 34.6 seconds because the crossing was judged to be clear (rule).,True
+97024_uncertainty_aware,"Throughout the walk phase, the camera lost track 6 after 11.7 seconds, which did not reach the exit (rule).",True

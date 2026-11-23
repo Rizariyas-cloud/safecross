@@ -1,0 +1,23 @@
+test,model,checker,coverage,risk,wrong_answers,guesses_without_facts,n
+main,LLaVA-7B,False,0.9963235294117647,0.47474747474747475,11,224,272
+main,LLaVA-7B,True,0.9485294117647058,0.019011406844106463,0,5,272
+main,Ours 1.5B (v1),False,1.0,0.0,0,0,272
+main,Ours 1.5B (v1),True,1.0,0.0,0,0,272
+main,Ours 1.5B (v2),False,1.0,0.007326007326007326,1,1,272
+main,Ours 1.5B (v2),True,0.9926470588235294,0.0,0,0,272
+main,Qwen-1.5B untrained,False,1.0,0.580110497237569,44,271,272
+main,Qwen-1.5B untrained,True,0.8088235294117647,0.0,0,0,272
+main,Qwen2.5-VL-7B,False,1.0,0.5441176470588235,24,272,272
+main,Qwen2.5-VL-7B,True,0.7573529411764706,0.0,0,0,272
+reworded,Ours 1.5B (v1),False,1.0,0.0,0,0,282
+reworded,Ours 1.5B (v1),True,1.0,0.0,0,0,282
+reworded,Ours 1.5B (v2),False,1.0,0.0,0,0,282
+reworded,Ours 1.5B (v2),True,1.0,0.0,0,0,282
+reworded,Qwen-1.5B untrained,False,0.9964539007092199,0.5985790408525755,55,282,282
+reworded,Qwen-1.5B untrained,True,0.7588652482269503,0.0,0,0,282
+unseen controller,Ours 1.5B (v1),False,0.9865771812080537,0.0,0,0,149
+unseen controller,Ours 1.5B (v1),True,0.959731543624161,0.0,0,0,149
+unseen controller,Ours 1.5B (v2),False,0.9865771812080537,0.057692307692307696,0,9,149
+unseen controller,Ours 1.5B (v2),True,0.9865771812080537,0.0,0,0,149
+unseen controller,Qwen-1.5B untrained,False,1.0,0.5738255033557047,22,149,149
+unseen controller,Qwen-1.5B untrained,True,0.7583892617449665,0.0,0,0,149

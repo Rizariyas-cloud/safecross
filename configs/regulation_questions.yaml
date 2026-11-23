@@ -1,0 +1,18 @@
+# Regulation questions for the RAG part (evaluated separately).
+# The team writes these AFTER reading the Dubai Universal Design Code.
+# For each question, write the page number(s) where the answer really is.
+# Score = did the retriever return one of those pages in its top results,
+#         and did the answer cite a retrieved passage instead of inventing a rule?
+#
+# Replace the examples below with real questions and real page numbers.
+
+questions:
+  - id: reg01
+    question: "What does the Dubai Universal Design Code require for pedestrian crossings?"
+    expected_pages: []        # e.g. [112, 113]  <- fill in after reading the code
+  - id: reg02
+    question: "What does the code say about accessible pedestrian signals?"
+    expected_pages: []
+  - id: reg03
+    question: "What does the code say about kerb ramps at crossings?"
+    expected_pages: []

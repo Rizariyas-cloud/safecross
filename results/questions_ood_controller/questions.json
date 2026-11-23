@@ -1,0 +1,4022 @@
+[
+ {
+  "qid": "oodc_ep90000_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90000,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 29.5 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.62 (track 3 lost at y=3.9m, 7.5s ago; holding until 29.5s)",
+   "[L3] t=29.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90000_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90000,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.62 (track 3 lost at y=3.9m, 7.5s ago; holding until 29.5s)",
+   "[L3] t=29.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: pedestrian, confidence 0.81, past the exit at y=13.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90001_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90001,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90001_uncertainty_aware_filtered_cf_track3",
+  "qtype": "counterfactual",
+  "episode_id": 90001,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90002_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90002,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 27.5 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.53 (track 5 lost at y=3.6m, 9.5s ago; holding until 27.5s)",
+   "[L3] t=27.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90002_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90002,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.53 (track 5 lost at y=3.6m, 9.5s ago; holding until 27.5s)",
+   "[L3] t=27.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90003_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90003,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 20.5 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.95 (tracks [3, 6] detected on the crossing)",
+   "[L3] t=19.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.72 (track 3 lost at y=10.5m, 1.1s ago; holding until 22.2s)",
+   "[L4] t=19.5s HOLD reason=mobility_aid_on_crossing confidence=0.95 (tracks [3] detected on the crossing)",
+   "[L5] t=20.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: pedestrian, confidence 0.64, on the crossing at y=11.7 m",
+   "track 6: cane, confidence 0.49, past the exit at y=12.9 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90003_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90003,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.95 (tracks [3, 6] detected on the crossing)",
+   "[L3] t=19.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.72 (track 3 lost at y=10.5m, 1.1s ago; holding until 22.2s)",
+   "[L4] t=19.5s HOLD reason=mobility_aid_on_crossing confidence=0.95 (tracks [3] detected on the crossing)",
+   "[L5] t=20.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: crutches, confidence 0.86, on the crossing at y=9.8 m",
+   "track 6: pedestrian, confidence 0.41, on the crossing at y=9.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90003_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90003,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 20.5 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 20.5
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.95 (tracks [3, 6] detected on the crossing)",
+   "[L3] t=19.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.72 (track 3 lost at y=10.5m, 1.1s ago; holding until 22.2s)",
+   "[L4] t=19.5s HOLD reason=mobility_aid_on_crossing confidence=0.95 (tracks [3] detected on the crossing)",
+   "[L5] t=20.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: pedestrian, confidence 0.64, on the crossing at y=11.7 m",
+   "track 6: cane, confidence 0.49, past the exit at y=12.9 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90004_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90004,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 29.7 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.84 (tracks [5, 6, 7] detected on the crossing)",
+   "[L3] t=24.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.50 (track 7 lost at y=8.3m, 4.9s ago; holding until 29.6s)",
+   "[L4] t=29.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90004_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90004,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.84 (tracks [5, 6, 7] detected on the crossing)",
+   "[L3] t=24.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.50 (track 7 lost at y=8.3m, 4.9s ago; holding until 29.6s)",
+   "[L4] t=29.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 5: rollator, confidence 0.76, on the crossing at y=9.7 m",
+   "track 6: rollator, confidence 0.58, on the crossing at y=8.5 m",
+   "track 7: crutches, confidence 0.69, on the crossing at y=6.6 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90005_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90005,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90005_uncertainty_aware_filtered_cf_track3",
+  "qtype": "counterfactual",
+  "episode_id": 90005,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90006_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90006,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 27.6 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.93 (tracks [7, 6] detected on the crossing)",
+   "[L3] t=27.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 7: wheelchair, confidence 0.67, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90006_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90006,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.93 (tracks [7, 6] detected on the crossing)",
+   "[L3] t=27.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: pedestrian, confidence 0.85, past the exit at y=12.4 m",
+   "track 6: wheelchair, confidence 0.83, on the crossing at y=10.0 m",
+   "track 7: wheelchair, confidence 0.66, on the crossing at y=8.4 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90006_uncertainty_aware_filtered_cf_track7",
+  "qtype": "counterfactual",
+  "episode_id": 90006,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 7 had never been detected, would the pedestrian phase have ended earlier than 27.6 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 21.9
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.93 (tracks [7, 6] detected on the crossing)",
+   "[L3] t=27.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 7: wheelchair, confidence 0.67, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90007_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90007,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 20.7 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=confirmed_occupancy confidence=0.81 (tracks [3] detected on the crossing)",
+   "[L3] t=20.3s HOLD reason=uncertain_occupancy_lost_track confidence=0.34 (track 3 lost at y=10.8m, 1.1s ago; holding until 20.9s)",
+   "[L4] t=20.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: pedestrian, confidence 0.66, past the exit at y=12.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90007_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90007,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "confirmed_occupancy"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=confirmed_occupancy confidence=0.81 (tracks [3] detected on the crossing)",
+   "[L3] t=20.3s HOLD reason=uncertain_occupancy_lost_track confidence=0.34 (track 3 lost at y=10.8m, 1.1s ago; holding until 20.9s)",
+   "[L4] t=20.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: pedestrian, confidence 0.69, on the crossing at y=8.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90007_uncertainty_aware_filtered_cf_track3",
+  "qtype": "counterfactual",
+  "episode_id": 90007,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 20.7 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=confirmed_occupancy confidence=0.81 (tracks [3] detected on the crossing)",
+   "[L3] t=20.3s HOLD reason=uncertain_occupancy_lost_track confidence=0.34 (track 3 lost at y=10.8m, 1.1s ago; holding until 20.9s)",
+   "[L4] t=20.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: pedestrian, confidence 0.66, past the exit at y=12.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90008_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90008,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: cane, confidence 0.62, past the exit at y=12.6 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90008_uncertainty_aware_filtered_cf_track4",
+  "qtype": "counterfactual",
+  "episode_id": 90008,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 4 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: cane, confidence 0.62, past the exit at y=12.6 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90009_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90009,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90009_uncertainty_aware_filtered_cf_track5",
+  "qtype": "counterfactual",
+  "episode_id": 90009,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 5 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90010_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90010,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 27.2 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.84 (tracks [2, 4] detected on the crossing)",
+   "[L3] t=22.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.22 (track 5 lost at y=4.2m, 15.6s ago; holding until 27.2s)",
+   "[L4] t=27.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.60, past the exit at y=13.3 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90010_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90010,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.84 (tracks [2, 4] detected on the crossing)",
+   "[L3] t=22.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.22 (track 5 lost at y=4.2m, 15.6s ago; holding until 27.2s)",
+   "[L4] t=27.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.57, on the crossing at y=9.0 m",
+   "track 4: wheelchair, confidence 0.76, on the crossing at y=11.5 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90011_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90011,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 18.1 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2] detected on the crossing)",
+   "[L3] t=18.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.95, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90011_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90011,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2] detected on the crossing)",
+   "[L3] t=18.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.97, on the crossing at y=11.1 m",
+   "track 7: pedestrian, confidence 0.59, on the crossing at y=10.3 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90011_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90011,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 18.1 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2] detected on the crossing)",
+   "[L3] t=18.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.95, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90012_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90012,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 18.6 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.97 (tracks [2] detected on the crossing)",
+   "[L3] t=18.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.85, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90012_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90012,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.97 (tracks [2] detected on the crossing)",
+   "[L3] t=18.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.86, on the crossing at y=10.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90012_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90012,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 18.6 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.5
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.97 (tracks [2] detected on the crossing)",
+   "[L3] t=18.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.85, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90013_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90013,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 23.1 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.30 (track 3 lost at y=1.6m, 13.9s ago; holding until 23.1s)",
+   "[L3] t=23.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90013_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90013,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.30 (track 3 lost at y=1.6m, 13.9s ago; holding until 23.1s)",
+   "[L3] t=23.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.92, past the exit at y=12.6 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90014_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90014,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 27.3 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.79 (tracks [2] detected on the crossing)",
+   "[L3] t=20.1s HOLD reason=uncertain_occupancy_lost_track confidence=0.36 (track 1 lost at y=0.9m, 12.8s ago; holding until 27.3s)",
+   "[L4] t=27.3s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90014_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90014,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.79 (tracks [2] detected on the crossing)",
+   "[L3] t=20.1s HOLD reason=uncertain_occupancy_lost_track confidence=0.36 (track 1 lost at y=0.9m, 12.8s ago; holding until 27.3s)",
+   "[L4] t=27.3s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.65, on the crossing at y=9.1 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90015_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90015,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 20.5 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [6] detected on the crossing)",
+   "[L3] t=18.2s HOLD reason=uncertain_occupancy_lost_track confidence=0.76 (track 6 lost at y=10.2m, 1.1s ago; holding until 21.7s)",
+   "[L4] t=19.9s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [6] detected on the crossing)",
+   "[L5] t=20.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 6: rollator, confidence 0.97, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90015_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90015,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [6] detected on the crossing)",
+   "[L3] t=18.2s HOLD reason=uncertain_occupancy_lost_track confidence=0.76 (track 6 lost at y=10.2m, 1.1s ago; holding until 21.7s)",
+   "[L4] t=19.9s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [6] detected on the crossing)",
+   "[L5] t=20.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 6: rollator, confidence 0.94, on the crossing at y=10.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90015_uncertainty_aware_filtered_cf_track6",
+  "qtype": "counterfactual",
+  "episode_id": 90015,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 6 had never been detected, would the pedestrian phase have ended earlier than 20.5 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [6] detected on the crossing)",
+   "[L3] t=18.2s HOLD reason=uncertain_occupancy_lost_track confidence=0.76 (track 6 lost at y=10.2m, 1.1s ago; holding until 21.7s)",
+   "[L4] t=19.9s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [6] detected on the crossing)",
+   "[L5] t=20.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 6: rollator, confidence 0.97, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90016_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90016,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.9 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.70 (tracks [1] detected on the crossing)",
+   "[L3] t=17.9s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: crutches, confidence 0.64, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90016_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90016,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.70 (tracks [1] detected on the crossing)",
+   "[L3] t=17.9s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: crutches, confidence 0.60, on the crossing at y=11.1 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90016_uncertainty_aware_filtered_cf_track1",
+  "qtype": "counterfactual",
+  "episode_id": 90016,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 1 had never been detected, would the pedestrian phase have ended earlier than 17.9 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.70 (tracks [1] detected on the crossing)",
+   "[L3] t=17.9s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: crutches, confidence 0.64, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90017_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90017,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.1 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.92 (tracks [2] detected on the crossing)",
+   "[L3] t=17.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.81, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90017_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90017,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.92 (tracks [2] detected on the crossing)",
+   "[L3] t=17.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.85, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90017_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90017,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 17.1 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.92 (tracks [2] detected on the crossing)",
+   "[L3] t=17.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.81, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90018_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90018,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 21.9 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.24 (track 1 lost at y=1.0m, 15.1s ago; holding until 21.9s)",
+   "[L3] t=21.9s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90018_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90018,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.24 (track 1 lost at y=1.0m, 15.1s ago; holding until 21.9s)",
+   "[L3] t=21.9s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.77, past the exit at y=12.5 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90019_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90019,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 25.4 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.96 (tracks [2, 3] detected on the crossing)",
+   "[L3] t=22.9s HOLD reason=uncertain_occupancy_lost_track confidence=0.68 (track 3 lost at y=10.6m, 1.2s ago; holding until 25.4s)",
+   "[L4] t=25.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.82, past the exit at y=13.3 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90019_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90019,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.96 (tracks [2, 3] detected on the crossing)",
+   "[L3] t=22.9s HOLD reason=uncertain_occupancy_lost_track confidence=0.68 (track 3 lost at y=10.6m, 1.2s ago; holding until 25.4s)",
+   "[L4] t=25.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.84, on the crossing at y=8.5 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90019_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90019,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 25.4 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 25.4
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.96 (tracks [2, 3] detected on the crossing)",
+   "[L3] t=22.9s HOLD reason=uncertain_occupancy_lost_track confidence=0.68 (track 3 lost at y=10.6m, 1.2s ago; holding until 25.4s)",
+   "[L4] t=25.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.82, past the exit at y=13.3 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90020_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90020,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 24.6 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.95 (tracks [2, 3] detected on the crossing)",
+   "[L3] t=24.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: crutches, confidence 0.86, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90020_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90020,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.95 (tracks [2, 3] detected on the crossing)",
+   "[L3] t=24.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: pedestrian, confidence 0.70, on the crossing at y=8.8 m",
+   "track 3: crutches, confidence 0.82, on the crossing at y=8.0 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90020_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90020,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 24.6 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 24.6
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.95 (tracks [2, 3] detected on the crossing)",
+   "[L3] t=24.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: crutches, confidence 0.86, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90021_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90021,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 26.8 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [1, 5, 4] detected on the crossing)",
+   "[L3] t=22.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.82 (track 5 lost at y=8.8m, 1.5s ago; holding until 29.5s)",
+   "[L4] t=22.9s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [5] detected on the crossing)",
+   "[L5] t=26.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 5: wheelchair, confidence 0.79, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90021_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90021,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [1, 5, 4] detected on the crossing)",
+   "[L3] t=22.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.82 (track 5 lost at y=8.8m, 1.5s ago; holding until 29.5s)",
+   "[L4] t=22.9s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [5] detected on the crossing)",
+   "[L5] t=26.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: wheelchair, confidence 0.67, on the crossing at y=8.0 m",
+   "track 2: pedestrian, confidence 0.77, past the exit at y=12.8 m",
+   "track 4: rollator, confidence 0.64, on the crossing at y=8.4 m",
+   "track 5: wheelchair, confidence 0.82, on the crossing at y=6.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90021_uncertainty_aware_filtered_cf_track5",
+  "qtype": "counterfactual",
+  "episode_id": 90021,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 5 had never been detected, would the pedestrian phase have ended earlier than 26.8 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 22.8
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [1, 5, 4] detected on the crossing)",
+   "[L3] t=22.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.82 (track 5 lost at y=8.8m, 1.5s ago; holding until 29.5s)",
+   "[L4] t=22.9s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [5] detected on the crossing)",
+   "[L5] t=26.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 5: wheelchair, confidence 0.79, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90022_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90022,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90023_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90023,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 20.8 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.82 (tracks [2] detected on the crossing)",
+   "[L3] t=20.0s HOLD reason=uncertain_occupancy_lost_track confidence=0.75 (track 2 lost at y=10.3m, 1.1s ago; holding until 23.2s)",
+   "[L4] t=20.5s HOLD reason=mobility_aid_on_crossing confidence=0.82 (tracks [2] detected on the crossing)",
+   "[L5] t=20.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.72, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90023_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90023,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.82 (tracks [2] detected on the crossing)",
+   "[L3] t=20.0s HOLD reason=uncertain_occupancy_lost_track confidence=0.75 (track 2 lost at y=10.3m, 1.1s ago; holding until 23.2s)",
+   "[L4] t=20.5s HOLD reason=mobility_aid_on_crossing confidence=0.82 (tracks [2] detected on the crossing)",
+   "[L5] t=20.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.70, on the crossing at y=9.3 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90023_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90023,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 20.8 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.82 (tracks [2] detected on the crossing)",
+   "[L3] t=20.0s HOLD reason=uncertain_occupancy_lost_track confidence=0.75 (track 2 lost at y=10.3m, 1.1s ago; holding until 23.2s)",
+   "[L4] t=20.5s HOLD reason=mobility_aid_on_crossing confidence=0.82 (tracks [2] detected on the crossing)",
+   "[L5] t=20.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.72, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90024_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90024,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 19.7 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.71 (tracks [1] detected on the crossing)",
+   "[L3] t=19.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: rollator, confidence 0.58, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90024_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90024,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.71 (tracks [1] detected on the crossing)",
+   "[L3] t=19.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: rollator, confidence 0.47, on the crossing at y=10.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90024_uncertainty_aware_filtered_cf_track1",
+  "qtype": "counterfactual",
+  "episode_id": 90024,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 1 had never been detected, would the pedestrian phase have ended earlier than 19.7 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.71 (tracks [1] detected on the crossing)",
+   "[L3] t=19.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: rollator, confidence 0.58, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90025_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90025,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 18.1 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.83 (tracks [6] detected on the crossing)",
+   "[L3] t=18.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 6: wheelchair, confidence 0.71, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90025_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90025,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.83 (tracks [6] detected on the crossing)",
+   "[L3] t=18.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 6: pedestrian, confidence 0.56, on the crossing at y=10.6 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90025_uncertainty_aware_filtered_cf_track6",
+  "qtype": "counterfactual",
+  "episode_id": 90025,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 6 had never been detected, would the pedestrian phase have ended earlier than 18.1 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.83 (tracks [6] detected on the crossing)",
+   "[L3] t=18.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 6: wheelchair, confidence 0.71, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90026_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90026,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 24.7 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2, 6] detected on the crossing)",
+   "[L3] t=24.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 6: crutches, confidence 0.93, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90026_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90026,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2, 6] detected on the crossing)",
+   "[L3] t=24.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.95, on the crossing at y=9.3 m",
+   "track 6: crutches, confidence 0.95, on the crossing at y=7.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90026_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90026,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 24.7 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 24.7
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2, 6] detected on the crossing)",
+   "[L3] t=24.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 6: crutches, confidence 0.93, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90027_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90027,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 22.2 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.74 (tracks [4] detected on the crossing)",
+   "[L3] t=22.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: wheelchair, confidence 0.55, past the exit at y=12.1 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90027_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90027,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.74 (tracks [4] detected on the crossing)",
+   "[L3] t=22.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: pedestrian, confidence 0.45, on the crossing at y=9.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90027_uncertainty_aware_filtered_cf_track4",
+  "qtype": "counterfactual",
+  "episode_id": 90027,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 4 had never been detected, would the pedestrian phase have ended earlier than 22.2 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.74 (tracks [4] detected on the crossing)",
+   "[L3] t=22.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: wheelchair, confidence 0.55, past the exit at y=12.1 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90028_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90028,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90029_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90029,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.4 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.90 (tracks [4] detected on the crossing)",
+   "[L3] t=17.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 9: pedestrian, confidence 0.40, on the crossing at y=11.0 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90029_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90029,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.90 (tracks [4] detected on the crossing)",
+   "[L3] t=17.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90029_uncertainty_aware_filtered_cf_track4",
+  "qtype": "counterfactual",
+  "episode_id": 90029,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 4 had never been detected, would the pedestrian phase have ended earlier than 17.4 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.90 (tracks [4] detected on the crossing)",
+   "[L3] t=17.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 9: pedestrian, confidence 0.40, on the crossing at y=11.0 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90030_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90030,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.8 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.53 (track 3 lost at y=10.3m, 1.2s ago; holding until 18.3s)",
+   "[L3] t=17.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.84, past the exit at y=12.6 m",
+   "track 3: pedestrian, confidence 0.93, past the exit at y=12.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90030_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90030,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.53 (track 3 lost at y=10.3m, 1.2s ago; holding until 18.3s)",
+   "[L3] t=17.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.92, on the crossing at y=11.9 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90030_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90030,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 17.8 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.8
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.53 (track 3 lost at y=10.3m, 1.2s ago; holding until 18.3s)",
+   "[L3] t=17.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.84, past the exit at y=12.6 m",
+   "track 3: pedestrian, confidence 0.93, past the exit at y=12.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90031_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90031,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 18.7 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.89 (tracks [3] detected on the crossing)",
+   "[L3] t=18.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: rollator, confidence 0.76, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90031_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90031,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.89 (tracks [3] detected on the crossing)",
+   "[L3] t=18.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.82, past the exit at y=12.0 m",
+   "track 3: rollator, confidence 0.89, on the crossing at y=10.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90031_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90031,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 18.7 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 18.7
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.89 (tracks [3] detected on the crossing)",
+   "[L3] t=18.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: rollator, confidence 0.76, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90032_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90032,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 18.8 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.72 (tracks [2] detected on the crossing)",
+   "[L3] t=18.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.59, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90032_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90032,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.72 (tracks [2] detected on the crossing)",
+   "[L3] t=18.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90032_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90032,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 18.8 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.72 (tracks [2] detected on the crossing)",
+   "[L3] t=18.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.59, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90033_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90033,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 19.3 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.21 (track 2 lost at y=2.6m, 8.5s ago; holding until 19.3s)",
+   "[L3] t=19.3s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90033_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90033,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.21 (track 2 lost at y=2.6m, 8.5s ago; holding until 19.3s)",
+   "[L3] t=19.3s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90034_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90034,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90034_uncertainty_aware_filtered_cf_track3",
+  "qtype": "counterfactual",
+  "episode_id": 90034,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90035_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90035,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 28.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2, 7] detected on the crossing)",
+   "[L3] t=24.5s HOLD reason=uncertain_occupancy_lost_track confidence=0.18 (track 6 lost at y=3.5m, 16.5s ago; holding until 28.0s)",
+   "[L4] t=25.0s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [7] detected on the crossing)",
+   "[L5] t=25.3s HOLD reason=uncertain_occupancy_lost_track confidence=0.14 (track 6 lost at y=3.5m, 17.3s ago; holding until 28.0s)",
+   "[L6] t=28.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90035_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90035,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2, 7] detected on the crossing)",
+   "[L3] t=24.5s HOLD reason=uncertain_occupancy_lost_track confidence=0.18 (track 6 lost at y=3.5m, 16.5s ago; holding until 28.0s)",
+   "[L4] t=25.0s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [7] detected on the crossing)",
+   "[L5] t=25.3s HOLD reason=uncertain_occupancy_lost_track confidence=0.14 (track 6 lost at y=3.5m, 17.3s ago; holding until 28.0s)",
+   "[L6] t=28.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.58, on the crossing at y=7.9 m",
+   "track 7: crutches, confidence 0.91, on the crossing at y=6.9 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90035_uncertainty_aware_filtered_cf_track7",
+  "qtype": "counterfactual",
+  "episode_id": 90035,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 7 had never been detected, would the pedestrian phase have ended earlier than 28.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 28.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [2, 7] detected on the crossing)",
+   "[L3] t=24.5s HOLD reason=uncertain_occupancy_lost_track confidence=0.18 (track 6 lost at y=3.5m, 16.5s ago; holding until 28.0s)",
+   "[L4] t=25.0s HOLD reason=mobility_aid_on_crossing confidence=0.99 (tracks [7] detected on the crossing)",
+   "[L5] t=25.3s HOLD reason=uncertain_occupancy_lost_track confidence=0.14 (track 6 lost at y=3.5m, 17.3s ago; holding until 28.0s)",
+   "[L6] t=28.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90036_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90036,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.88, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90036_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90036,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.88, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90037_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90037,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 22.4 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3] detected on the crossing)",
+   "[L3] t=22.1s HOLD reason=uncertain_occupancy_lost_track confidence=0.61 (track 3 lost at y=10.9m, 1.1s ago; holding until 23.8s)",
+   "[L4] t=22.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: crutches, confidence 0.99, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90037_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90037,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3] detected on the crossing)",
+   "[L3] t=22.1s HOLD reason=uncertain_occupancy_lost_track confidence=0.61 (track 3 lost at y=10.9m, 1.1s ago; holding until 23.8s)",
+   "[L4] t=22.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90037_uncertainty_aware_filtered_cf_track3",
+  "qtype": "counterfactual",
+  "episode_id": 90037,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 22.4 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3] detected on the crossing)",
+   "[L3] t=22.1s HOLD reason=uncertain_occupancy_lost_track confidence=0.61 (track 3 lost at y=10.9m, 1.1s ago; holding until 23.8s)",
+   "[L4] t=22.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: crutches, confidence 0.99, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90038_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90038,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 28.1 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.87 (tracks [1] detected on the crossing)",
+   "[L3] t=26.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.73 (track 1 lost at y=10.4m, 1.1s ago; holding until 29.8s)",
+   "[L4] t=27.0s HOLD reason=mobility_aid_on_crossing confidence=0.89 (tracks [1] detected on the crossing)",
+   "[L5] t=28.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: crutches, confidence 0.72, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90038_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90038,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.87 (tracks [1] detected on the crossing)",
+   "[L3] t=26.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.73 (track 1 lost at y=10.4m, 1.1s ago; holding until 29.8s)",
+   "[L4] t=27.0s HOLD reason=mobility_aid_on_crossing confidence=0.89 (tracks [1] detected on the crossing)",
+   "[L5] t=28.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: crutches, confidence 0.80, on the crossing at y=6.5 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90038_uncertainty_aware_filtered_cf_track1",
+  "qtype": "counterfactual",
+  "episode_id": 90038,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 1 had never been detected, would the pedestrian phase have ended earlier than 28.1 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.87 (tracks [1] detected on the crossing)",
+   "[L3] t=26.8s HOLD reason=uncertain_occupancy_lost_track confidence=0.73 (track 1 lost at y=10.4m, 1.1s ago; holding until 29.8s)",
+   "[L4] t=27.0s HOLD reason=mobility_aid_on_crossing confidence=0.89 (tracks [1] detected on the crossing)",
+   "[L5] t=28.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: crutches, confidence 0.72, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90039_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90039,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90039_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90039,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90040_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90040,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 22.5 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [1] detected on the crossing)",
+   "[L3] t=22.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: rollator, confidence 0.93, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90040_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90040,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [1] detected on the crossing)",
+   "[L3] t=22.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: rollator, confidence 0.97, on the crossing at y=7.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90040_uncertainty_aware_filtered_cf_track1",
+  "qtype": "counterfactual",
+  "episode_id": 90040,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 1 had never been detected, would the pedestrian phase have ended earlier than 22.5 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [1] detected on the crossing)",
+   "[L3] t=22.5s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 1: rollator, confidence 0.93, on the crossing at y=11.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90041_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90041,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90041_uncertainty_aware_filtered_cf_track5",
+  "qtype": "counterfactual",
+  "episode_id": 90041,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 5 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90042_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90042,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 21.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.54 (track 6 lost at y=9.2m, 3.4s ago; holding until 20.9s)",
+   "[L3] t=21.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90042_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90042,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.54 (track 6 lost at y=9.2m, 3.4s ago; holding until 20.9s)",
+   "[L3] t=21.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90043_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90043,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 28.8 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3] detected on the crossing)",
+   "[L3] t=17.6s HOLD reason=uncertain_occupancy_lost_track confidence=0.56 (track 2 lost at y=3.4m, 8.8s ago; holding until 28.8s)",
+   "[L4] t=28.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90043_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90043,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3] detected on the crossing)",
+   "[L3] t=17.6s HOLD reason=uncertain_occupancy_lost_track confidence=0.56 (track 2 lost at y=3.4m, 8.8s ago; holding until 28.8s)",
+   "[L4] t=28.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: rollator, confidence 0.97, on the crossing at y=11.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90044_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90044,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 18.4 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.72 (tracks [2] detected on the crossing)",
+   "[L3] t=18.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.58, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90044_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90044,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.72 (tracks [2] detected on the crossing)",
+   "[L3] t=18.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.63, on the crossing at y=10.6 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90044_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90044,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 18.4 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.72 (tracks [2] detected on the crossing)",
+   "[L3] t=18.4s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: rollator, confidence 0.58, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90045_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90045,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 20.1 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.93 (tracks [2, 4] detected on the crossing)",
+   "[L3] t=17.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.79 (track 2 lost at y=10.0m, 1.1s ago; holding until 21.4s)",
+   "[L4] t=20.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.76, past the exit at y=12.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90045_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90045,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.93 (tracks [2, 4] detected on the crossing)",
+   "[L3] t=17.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.79 (track 2 lost at y=10.0m, 1.1s ago; holding until 21.4s)",
+   "[L4] t=20.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90045_uncertainty_aware_filtered_cf_track4",
+  "qtype": "counterfactual",
+  "episode_id": 90045,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 4 had never been detected, would the pedestrian phase have ended earlier than 20.1 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 20.1
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.93 (tracks [2, 4] detected on the crossing)",
+   "[L3] t=17.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.79 (track 2 lost at y=10.0m, 1.1s ago; holding until 21.4s)",
+   "[L4] t=20.1s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.76, past the exit at y=12.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90046_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90046,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 19.2 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.68 (track 3 lost at y=9.3m, 2.2s ago; holding until 21.8s)",
+   "[L3] t=17.2s HOLD reason=mobility_aid_on_crossing confidence=0.92 (tracks [3] detected on the crossing)",
+   "[L4] t=18.5s HOLD reason=uncertain_occupancy_lost_track confidence=0.45 (track 3 lost at y=11.2m, 1.1s ago; holding until 19.4s)",
+   "[L5] t=19.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: crutches, confidence 0.82, past the exit at y=12.5 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90046_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90046,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.68 (track 3 lost at y=9.3m, 2.2s ago; holding until 21.8s)",
+   "[L3] t=17.2s HOLD reason=mobility_aid_on_crossing confidence=0.92 (tracks [3] detected on the crossing)",
+   "[L4] t=18.5s HOLD reason=uncertain_occupancy_lost_track confidence=0.45 (track 3 lost at y=11.2m, 1.1s ago; holding until 19.4s)",
+   "[L5] t=19.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 8: pedestrian, confidence 0.49, on the crossing at y=7.8 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90046_uncertainty_aware_filtered_cf_track3",
+  "qtype": "counterfactual",
+  "episode_id": 90046,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 19.2 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 18.8
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.68 (track 3 lost at y=9.3m, 2.2s ago; holding until 21.8s)",
+   "[L3] t=17.2s HOLD reason=mobility_aid_on_crossing confidence=0.92 (tracks [3] detected on the crossing)",
+   "[L4] t=18.5s HOLD reason=uncertain_occupancy_lost_track confidence=0.45 (track 3 lost at y=11.2m, 1.1s ago; holding until 19.4s)",
+   "[L5] t=19.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: crutches, confidence 0.82, past the exit at y=12.5 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90047_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90047,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 25.6 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [4] detected on the crossing)",
+   "[L3] t=19.3s HOLD reason=uncertain_occupancy_lost_track confidence=0.32 (track 3 lost at y=2.4m, 13.7s ago; holding until 25.6s)",
+   "[L4] t=25.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90047_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90047,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [4] detected on the crossing)",
+   "[L3] t=19.3s HOLD reason=uncertain_occupancy_lost_track confidence=0.32 (track 3 lost at y=2.4m, 13.7s ago; holding until 25.6s)",
+   "[L4] t=25.6s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: cane, confidence 0.97, on the crossing at y=10.0 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90048_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90048,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90049_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90049,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 20.2 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3] detected on the crossing)",
+   "[L3] t=17.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.84 (track 3 lost at y=9.3m, 1.1s ago; holding until 23.3s)",
+   "[L4] t=20.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: wheelchair, confidence 0.91, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90049_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90049,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3] detected on the crossing)",
+   "[L3] t=17.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.84 (track 3 lost at y=9.3m, 1.1s ago; holding until 23.3s)",
+   "[L4] t=20.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90049_uncertainty_aware_filtered_cf_track3",
+  "qtype": "counterfactual",
+  "episode_id": 90049,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 20.2 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3] detected on the crossing)",
+   "[L3] t=17.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.84 (track 3 lost at y=9.3m, 1.1s ago; holding until 23.3s)",
+   "[L4] t=20.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: wheelchair, confidence 0.91, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90050_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90050,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 24.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.94 (tracks [2] detected on the crossing)",
+   "[L3] t=24.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.84, on the crossing at y=11.9 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90050_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90050,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.94 (tracks [2] detected on the crossing)",
+   "[L3] t=24.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: pedestrian, confidence 0.64, on the crossing at y=8.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90050_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90050,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 24.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.94 (tracks [2] detected on the crossing)",
+   "[L3] t=24.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: cane, confidence 0.84, on the crossing at y=11.9 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90051_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90051,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.8 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.05 (track 3 lost at y=1.0m, 14.1s ago; holding until 17.8s)",
+   "[L3] t=17.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90051_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90051,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.05 (track 3 lost at y=1.0m, 14.1s ago; holding until 17.8s)",
+   "[L3] t=17.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 7: pedestrian, confidence 0.50, on the crossing at y=6.1 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90052_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90052,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 22.7 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.28 (track 4 lost at y=0.8m, 14.3s ago; holding until 22.7s)",
+   "[L3] t=17.6s HOLD reason=mobility_aid_on_crossing confidence=0.95 (tracks [5] detected on the crossing)",
+   "[L4] t=20.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.11 (track 4 lost at y=0.8m, 17.7s ago; holding until 22.7s)",
+   "[L5] t=22.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90052_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90052,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.28 (track 4 lost at y=0.8m, 14.3s ago; holding until 22.7s)",
+   "[L3] t=17.6s HOLD reason=mobility_aid_on_crossing confidence=0.95 (tracks [5] detected on the crossing)",
+   "[L4] t=20.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.11 (track 4 lost at y=0.8m, 17.7s ago; holding until 22.7s)",
+   "[L5] t=22.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90052_uncertainty_aware_filtered_cf_track5",
+  "qtype": "counterfactual",
+  "episode_id": 90052,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 5 had never been detected, would the pedestrian phase have ended earlier than 22.7 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 22.7
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.28 (track 4 lost at y=0.8m, 14.3s ago; holding until 22.7s)",
+   "[L3] t=17.6s HOLD reason=mobility_aid_on_crossing confidence=0.95 (tracks [5] detected on the crossing)",
+   "[L4] t=20.4s HOLD reason=uncertain_occupancy_lost_track confidence=0.11 (track 4 lost at y=0.8m, 17.7s ago; holding until 22.7s)",
+   "[L5] t=22.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90053_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90053,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 19.8 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.96 (tracks [2] detected on the crossing)",
+   "[L3] t=19.0s HOLD reason=uncertain_occupancy_lost_track confidence=0.54 (track 2 lost at y=11.1m, 1.1s ago; holding until 20.3s)",
+   "[L4] t=19.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.81, past the exit at y=12.9 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90053_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90053,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.96 (tracks [2] detected on the crossing)",
+   "[L3] t=19.0s HOLD reason=uncertain_occupancy_lost_track confidence=0.54 (track 2 lost at y=11.1m, 1.1s ago; holding until 20.3s)",
+   "[L4] t=19.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90053_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90053,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 19.8 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "yes",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.96 (tracks [2] detected on the crossing)",
+   "[L3] t=19.0s HOLD reason=uncertain_occupancy_lost_track confidence=0.54 (track 2 lost at y=11.1m, 1.1s ago; holding until 20.3s)",
+   "[L4] t=19.8s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: crutches, confidence 0.81, past the exit at y=12.9 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90054_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90054,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 23.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.45 (track 2 lost at y=7.0m, 7.2s ago; holding until 22.9s)",
+   "[L3] t=23.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90054_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90054,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.45 (track 2 lost at y=7.0m, 7.2s ago; holding until 22.9s)",
+   "[L3] t=23.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90055_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90055,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.7 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.82 (tracks [3] detected on the crossing)",
+   "[L3] t=17.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: pedestrian, confidence 0.70, past the exit at y=12.7 m",
+   "track 3: cane, confidence 0.69, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90055_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90055,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.82 (tracks [3] detected on the crossing)",
+   "[L3] t=17.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: pedestrian, confidence 0.71, on the crossing at y=11.9 m",
+   "track 3: cane, confidence 0.65, on the crossing at y=11.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90055_uncertainty_aware_filtered_cf_track2",
+  "qtype": "counterfactual",
+  "episode_id": 90055,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 17.7 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.7
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.82 (tracks [3] detected on the crossing)",
+   "[L3] t=17.7s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: pedestrian, confidence 0.70, past the exit at y=12.7 m",
+   "track 3: cane, confidence 0.69, on the crossing at y=11.7 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90056_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90056,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 23.9 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.79 (track 3 lost at y=8.7m, 1.8s ago; holding until 23.8s)",
+   "[L3] t=23.9s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: pedestrian, confidence 0.78, past the exit at y=13.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90056_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90056,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "uncertain_occupancy_lost_track"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.79 (track 3 lost at y=8.7m, 1.8s ago; holding until 23.8s)",
+   "[L3] t=23.9s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90056_uncertainty_aware_filtered_cf_track4",
+  "qtype": "counterfactual",
+  "episode_id": 90056,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 4 had never been detected, would the pedestrian phase have ended earlier than 23.9 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 23.9
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=uncertain_occupancy_lost_track confidence=0.79 (track 3 lost at y=8.7m, 1.8s ago; holding until 23.8s)",
+   "[L3] t=23.9s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 4: pedestrian, confidence 0.78, past the exit at y=13.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90057_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90057,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90057_uncertainty_aware_filtered_cf_track1",
+  "qtype": "counterfactual",
+  "episode_id": 90057,
+  "controller": "uncertainty_aware_filtered",
+  "question": "If track 1 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "fields": {
+   "answer": [
+    "yes",
+    "no"
+   ]
+  },
+  "truth": {
+   "answer": "no",
+   "new_end_time": 17.0
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90058_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90058,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 3: crutches, confidence 0.83, past the exit at y=13.2 m"
+  ]
+ },
+ {
+  "qid": "oodc_ep90059_uncertainty_aware_filtered_why_end",
+  "qtype": "decision",
+  "episode_id": 90059,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why did the pedestrian phase end at 26.2 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "crossing_clear"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3, 2] detected on the crossing)",
+   "[L3] t=18.9s HOLD reason=uncertain_occupancy_lost_track confidence=0.36 (track 1 lost at y=1.3m, 12.7s ago; holding until 26.2s)",
+   "[L4] t=26.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "no detections"
+  ]
+ },
+ {
+  "qid": "oodc_ep90059_uncertainty_aware_filtered_why_extend",
+  "qtype": "decision",
+  "episode_id": 90059,
+  "controller": "uncertainty_aware_filtered",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "fields": {
+   "reason_code": [
+    "confirmed_occupancy",
+    "mobility_aid_on_crossing",
+    "uncertain_occupancy_lost_track",
+    "crossing_clear",
+    "max_phase_reached"
+   ]
+  },
+  "truth": {
+   "reason_code": "mobility_aid_on_crossing"
+  },
+  "log": [
+   "[L1] t=0.0s PHASE_START reason=walk_requested (normal phase length 17.0s, maximum 40.0s)",
+   "[L2] t=17.0s EXTEND reason=mobility_aid_on_crossing confidence=0.99 (tracks [3, 2] detected on the crossing)",
+   "[L3] t=18.9s HOLD reason=uncertain_occupancy_lost_track confidence=0.36 (track 1 lost at y=1.3m, 12.7s ago; holding until 26.2s)",
+   "[L4] t=26.2s PHASE_END reason=crossing_clear (no confirmed or uncertain occupancy)"
+  ],
+  "detections": [
+   "track 2: wheelchair, confidence 0.91, on the crossing at y=11.5 m",
+   "track 3: rollator, confidence 0.74, on the crossing at y=10.0 m"
+  ]
+ }
+]

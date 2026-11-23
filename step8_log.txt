@@ -1,0 +1,266 @@
+Using device: mps
+Dataset: pmma_v2.yaml
+337 images from split 'test_same'
+  25/337 images done
+  50/337 images done
+  75/337 images done
+  100/337 images done
+  125/337 images done
+  150/337 images done
+  175/337 images done
+  200/337 images done
+  225/337 images done
+  250/337 images done
+  275/337 images done
+  300/337 images done
+  325/337 images done
+Confidence intervals resample 34 blocks of 30 frames (not single images).
+                    model condition  severity  recall  recall_lo  recall_hi  found_as_person  found_as_person_lo  found_as_person_hi
+pmma_v2_aug_yolo11s_seed1      blur         1   0.586      0.539      0.628            0.896               0.870               0.921
+pmma_v2_aug_yolo11s_seed1      blur         2   0.524      0.479      0.569            0.851               0.823               0.879
+pmma_v2_aug_yolo11s_seed1      blur         3   0.454      0.409      0.498            0.801               0.767               0.833
+pmma_v2_aug_yolo11s_seed1     clean         0   0.621      0.580      0.657            0.919               0.895               0.941
+pmma_v2_aug_yolo11s_seed1  darkness         1   0.620      0.582      0.653            0.920               0.902               0.937
+pmma_v2_aug_yolo11s_seed1  darkness         2   0.553      0.518      0.588            0.873               0.846               0.899
+pmma_v2_aug_yolo11s_seed1  darkness         3   0.278      0.241      0.316            0.478               0.451               0.506
+pmma_v2_aug_yolo11s_seed1 occlusion         1   0.342      0.310      0.372            0.645               0.619               0.673
+pmma_v2_aug_yolo11s_seed1 occlusion         2   0.156      0.137      0.176            0.345               0.323               0.367
+pmma_v2_aug_yolo11s_seed1 occlusion         3   0.037      0.026      0.050            0.101               0.081               0.123
+
+Per class, clean images (found_as_person):
+model              pmma_v2_aug_yolo11s_seed1
+class                                       
+ALL_MOBILITY_AIDS                      0.919
+cane                                   0.892
+pedestrian                             0.898
+rollator                               0.943
+wheelchair                             0.924
+
+Saved results to /Users/risafathima/Documents/safecross/results/experiment_a_v2_same_aug_seed1
+Using device: mps
+Dataset: pmma_v2.yaml
+2426 images from split 'test_new'
+  25/2426 images done
+  50/2426 images done
+  75/2426 images done
+  100/2426 images done
+  125/2426 images done
+  150/2426 images done
+  175/2426 images done
+  200/2426 images done
+  225/2426 images done
+  250/2426 images done
+  275/2426 images done
+  300/2426 images done
+  325/2426 images done
+  350/2426 images done
+  375/2426 images done
+  400/2426 images done
+  425/2426 images done
+  450/2426 images done
+  475/2426 images done
+  500/2426 images done
+  525/2426 images done
+  550/2426 images done
+  575/2426 images done
+  600/2426 images done
+  625/2426 images done
+  650/2426 images done
+  675/2426 images done
+  700/2426 images done
+  725/2426 images done
+  750/2426 images done
+  775/2426 images done
+  800/2426 images done
+  825/2426 images done
+  850/2426 images done
+  875/2426 images done
+  900/2426 images done
+  925/2426 images done
+  950/2426 images done
+  975/2426 images done
+  1000/2426 images done
+  1025/2426 images done
+  1050/2426 images done
+  1075/2426 images done
+  1100/2426 images done
+  1125/2426 images done
+  1150/2426 images done
+  1175/2426 images done
+  1200/2426 images done
+  1225/2426 images done
+  1250/2426 images done
+  1275/2426 images done
+  1300/2426 images done
+  1325/2426 images done
+  1350/2426 images done
+  1375/2426 images done
+  1400/2426 images done
+  1425/2426 images done
+  1450/2426 images done
+  1475/2426 images done
+  1500/2426 images done
+  1525/2426 images done
+  1550/2426 images done
+  1575/2426 images done
+  1600/2426 images done
+  1625/2426 images done
+  1650/2426 images done
+  1675/2426 images done
+  1700/2426 images done
+  1725/2426 images done
+  1750/2426 images done
+  1775/2426 images done
+  1800/2426 images done
+  1825/2426 images done
+  1850/2426 images done
+  1875/2426 images done
+  1900/2426 images done
+  1925/2426 images done
+  1950/2426 images done
+  1975/2426 images done
+  2000/2426 images done
+  2025/2426 images done
+  2050/2426 images done
+  2075/2426 images done
+  2100/2426 images done
+  2125/2426 images done
+  2150/2426 images done
+  2175/2426 images done
+  2200/2426 images done
+  2225/2426 images done
+  2250/2426 images done
+  2275/2426 images done
+  2300/2426 images done
+  2325/2426 images done
+  2350/2426 images done
+  2375/2426 images done
+  2400/2426 images done
+  2425/2426 images done
+Confidence intervals resample 487 blocks of 30 frames (not single images).
+                    model condition  severity  recall  recall_lo  recall_hi  found_as_person  found_as_person_lo  found_as_person_hi
+pmma_v2_aug_yolo11s_seed1      blur         1   0.244      0.231      0.258            0.466               0.451               0.483
+pmma_v2_aug_yolo11s_seed1      blur         2   0.207      0.195      0.220            0.417               0.402               0.435
+pmma_v2_aug_yolo11s_seed1      blur         3   0.159      0.148      0.170            0.335               0.320               0.350
+pmma_v2_aug_yolo11s_seed1     clean         0   0.283      0.269      0.299            0.488               0.472               0.507
+pmma_v2_aug_yolo11s_seed1  darkness         1   0.296      0.282      0.310            0.507               0.491               0.524
+pmma_v2_aug_yolo11s_seed1  darkness         2   0.278      0.265      0.292            0.490               0.473               0.507
+pmma_v2_aug_yolo11s_seed1  darkness         3   0.163      0.152      0.174            0.306               0.290               0.323
+pmma_v2_aug_yolo11s_seed1 occlusion         1   0.078      0.071      0.085            0.185               0.176               0.196
+pmma_v2_aug_yolo11s_seed1 occlusion         2   0.014      0.011      0.016            0.047               0.043               0.051
+pmma_v2_aug_yolo11s_seed1 occlusion         3   0.000      0.000      0.001            0.003               0.002               0.004
+
+Per class, clean images (found_as_person):
+model              pmma_v2_aug_yolo11s_seed1
+class                                       
+ALL_MOBILITY_AIDS                      0.488
+cane                                   0.543
+pedestrian                             0.494
+rollator                               0.378
+wheelchair                             0.528
+
+Saved results to /Users/risafathima/Documents/safecross/results/experiment_a_v2_new_aug_seed1
+Reading PMMA labels (train/val/test json) ...
+  video 3: 14553 labelled frames to track (1159 s at 12.55 fps)
+  trying CVAT file video_3_annotations.xml ...
+    best alignment: label = CVAT frame + 30000  (mean box overlap 1.00)
+  ground-truth identities: CVAT XML video_3_annotations.xml (offset 30000, 68 of 200344 boxes without a CVAT id)
+  250/14553 frames, 0.06 s each, about 15 min left
+  500/14553 frames, 0.06 s each, about 14 min left
+  750/14553 frames, 0.06 s each, about 13 min left
+  1000/14553 frames, 0.06 s each, about 13 min left
+  1250/14553 frames, 0.05 s each, about 12 min left
+  1500/14553 frames, 0.05 s each, about 12 min left
+  1750/14553 frames, 0.05 s each, about 12 min left
+  2000/14553 frames, 0.05 s each, about 11 min left
+  2250/14553 frames, 0.05 s each, about 11 min left
+  2500/14553 frames, 0.05 s each, about 11 min left
+  2750/14553 frames, 0.05 s each, about 11 min left
+  3000/14553 frames, 0.05 s each, about 10 min left
+  3250/14553 frames, 0.05 s each, about 10 min left
+  3500/14553 frames, 0.05 s each, about 10 min left
+  3750/14553 frames, 0.05 s each, about 10 min left
+  4000/14553 frames, 0.05 s each, about 10 min left
+  4250/14553 frames, 0.05 s each, about 9 min left
+  4500/14553 frames, 0.05 s each, about 9 min left
+  4750/14553 frames, 0.05 s each, about 9 min left
+  5000/14553 frames, 0.05 s each, about 9 min left
+  5250/14553 frames, 0.05 s each, about 8 min left
+  5500/14553 frames, 0.05 s each, about 8 min left
+  5750/14553 frames, 0.05 s each, about 8 min left
+  6000/14553 frames, 0.06 s each, about 8 min left
+    video_3_part1.mp4: frames counted so far = 7532
+  6250/14553 frames, 0.05 s each, about 8 min left
+  6500/14553 frames, 0.06 s each, about 7 min left
+  6750/14553 frames, 0.06 s each, about 7 min left
+  7000/14553 frames, 0.06 s each, about 7 min left
+  7250/14553 frames, 0.06 s each, about 7 min left
+  7500/14553 frames, 0.06 s each, about 7 min left
+  7750/14553 frames, 0.06 s each, about 6 min left
+  8000/14553 frames, 0.06 s each, about 6 min left
+  8250/14553 frames, 0.06 s each, about 6 min left
+  8500/14553 frames, 0.06 s each, about 6 min left
+  8750/14553 frames, 0.06 s each, about 6 min left
+  9000/14553 frames, 0.06 s each, about 5 min left
+  9250/14553 frames, 0.06 s each, about 5 min left
+  9500/14553 frames, 0.06 s each, about 5 min left
+  9750/14553 frames, 0.06 s each, about 5 min left
+  10000/14553 frames, 0.06 s each, about 4 min left
+  10250/14553 frames, 0.06 s each, about 4 min left
+  10500/14553 frames, 0.06 s each, about 4 min left
+  10750/14553 frames, 0.06 s each, about 4 min left
+  11000/14553 frames, 0.06 s each, about 3 min left
+  11250/14553 frames, 0.06 s each, about 3 min left
+  11500/14553 frames, 0.06 s each, about 3 min left
+  11750/14553 frames, 0.06 s each, about 3 min left
+  12000/14553 frames, 0.06 s each, about 2 min left
+  12250/14553 frames, 0.06 s each, about 2 min left
+  12500/14553 frames, 0.06 s each, about 2 min left
+  12750/14553 frames, 0.06 s each, about 2 min left
+  13000/14553 frames, 0.06 s each, about 2 min left
+  13250/14553 frames, 0.06 s each, about 1 min left
+  13500/14553 frames, 0.06 s each, about 1 min left
+  13750/14553 frames, 0.06 s each, about 1 min left
+  14000/14553 frames, 0.06 s each, about 1 min left
+  14250/14553 frames, 0.06 s each, about 0 min left
+  14500/14553 frames, 0.06 s each, about 0 min left
+    video_3_part2.mp4: frames counted so far = 17294
+
+=== Tracking on real video (NEW camera position, video 3) ===
+MOTA 0.457   IDF1 0.190   ID switches 1274   recall 0.502   precision 0.928
+GT people 123, tracker IDs 1327, phantom tracker IDs 718, 1159 s of video
+
+Mobility-aid users: 81 people, found in 50.2% of frames
+  miss bursts: mean 2.49 s, median 0.32 s, longest 160.0 s; 23% last longer than the baseline's 1.0 s memory
+  people whose ID changed: 28%  (gap before the new ID, middle half: [0.0, 1.5933085501858737])
+  labelled 'pedestrian' in 41.5% of found frames
+
+Pedestrians: 42 people, found in 50.2% of frames
+  miss bursts: mean 2.33 s, median 0.32 s, longest 111.1 s; 23% last longer than the baseline's 1.0 s memory
+  people whose ID changed: 50%  (gap before the new ID, middle half: [0.07966542750929369, 2.947620817843866])
+
+Simulation assumed: misses in bursts of 0.8 s; lost tracks for 3-15 s, then a new ID.
+Measured (mobility-aid users): recall 0.502, bursts 2.49 s, ID change in 28% of people, gap [0.1, 1.59] s, phantoms 0.6193/s
+
+Saved to /Users/risafathima/Documents/safecross/results/tracking/pmma_v2_aug_yolo11s_seed1_v3
+Next: python scripts/04_experiment_b.py --calibration /Users/risafathima/Documents/safecross/results/tracking/pmma_v2_aug_yolo11s_seed1_v3/calibration.json
+Calibrated failure settings (measured on real video): {'recall': 0.751, 'miss_burst_frames': 10.5, 'misclassification_prob': 0.416, 'track_loss_prob': 0.346, 'track_loss_duration_s': [0.1, 1.35], 'false_positive_rate': 0.9859, 'false_positive_duration_s': [0.16, 0.56]}
+done: calibrated = 1.0
+done: calibrated_without_phantoms = 1.0
+done: calibrated_recall_only = 1.0
+done: calibrated_track_loss_prob_only = 1.0
+                        failure  level                 controller  cutoff_rate  ci_low  ci_high  mean_added_time_s  false_extension_rate  aid_crossings
+                     calibrated    1.0                   baseline        0.097   0.065    0.132              1.580                 0.295            279
+                     calibrated    1.0          uncertainty_aware        0.007   0.000    0.019             19.084                 0.985            279
+                     calibrated    1.0 uncertainty_aware_filtered        0.007   0.000    0.019              1.820                 0.310            279
+         calibrated_recall_only    1.0                   baseline        0.172   0.126    0.218              0.364                 0.000            279
+         calibrated_recall_only    1.0          uncertainty_aware        0.007   0.000    0.019              0.132                 0.005            279
+         calibrated_recall_only    1.0 uncertainty_aware_filtered        0.007   0.000    0.019              0.132                 0.005            279
+calibrated_track_loss_prob_only    1.0                   baseline        0.014   0.003    0.030              0.614                 0.000            279
+calibrated_track_loss_prob_only    1.0          uncertainty_aware        0.007   0.000    0.019              1.536                 0.270            279
+calibrated_track_loss_prob_only    1.0 uncertainty_aware_filtered        0.007   0.000    0.019              1.536                 0.270            279
+    calibrated_without_phantoms    1.0                   baseline        0.183   0.138    0.229              0.352                 0.000            279
+    calibrated_without_phantoms    1.0          uncertainty_aware        0.007   0.000    0.019              1.820                 0.310            279
+    calibrated_without_phantoms    1.0 uncertainty_aware_filtered        0.007   0.000    0.019              1.820                 0.310            279
+
+Saved results to /Users/risafathima/Documents/safecross/results/experiment_b_calibrated_seed1

@@ -1,0 +1,445 @@
+[
+ {
+  "id": "Q01",
+  "question": "Why did the pedestrian phase end at 33.5 s?",
+  "facts": [
+   "G1: walk phase | controlled by | uncertainty_aware controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: uncertainty_aware controller | counts crossing occupied if | a track is detected on the crossing, OR a track was lost on the crossing and is being held (rule)",
+   "G6: uncertainty_aware controller | holds lost track until | it could have finished crossing at its speed, or 0.5 m/s if it is a mobility-aid user or its speed is unknown, x1.3, at most 20 s (rule)",
+   "G14: L3 PHASE_END | at time | 33.5 s",
+   "G15: L3 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G16: walk phase | ended at | 33.5 s because crossing_clear (see L3)",
+   "G36: walk phase | extended by | track 4",
+   "G44: walk phase | extended by | track 6"
+  ],
+  "A": {
+   "answer": "the crossing was judged to be clear",
+   "explanation": "The pedestrian phase ended because the crossing was judged to be clear.",
+   "evidence": [
+    "G14",
+    "G15",
+    "G16"
+   ]
+  },
+  "B": {
+   "answer": "the crossing was judged to be clear",
+   "explanation": "At 33.5 s the controller logged PHASE_END with reason crossing_clear (the crossing was judged to be clear).",
+   "evidence": [
+    "G15"
+   ]
+  }
+ },
+ {
+  "id": "Q02",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "facts": [
+   "G1: walk phase | controlled by | uncertainty_aware controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: uncertainty_aware controller | counts crossing occupied if | a track is detected on the crossing, OR a track was lost on the crossing and is being held (rule)",
+   "G6: uncertainty_aware controller | holds lost track until | it could have finished crossing at its speed, or 0.5 m/s if it is a mobility-aid user or its speed is unknown, x1.3, at most 20 s (rule)",
+   "G10: L2 EXTEND | at time | 17.0 s",
+   "G11: L2 EXTEND | reason | uncertain_occupancy_lost_track (a person was lost by the tracker while still on the crossing, so the phase was held)",
+   "G12: L2 EXTEND | confidence | 0.69",
+   "G13: L2 EXTEND | caused by | track 7",
+   "G40: walk phase | ended at | 40.0 s because max_phase_reached (see L9)",
+   "G48: walk phase | extended by | track 1",
+   "G74: walk phase | extended by | track 6",
+   "G75: track 7 | labelled as | pedestrian (0% of frames as mobility aid)",
+   "G76: track 7 | first seen at | 10.4 s",
+   "G77: track 7 | last seen at | 10.8 s at y=1.4 m of 12 m",
+   "G78: track 7 | lost by camera | not seen after 10.8 s and did not reach the exit",
+   "G79: track 7 | estimated speed | 0.00 m/s",
+   "G80: track 7 | held until | 30.8 s",
+   "G81: track 7 | kept crossing occupied | 17.0-30.7 s (after the normal length 17.0 s)",
+   "G82: walk phase | extended by | track 7",
+   "G90: walk phase | extended by | track 8",
+   "G98: walk phase | extended by | track 9",
+   "G106: walk phase | extended by | track 10",
+   "G114: walk phase | extended by | track 11"
+  ],
+  "A": {
+   "answer": "a person was lost by the tracker while still on the crossing, so the phase was held",
+   "explanation": "The pedestrian phase was extended because a pedestrian was lost by the tracker while still on the crossing, so the phase was held.",
+   "evidence": [
+    "G12",
+    "G11",
+    "G74"
+   ]
+  },
+  "B": {
+   "answer": "a person was lost by the tracker while still on the crossing, so the phase was held",
+   "explanation": "At 17.0 s the controller logged EXTEND with reason uncertain_occupancy_lost_track (a person was lost by the tracker while still on the crossing, so the phase was held).",
+   "evidence": [
+    "G11"
+   ]
+  }
+ },
+ {
+  "id": "Q03",
+  "question": "Why did the pedestrian phase end at 18.5 s?",
+  "facts": [
+   "G1: walk phase | controlled by | baseline controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: baseline controller | counts crossing occupied if | a track was detected on the crossing in the last 1.0 s (rule)",
+   "G13: L3 PHASE_END | at time | 18.5 s",
+   "G14: L3 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G15: walk phase | ended at | 18.5 s because crossing_clear (see L3)",
+   "G24: walk phase | extended by | track 2",
+   "G31: walk phase | extended by | track 4"
+  ],
+  "A": {
+   "answer": "the crossing was judged to be clear",
+   "explanation": "At 18.5 s the controller logged PHASE_END with reason crossing_clear (the crossing was judged to be clear).",
+   "evidence": [
+    "G14"
+   ]
+  },
+  "B": {
+   "answer": "the crossing was judged to be clear",
+   "explanation": "The pedestrian phase ended because the crossing was judged to be clear.",
+   "evidence": [
+    "G15",
+    "G14"
+   ]
+  }
+ },
+ {
+  "id": "Q04",
+  "question": "If track 4 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "facts": [
+   "G1: walk phase | controlled by | baseline controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: baseline controller | counts crossing occupied if | a track was detected on the crossing in the last 1.0 s (rule)",
+   "G9: L2 PHASE_END | at time | 17.0 s",
+   "G10: L2 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G11: walk phase | ended at | 17.0 s because crossing_clear (see L2)",
+   "G20: track 4 | labelled as | pedestrian (0% of frames as mobility aid)",
+   "G21: track 4 | first seen at | 0.0 s",
+   "G22: track 4 | reached exit at | 14.9 s",
+   "G42: walk phase | extended by | nobody (crossing clear at the normal length)"
+  ],
+  "A": {
+   "answer": "No",
+   "explanation": "Track 4 was never the only track keeping the crossing occupied after the normal length, so removing it would not have ended the phase earlier.",
+   "evidence": [
+    "G22",
+    "G4"
+   ]
+  },
+  "B": {
+   "answer": "No",
+   "explanation": "The pedestrian phase would not have ended earlier than 17.0 s because the baseline controller counts the crossing as occupied if a track was detected on the crossing in the last 1.0 s, and the walk phase ends when the crossing is not occupied after 17.0 s.",
+   "evidence": [
+    "G5",
+    "G11"
+   ]
+  }
+ },
+ {
+  "id": "Q05",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 20.9 s?",
+  "facts": [
+   "G1: walk phase | controlled by | baseline controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: baseline controller | counts crossing occupied if | a track was detected on the crossing in the last 1.0 s (rule)",
+   "G13: L3 PHASE_END | at time | 20.9 s",
+   "G14: L3 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G15: walk phase | ended at | 20.9 s because crossing_clear (see L3)",
+   "G19: track 2 | labelled as | mobility-aid user (89% of frames)",
+   "G20: track 2 | first seen at | 0.0 s",
+   "G21: track 2 | last seen at | 19.8 s at y=6.5 m of 12 m",
+   "G22: track 2 | lost by camera | not seen after 19.8 s and did not reach the exit",
+   "G23: track 2 | kept crossing occupied | 17.0-20.8 s (after the normal length 17.0 s)",
+   "G24: walk phase | extended by | track 2",
+   "G25: track 2 | only occupant | 17.0-20.8 s (no other track kept the crossing occupied then)"
+  ],
+  "A": {
+   "answer": "Yes",
+   "explanation": "Track 2 was the only track keeping the crossing occupied (17.0-20.8 s), so without it the phase would have ended earlier.",
+   "evidence": [
+    "G25",
+    "G4"
+   ]
+  },
+  "B": {
+   "answer": "No",
+   "explanation": "The pedestrian phase would not have ended earlier than 20.9 s because track 2 kept the crossing occupied for an extended period, extending the walk phase.",
+   "evidence": [
+    "G15",
+    "G24",
+    "G25"
+   ]
+  }
+ },
+ {
+  "id": "Q06",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 22.2 s?",
+  "facts": [
+   "G1: walk phase | controlled by | baseline controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: baseline controller | counts crossing occupied if | a track was detected on the crossing in the last 1.0 s (rule)",
+   "G15: L3 PHASE_END | at time | 22.2 s",
+   "G16: L3 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G17: walk phase | ended at | 22.2 s because crossing_clear (see L3)",
+   "G26: walk phase | extended by | track 2",
+   "G41: walk phase | extended by | track 5",
+   "G46: walk phase | extended by | track 6"
+  ],
+  "A": {
+   "answer": "Cannot determine from the facts",
+   "explanation": "The facts given contain nothing about track 3, so this cannot be determined.",
+   "evidence": []
+  },
+  "B": {
+   "answer": "No",
+   "explanation": "The pedestrian phase would not have ended earlier than 22.2 s because track 3's detection is not mentioned as an extension factor in the given facts.",
+   "evidence": [
+    "G17",
+    "G15",
+    "G16"
+   ]
+  }
+ },
+ {
+  "id": "Q07",
+  "question": "If track 1 had never been detected, would the pedestrian phase have ended earlier than 25.8 s?",
+  "facts": [
+   "G1: walk phase | controlled by | uncertainty_aware controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: uncertainty_aware controller | counts crossing occupied if | a track is detected on the crossing, OR a track was lost on the crossing and is being held (rule)",
+   "G6: uncertainty_aware controller | holds lost track until | it could have finished crossing at its speed, or 0.5 m/s if it is a mobility-aid user or its speed is unknown, x1.3, at most 20 s (rule)",
+   "G14: L3 PHASE_END | at time | 25.8 s",
+   "G15: L3 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G16: walk phase | ended at | 25.8 s because crossing_clear (see L3)",
+   "G17: track 1 | labelled as | mobility-aid user (90% of frames)",
+   "G18: track 1 | first seen at | 1.5 s",
+   "G19: track 1 | reached exit at | 25.8 s",
+   "G20: track 1 | estimated speed | 0.52 m/s",
+   "G21: track 1 | kept crossing occupied | 17.0-25.7 s (after the normal length 17.0 s)",
+   "G22: walk phase | extended by | track 1",
+   "G23: track 1 | only occupant | 17.0-25.7 s (no other track kept the crossing occupied then)"
+  ],
+  "A": {
+   "answer": "No",
+   "explanation": "The pedestrian phase would not have ended earlier than 25.8 s because track 1 was detected and extended the walk phase by 8.7 seconds (25.8 s - 17.0 s = 8.7 s).",
+   "evidence": [
+    "G16",
+    "G22"
+   ]
+  },
+  "B": {
+   "answer": "Yes",
+   "explanation": "Track 1 was the only track keeping the crossing occupied (17.0-25.7 s), so without it the phase would have ended earlier.",
+   "evidence": [
+    "G23",
+    "G4"
+   ]
+  }
+ },
+ {
+  "id": "Q08",
+  "question": "If track 2 had never been detected, would the pedestrian phase have ended earlier than 20.0 s?",
+  "facts": [
+   "G1: walk phase | controlled by | uncertainty_aware controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: uncertainty_aware controller | counts crossing occupied if | a track is detected on the crossing, OR a track was lost on the crossing and is being held (rule)",
+   "G6: uncertainty_aware controller | holds lost track until | it could have finished crossing at its speed, or 0.5 m/s if it is a mobility-aid user or its speed is unknown, x1.3, at most 20 s (rule)",
+   "G14: L3 PHASE_END | at time | 20.0 s",
+   "G15: L3 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G16: walk phase | ended at | 20.0 s because crossing_clear (see L3)",
+   "G21: track 2 | labelled as | mobility-aid user (88% of frames)",
+   "G22: track 2 | first seen at | 0.0 s",
+   "G23: track 2 | reached exit at | 20.0 s",
+   "G24: track 2 | estimated speed | 0.56 m/s",
+   "G25: track 2 | kept crossing occupied | 17.0-19.9 s (after the normal length 17.0 s)",
+   "G26: walk phase | extended by | track 2",
+   "G27: track 2 | only occupant | 17.0-19.9 s (no other track kept the crossing occupied then)"
+  ],
+  "A": {
+   "answer": "No",
+   "explanation": "The pedestrian phase would not have ended earlier than 20.0 s because track 2 was detected and extended the walk phase by 3.0 seconds.",
+   "evidence": [
+    "G21",
+    "G22",
+    "G23",
+    "G24",
+    "G25",
+    "G26"
+   ]
+  },
+  "B": {
+   "answer": "Yes",
+   "explanation": "Track 2 was the only track keeping the crossing occupied (17.0-19.9 s), so without it the phase would have ended earlier.",
+   "evidence": [
+    "G27",
+    "G4"
+   ]
+  }
+ },
+ {
+  "id": "Q09",
+  "question": "If track 3 had never been detected, would the pedestrian phase have ended earlier than 17.0 s?",
+  "facts": [
+   "G1: walk phase | controlled by | baseline controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: baseline controller | counts crossing occupied if | a track was detected on the crossing in the last 1.0 s (rule)",
+   "G9: L2 PHASE_END | at time | 17.0 s",
+   "G10: L2 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G11: walk phase | ended at | 17.0 s because crossing_clear (see L2)",
+   "G27: walk phase | extended by | nobody (crossing clear at the normal length)"
+  ],
+  "A": {
+   "answer": "Cannot determine from the facts",
+   "explanation": "The facts given contain nothing about track 3, so this cannot be determined.",
+   "evidence": []
+  },
+  "B": {
+   "answer": "No",
+   "explanation": "The pedestrian phase would not have ended earlier than 17.0 s because the baseline controller counts the crossing as occupied if a track was detected on the crossing in the last 1.0 s, and the walk phase ends when the crossing is not occupied after 17.0 s.",
+   "evidence": [
+    "G5",
+    "G11"
+   ]
+  }
+ },
+ {
+  "id": "Q10",
+  "question": "Why was the pedestrian phase extended at 17.0 s?",
+  "facts": [
+   "G1: walk phase | controlled by | uncertainty_aware controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: uncertainty_aware controller | counts crossing occupied if | a track is detected on the crossing, OR a track was lost on the crossing and is being held (rule)",
+   "G6: uncertainty_aware controller | holds lost track until | it could have finished crossing at its speed, or 0.5 m/s if it is a mobility-aid user or its speed is unknown, x1.3, at most 20 s (rule)",
+   "G10: L2 EXTEND | at time | 17.0 s",
+   "G11: L2 EXTEND | reason | mobility_aid_on_crossing (a person using a mobility aid was detected on the crossing)",
+   "G12: L2 EXTEND | confidence | 0.75",
+   "G13: L2 EXTEND | caused by | track 6",
+   "G14: L2 EXTEND | caused by | track 7",
+   "G21: walk phase | ended at | 24.3 s because crossing_clear (see L4)",
+   "G33: walk phase | extended by | track 2",
+   "G41: walk phase | extended by | track 3",
+   "G53: track 6 | labelled as | mobility-aid user (88% of frames)",
+   "G54: track 6 | first seen at | 0.0 s",
+   "G55: track 6 | reached exit at | 22.5 s",
+   "G56: track 6 | estimated speed | 0.54 m/s",
+   "G57: track 6 | kept crossing occupied | 17.0-19.4 s (after the normal length 17.0 s)",
+   "G58: walk phase | extended by | track 6",
+   "G59: track 7 | labelled as | pedestrian (0% of frames as mobility aid)",
+   "G60: track 7 | first seen at | 16.0 s",
+   "G61: track 7 | last seen at | 17.0 s at y=10.2 m of 12 m",
+   "G62: track 7 | lost by camera | not seen after 17.0 s and did not reach the exit",
+   "G63: track 7 | estimated speed | 0.00 m/s",
+   "G64: track 7 | held until | 21.7 s",
+   "G65: track 7 | kept crossing occupied | 17.0-21.6 s (after the normal length 17.0 s)",
+   "G66: walk phase | extended by | track 7",
+   "G74: walk phase | extended by | track 8"
+  ],
+  "A": {
+   "answer": "a person using a mobility aid was detected on the crossing",
+   "explanation": "At 17.0 s the controller logged EXTEND with reason mobility_aid_on_crossing (a person using a mobility aid was detected on the crossing).",
+   "evidence": [
+    "G11"
+   ]
+  },
+  "B": {
+   "answer": "a person using a mobility aid was detected on the crossing",
+   "explanation": "The pedestrian phase was extended because a mobility-aid user was detected on the crossing.",
+   "evidence": [
+    "G11",
+    "G12",
+    "G13",
+    "G53",
+    "G55",
+    "G56",
+    "G57",
+    "G58"
+   ]
+  }
+ },
+ {
+  "id": "Q11",
+  "question": "Why did the pedestrian phase end at 29.4 s?",
+  "facts": [
+   "G1: walk phase | controlled by | uncertainty_aware controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: uncertainty_aware controller | counts crossing occupied if | a track is detected on the crossing, OR a track was lost on the crossing and is being held (rule)",
+   "G6: uncertainty_aware controller | holds lost track until | it could have finished crossing at its speed, or 0.5 m/s if it is a mobility-aid user or its speed is unknown, x1.3, at most 20 s (rule)",
+   "G41: walk phase | extended by | track 3",
+   "G47: walk phase | extended by | track 4",
+   "G53: walk phase | extended by | track 5",
+   "G69: walk phase | extended by | track 10"
+  ],
+  "A": {
+   "answer": "a person was detected on the crossing",
+   "explanation": "The pedestrian phase ended because a track was detected on the crossing, extending the walk phase.",
+   "evidence": [
+    "G41",
+    "G47",
+    "G53",
+    "G69"
+   ]
+  },
+  "B": {
+   "answer": "Cannot determine from the facts",
+   "explanation": "The facts given do not include this decision, so its reason cannot be determined.",
+   "evidence": []
+  }
+ },
+ {
+  "id": "Q12",
+  "question": "If track 1 had never been detected, would the pedestrian phase have ended earlier than 17.6 s?",
+  "facts": [
+   "G1: walk phase | controlled by | baseline controller",
+   "G2: walk phase | normal length | 17.0 s (rule: walk interval + crossing length / design speed)",
+   "G3: walk phase | maximum length | 40 s (rule)",
+   "G4: walk phase | ends when | the crossing is not occupied at some moment after 17.0 s (rule)",
+   "G5: baseline controller | counts crossing occupied if | a track was detected on the crossing in the last 1.0 s (rule)",
+   "G13: L3 PHASE_END | at time | 17.6 s",
+   "G14: L3 PHASE_END | reason | crossing_clear (the crossing was judged to be clear)",
+   "G15: walk phase | ended at | 17.6 s because crossing_clear (see L3)",
+   "G16: track 1 | labelled as | mobility-aid user (92% of frames)",
+   "G17: track 1 | first seen at | 0.3 s",
+   "G18: track 1 | reached exit at | 16.1 s",
+   "G27: walk phase | extended by | track 3"
+  ],
+  "A": {
+   "answer": "No",
+   "explanation": "The pedestrian phase would not have ended earlier than 17.6 s because track 1's detection extended the walk phase by 1.5 seconds, as indicated by the facts [G16] and [G17].",
+   "evidence": [
+    "G16",
+    "G17"
+   ]
+  },
+  "B": {
+   "answer": "No",
+   "explanation": "Track 1 was never the only track keeping the crossing occupied after the normal length, so removing it would not have ended the phase earlier.",
+   "evidence": [
+    "G18",
+    "G4"
+   ]
+  }
+ }
+]

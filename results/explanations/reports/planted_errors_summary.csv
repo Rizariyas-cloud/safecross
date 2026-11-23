@@ -1,0 +1,3 @@
+checker,true_sentences_accepted,false_sentences_caught,balanced_accuracy
+minicheck,1.0,0.9149184149184149,0.9574592074592074
+numbers,1.0,0.2435897435897436,0.6217948717948718

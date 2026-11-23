@@ -1,0 +1,16 @@
+qtype,condition,factual_correct,controller_faithful,visually_grounded,abstained,hallucinated_citation,parsed
+counterfactual,image_log,0.833,0.8333333333333334,,0.0,0.0,1.0
+counterfactual,image_only,0.0,0.9393939393939394,,0.939,0.227,0.939
+counterfactual,log_only,0.682,0.6818181818181818,,0.0,0.0,1.0
+counterfactual_rules,image_log,0.5,0.5,,0.0,0.0,1.0
+counterfactual_rules,image_only,0.212,0.22727272727272727,,0.227,0.121,0.985
+counterfactual_rules,log_only,0.712,0.7121212121212122,,0.0,0.0,1.0
+decision,image_log,0.956,0.883495145631068,,0.0,0.0,1.0
+decision,image_only,0.034,0.5194174757281553,,0.519,0.01,0.553
+decision,log_only,1.0,1.0,,0.0,0.0,1.0
+visual,image_log,0.0,,0.0,0.983,0.983,0.983
+visual,image_only,0.0,,0.95,0.95,0.95,0.95
+visual,log_only,0.0,,0.9666666666666667,0.967,0.983,0.983
+visual_real,image_log,0.483,,0.48333333333333334,0.108,1.0,1.0
+visual_real,image_only,0.0,,1.0,1.0,0.767,1.0
+visual_real,log_only,0.5,,0.03333333333333333,0.033,1.0,1.0

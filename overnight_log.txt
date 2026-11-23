@@ -1,0 +1,457 @@
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 1319.20it/s]
+272 questions x 2 graph conditions, 0 already done. Model: mlx:Qwen2.5-1.5B-Instruct+lora_v2
+  20 answers, 1.3s each, about 17 min left
+  40 answers, 1.2s each, about 16 min left
+  60 answers, 1.2s each, about 16 min left
+  80 answers, 1.2s each, about 15 min left
+  100 answers, 1.2s each, about 15 min left
+  120 answers, 1.2s each, about 14 min left
+  140 answers, 1.3s each, about 14 min left
+  160 answers, 1.3s each, about 14 min left
+  180 answers, 1.3s each, about 14 min left
+  200 answers, 1.3s each, about 13 min left
+  220 answers, 1.3s each, about 13 min left
+  240 answers, 1.3s each, about 12 min left
+  260 answers, 1.3s each, about 12 min left
+  280 answers, 1.3s each, about 12 min left
+  300 answers, 1.3s each, about 11 min left
+  320 answers, 1.3s each, about 11 min left
+  340 answers, 1.3s each, about 10 min left
+  360 answers, 1.3s each, about 10 min left
+  380 answers, 1.3s each, about 10 min left
+  400 answers, 1.3s each, about 9 min left
+  420 answers, 1.3s each, about 9 min left
+  440 answers, 1.3s each, about 8 min left
+  460 answers, 1.3s each, about 8 min left
+  480 answers, 1.3s each, about 7 min left
+  500 answers, 1.3s each, about 7 min left
+  520 answers, 1.3s each, about 7 min left
+  540 answers, 1.3s each, about 6 min left
+  560 answers, 1.3s each, about 6 min left
+  580 answers, 1.3s each, about 5 min left
+  600 answers, 1.3s each, about 5 min left
+  620 answers, 1.3s each, about 4 min left
+  640 answers, 1.3s each, about 4 min left
+  660 answers, 1.3s each, about 3 min left
+  680 answers, 1.3s each, about 3 min left
+  700 answers, 1.3s each, about 3 min left
+  720 answers, 1.3s each, about 2 min left
+  740 answers, 1.3s each, about 2 min left
+  760 answers, 1.3s each, about 1 min left
+  780 answers, 1.3s each, about 1 min left
+  800 answers, 1.3s each, about 0 min left
+(no earlier answers file answers_mlx_Qwen2.5-1.5B-Instruct+lora_v2.jsonl: log_only comparison skipped)
+
+Share of answers (1.0 = 100%), same questions in every row:
+                               factual_correct  controller_faithful  hallucinated_citation  abstained  answered  parsed  accuracy_when_answered
+qtype          condition                                                                                                                       
+decision       kg_full                   1.000                1.000                  0.000      0.000     1.000     1.0                   1.000
+               kg_sub                    1.000                0.995                  0.005      0.000     1.000     1.0                   1.000
+               kg_sub+checker            0.995                0.995                  0.000      0.005     0.995     1.0                   1.000
+               kg_sub_missing            1.000                1.000                  0.000      1.000     0.000     1.0                     NaN
+counterfactual kg_full                   0.394                0.394                  0.000      0.485     0.515     1.0                   0.765
+               kg_sub                    0.985                0.985                  0.000      0.000     1.000     1.0                   0.985
+               kg_sub+checker            0.985                0.985                  0.000      0.015     0.985     1.0                   1.000
+               kg_sub_missing            0.985                0.985                  0.000      0.985     0.015     1.0                   0.000
+decision        kg_sub 1.000 vs kg_full 1.000 on 206 questions -> McNemar {'a_only': 0, 'b_only': 0, 'p_value': 1.0}
+counterfactual  kg_sub 0.985 vs kg_full 0.394 on 66 questions -> McNemar {'a_only': 39, 'b_only': 0, 'p_value': 3.637978807091713e-12}
+
+Citation checker: kept 270 of 272 subgraph answers (2 withheld as unsupported)
+
+Saved to /Users/risafathima/Documents/safecross/results/explanations
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 1409.85it/s]
+282 questions x 2 graph conditions, 0 already done. Model: mlx:Qwen2.5-1.5B-Instruct+lora_v2
+  20 answers, 1.3s each, about 17 min left
+  40 answers, 1.3s each, about 17 min left
+  60 answers, 1.3s each, about 17 min left
+  80 answers, 1.3s each, about 17 min left
+  100 answers, 1.4s each, about 17 min left
+  120 answers, 1.3s each, about 16 min left
+  140 answers, 1.3s each, about 16 min left
+  160 answers, 1.3s each, about 15 min left
+  180 answers, 1.3s each, about 15 min left
+  200 answers, 1.3s each, about 14 min left
+  220 answers, 1.3s each, about 14 min left
+  240 answers, 1.3s each, about 13 min left
+  260 answers, 1.3s each, about 13 min left
+  280 answers, 1.3s each, about 12 min left
+  300 answers, 1.3s each, about 12 min left
+  320 answers, 1.3s each, about 12 min left
+  340 answers, 1.3s each, about 11 min left
+  360 answers, 1.3s each, about 11 min left
+  380 answers, 1.3s each, about 10 min left
+  400 answers, 1.3s each, about 10 min left
+  420 answers, 1.3s each, about 9 min left
+  440 answers, 1.3s each, about 9 min left
+  460 answers, 1.3s each, about 9 min left
+  480 answers, 1.3s each, about 8 min left
+  500 answers, 1.3s each, about 8 min left
+  520 answers, 1.3s each, about 7 min left
+  540 answers, 1.3s each, about 7 min left
+  560 answers, 1.3s each, about 6 min left
+  580 answers, 1.3s each, about 6 min left
+  600 answers, 1.3s each, about 5 min left
+  620 answers, 1.3s each, about 5 min left
+  640 answers, 1.3s each, about 5 min left
+  660 answers, 1.3s each, about 4 min left
+  680 answers, 1.3s each, about 4 min left
+  700 answers, 1.3s each, about 3 min left
+  720 answers, 1.3s each, about 3 min left
+  740 answers, 1.3s each, about 2 min left
+  760 answers, 1.3s each, about 2 min left
+  780 answers, 1.3s each, about 1 min left
+  800 answers, 1.3s each, about 1 min left
+  820 answers, 1.3s each, about 1 min left
+  840 answers, 1.3s each, about 0 min left
+(no earlier answers file answers_mlx_Qwen2.5-1.5B-Instruct+lora_v2_ood_wording.jsonl: log_only comparison skipped)
+
+Share of answers (1.0 = 100%), same questions in every row:
+                               factual_correct  controller_faithful  hallucinated_citation  abstained  answered  parsed  accuracy_when_answered
+qtype          condition                                                                                                                       
+decision       kg_full                   1.000                1.000                    0.0      0.000     1.000     1.0                   1.000
+               kg_sub                    1.000                1.000                    0.0      0.000     1.000     1.0                   1.000
+               kg_sub+checker            1.000                1.000                    0.0      0.000     1.000     1.0                   1.000
+               kg_sub_missing            1.000                1.000                    0.0      1.000     0.000     1.0                     NaN
+counterfactual kg_full                   0.406                0.406                    0.0      0.507     0.493     1.0                   0.824
+               kg_sub                    1.000                1.000                    0.0      0.000     1.000     1.0                   1.000
+               kg_sub+checker            1.000                1.000                    0.0      0.000     1.000     1.0                   1.000
+               kg_sub_missing            1.000                1.000                    0.0      1.000     0.000     1.0                     NaN
+decision        kg_sub 1.000 vs kg_full 1.000 on 213 questions -> McNemar {'a_only': 0, 'b_only': 0, 'p_value': 1.0}
+counterfactual  kg_sub 1.000 vs kg_full 0.406 on 69 questions -> McNemar {'a_only': 41, 'b_only': 0, 'p_value': 9.094947017729282e-13}
+
+Citation checker: kept 282 of 282 subgraph answers (0 withheld as unsupported)
+
+Saved to /Users/risafathima/Documents/safecross/results/explanations
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00, 1007.35it/s]
+149 questions x 2 graph conditions, 0 already done. Model: mlx:Qwen2.5-1.5B-Instruct+lora_v2
+  20 answers, 1.4s each, about 10 min left
+  40 answers, 1.4s each, about 10 min left
+  60 answers, 1.4s each, about 9 min left
+  80 answers, 1.4s each, about 9 min left
+  100 answers, 1.4s each, about 8 min left
+  120 answers, 1.4s each, about 8 min left
+  140 answers, 1.4s each, about 7 min left
+  160 answers, 1.4s each, about 7 min left
+  180 answers, 1.4s each, about 6 min left
+  200 answers, 1.4s each, about 6 min left
+  220 answers, 1.4s each, about 5 min left
+  240 answers, 1.4s each, about 5 min left
+  260 answers, 1.4s each, about 4 min left
+  280 answers, 1.4s each, about 4 min left
+  300 answers, 1.4s each, about 3 min left
+  320 answers, 1.4s each, about 3 min left
+  340 answers, 1.4s each, about 2 min left
+  360 answers, 1.4s each, about 2 min left
+  380 answers, 1.4s each, about 2 min left
+  400 answers, 1.4s each, about 1 min left
+  420 answers, 1.4s each, about 1 min left
+  440 answers, 1.4s each, about 0 min left
+(no earlier answers file answers_mlx_Qwen2.5-1.5B-Instruct+lora_v2_ood_controller.jsonl: log_only comparison skipped)
+
+Share of answers (1.0 = 100%), same questions in every row:
+                               factual_correct  controller_faithful  hallucinated_citation  abstained  answered  parsed  accuracy_when_answered
+qtype          condition                                                                                                                       
+decision       kg_full                   1.000                0.598                    0.0      0.000     1.000     1.0                   1.000
+               kg_sub                    1.000                1.000                    0.0      0.000     1.000     1.0                   1.000
+               kg_sub+checker            1.000                1.000                    0.0      0.000     1.000     1.0                   1.000
+               kg_sub_missing            1.000                1.000                    0.0      1.000     0.000     1.0                     NaN
+counterfactual kg_full                   0.548                0.548                    0.0      0.357     0.643     1.0                   0.852
+               kg_sub                    0.952                0.952                    0.0      0.048     0.952     1.0                   1.000
+               kg_sub+checker            0.952                0.952                    0.0      0.048     0.952     1.0                   1.000
+               kg_sub_missing            0.786                0.786                    0.0      0.786     0.214     1.0                   0.000
+decision        kg_sub 1.000 vs kg_full 1.000 on 107 questions -> McNemar {'a_only': 0, 'b_only': 0, 'p_value': 1.0}
+counterfactual  kg_sub 0.952 vs kg_full 0.548 on 42 questions -> McNemar {'a_only': 17, 'b_only': 0, 'p_value': 1.52587890625e-05}
+
+Citation checker: kept 149 of 149 subgraph answers (0 withheld as unsupported)
+
+Saved to /Users/risafathima/Documents/safecross/results/explanations
+272 questions x 2 graph conditions, 0 already done. Model: ollama:qwen2.5vl:7b
+  20 answers, 2.9s each, about 38 min left
+  40 answers, 2.5s each, about 33 min left
+  60 answers, 2.5s each, about 31 min left
+  80 answers, 2.5s each, about 30 min left
+  100 answers, 2.4s each, about 28 min left
+  120 answers, 2.4s each, about 27 min left
+  140 answers, 2.5s each, about 28 min left
+  160 answers, 2.5s each, about 27 min left
+  180 answers, 2.5s each, about 26 min left
+  200 answers, 2.5s each, about 25 min left
+  220 answers, 2.5s each, about 24 min left
+  240 answers, 2.5s each, about 24 min left
+  260 answers, 2.5s each, about 23 min left
+  280 answers, 2.5s each, about 22 min left
+  300 answers, 2.5s each, about 21 min left
+  320 answers, 2.5s each, about 20 min left
+  340 answers, 2.5s each, about 20 min left
+  360 answers, 2.5s each, about 19 min left
+  380 answers, 2.5s each, about 18 min left
+  400 answers, 2.5s each, about 17 min left
+  420 answers, 2.5s each, about 17 min left
+  440 answers, 2.5s each, about 16 min left
+  460 answers, 2.5s each, about 15 min left
+  480 answers, 2.5s each, about 14 min left
+  500 answers, 2.6s each, about 13 min left
+  520 answers, 2.6s each, about 13 min left
+  540 answers, 2.6s each, about 12 min left
+  560 answers, 2.6s each, about 11 min left
+  580 answers, 2.6s each, about 10 min left
+  600 answers, 2.6s each, about 9 min left
+  620 answers, 2.6s each, about 8 min left
+  640 answers, 2.6s each, about 8 min left
+  660 answers, 2.6s each, about 7 min left
+  680 answers, 2.6s each, about 6 min left
+  700 answers, 2.6s each, about 5 min left
+  720 answers, 2.6s each, about 4 min left
+  740 answers, 2.6s each, about 3 min left
+  760 answers, 2.6s each, about 2 min left
+  780 answers, 2.6s each, about 2 min left
+  800 answers, 2.6s each, about 1 min left
+
+Share of answers (1.0 = 100%), same questions in every row:
+                               factual_correct  controller_faithful  hallucinated_citation  abstained  answered  parsed  accuracy_when_answered
+qtype          condition                                                                                                                       
+decision       log_only                  1.000                1.000                   0.00      0.000     1.000     1.0                   1.000
+               kg_full                   0.985                0.801                   0.00      0.000     1.000     1.0                   0.985
+               kg_sub                    1.000                0.917                   0.00      0.000     1.000     1.0                   1.000
+               kg_sub+checker            0.917                0.917                   0.00      0.083     0.917     1.0                   1.000
+               kg_sub_missing            0.000                0.000                   0.01      0.000     1.000     1.0                   0.000
+counterfactual log_only                  0.379                0.379                   0.00      0.015     0.985     1.0                   0.385
+               kg_full                   0.848                0.848                   0.00      0.000     1.000     1.0                   0.848
+               kg_sub                    0.636                0.636                   0.00      0.000     1.000     1.0                   0.636
+               kg_sub+checker            0.258                0.258                   0.00      0.742     0.258     1.0                   1.000
+               kg_sub_missing            0.000                0.000                   0.00      0.000     1.000     1.0                   0.000
+decision        kg_full 0.985 vs log_only 1.000 on 206 questions -> McNemar {'a_only': 0, 'b_only': 3, 'p_value': 0.25}
+decision        kg_sub 1.000 vs log_only 1.000 on 206 questions -> McNemar {'a_only': 0, 'b_only': 0, 'p_value': 1.0}
+decision        kg_sub 1.000 vs kg_full 0.985 on 206 questions -> McNemar {'a_only': 3, 'b_only': 0, 'p_value': 0.25}
+counterfactual  kg_full 0.848 vs log_only 0.379 on 66 questions -> McNemar {'a_only': 36, 'b_only': 5, 'p_value': 7.84157236921601e-07}
+counterfactual  kg_sub 0.636 vs log_only 0.379 on 66 questions -> McNemar {'a_only': 20, 'b_only': 3, 'p_value': 0.00048828125}
+counterfactual  kg_sub 0.636 vs kg_full 0.848 on 66 questions -> McNemar {'a_only': 3, 'b_only': 17, 'p_value': 0.0025768280029296875}
+
+Citation checker: kept 206 of 272 subgraph answers (66 withheld as unsupported)
+
+Saved to /Users/risafathima/Documents/safecross/results/explanations
+272 questions x 2 graph conditions, 0 already done. Model: ollama:llava:7b
+  20 answers, 3.1s each, about 41 min left
+  40 answers, 2.8s each, about 37 min left
+  60 answers, 2.9s each, about 36 min left
+  80 answers, 2.9s each, about 35 min left
+  100 answers, 2.8s each, about 34 min left
+  120 answers, 2.8s each, about 33 min left
+  140 answers, 3.0s each, about 33 min left
+  160 answers, 3.0s each, about 33 min left
+  180 answers, 3.0s each, about 32 min left
+  200 answers, 3.0s each, about 31 min left
+  220 answers, 3.1s each, about 30 min left
+  240 answers, 3.2s each, about 31 min left
+  260 answers, 3.2s each, about 30 min left
+  280 answers, 3.2s each, about 28 min left
+  300 answers, 3.2s each, about 27 min left
+  320 answers, 3.2s each, about 26 min left
+  340 answers, 3.2s each, about 25 min left
+  360 answers, 3.2s each, about 24 min left
+  380 answers, 3.2s each, about 23 min left
+  400 answers, 3.3s each, about 23 min left
+  420 answers, 3.2s each, about 21 min left
+  440 answers, 3.3s each, about 21 min left
+  460 answers, 3.3s each, about 19 min left
+  480 answers, 3.3s each, about 18 min left
+  500 answers, 3.3s each, about 17 min left
+  520 answers, 3.3s each, about 16 min left
+  540 answers, 3.3s each, about 15 min left
+  560 answers, 3.3s each, about 14 min left
+  580 answers, 3.3s each, about 13 min left
+  600 answers, 3.3s each, about 12 min left
+  620 answers, 3.3s each, about 11 min left
+  640 answers, 3.3s each, about 10 min left
+  660 answers, 3.3s each, about 9 min left
+  680 answers, 3.3s each, about 7 min left
+  700 answers, 3.3s each, about 6 min left
+  720 answers, 3.3s each, about 5 min left
+  740 answers, 3.3s each, about 4 min left
+  760 answers, 3.3s each, about 3 min left
+  780 answers, 3.3s each, about 2 min left
+  800 answers, 3.3s each, about 1 min left
+
+Share of answers (1.0 = 100%), same questions in every row:
+                               factual_correct  controller_faithful  hallucinated_citation  abstained  answered  parsed  accuracy_when_answered
+qtype          condition                                                                                                                       
+decision       log_only                  1.000                1.000                  0.000      0.000     1.000   1.000                   1.000
+               kg_full                   0.932                0.927                  0.005      0.000     0.995   0.995                   0.937
+               kg_sub                    0.990                0.990                  0.000      0.000     1.000   1.000                   0.990
+               kg_sub+checker            0.990                0.990                  0.000      0.010     0.990   1.000                   1.000
+               kg_sub_missing            0.000                0.000                  0.136      0.000     1.000   1.000                   0.000
+counterfactual log_only                  0.682                0.682                  0.000      0.000     1.000   1.000                   0.682
+               kg_full                   0.864                0.818                  0.045      0.000     1.000   1.000                   0.864
+               kg_sub                    0.848                0.833                  0.015      0.015     0.985   1.000                   0.862
+               kg_sub+checker            0.818                0.818                  0.000      0.182     0.818   1.000                   1.000
+               kg_sub_missing            0.727                0.727                  0.000      0.727     0.273   1.000                   0.000
+decision        kg_full 0.932 vs log_only 1.000 on 206 questions -> McNemar {'a_only': 0, 'b_only': 14, 'p_value': 0.0001220703125}
+decision        kg_sub 0.990 vs log_only 1.000 on 206 questions -> McNemar {'a_only': 0, 'b_only': 2, 'p_value': 0.5}
+decision        kg_sub 0.990 vs kg_full 0.932 on 206 questions -> McNemar {'a_only': 13, 'b_only': 1, 'p_value': 0.0018310546875}
+counterfactual  kg_full 0.864 vs log_only 0.682 on 66 questions -> McNemar {'a_only': 16, 'b_only': 4, 'p_value': 0.01181793212890625}
+counterfactual  kg_sub 0.848 vs log_only 0.682 on 66 questions -> McNemar {'a_only': 18, 'b_only': 7, 'p_value': 0.043285250663757324}
+counterfactual  kg_sub 0.848 vs kg_full 0.864 on 66 questions -> McNemar {'a_only': 6, 'b_only': 7, 'p_value': 1.0}
+
+Citation checker: kept 259 of 272 subgraph answers (13 withheld as unsupported)
+
+Saved to /Users/risafathima/Documents/safecross/results/explanations
+Using device: mps
+Dataset: pmma_v2.yaml
+New https://pypi.org/project/ultralytics/8.4.216 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.4.211 🚀 Python-3.11.14 torch-2.15.0 MPS (Apple M4 Pro)
+[34m[1mengine/trainer: [0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=8, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/Users/risafathima/Documents/safecross/configs/pmma_v2.yaml, degrees=0.0, deterministic=True, device=mps, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=30, erasing=0.4, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=1280, iou=None, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolo11s.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=pmma_v2_yolo11s_seed1, nbs=64, nms=None, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=100, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=/Users/risafathima/Documents/safecross/runs, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/Users/risafathima/Documents/safecross/runs/pmma_v2_yolo11s_seed1, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, tile=False, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+Overriding model.yaml nc=80 with nc=4
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]                 
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+  2                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  3                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  4                  -1  1    103360  ultralytics.nn.modules.block.C3k2            [128, 256, 1, False, 0.25]    
+  5                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+  6                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]              
+  8                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]           
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 
+ 10                  -1  1    990976  ultralytics.nn.modules.block.C2PSA           [512, 512, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    443776  ultralytics.nn.modules.block.C3k2            [768, 256, 1, False]          
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1    127680  ultralytics.nn.modules.block.C3k2            [512, 128, 1, False]          
+ 17                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1    345472  ultralytics.nn.modules.block.C3k2            [384, 256, 1, False]          
+ 20                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1   1511424  ultralytics.nn.modules.block.C3k2            [768, 512, 1, True]           
+ 23        [16, 19, 22]  1    820956  ultralytics.nn.modules.head.Detect           [4, 16, None, [128, 256, 512]]
+YOLO11s summary: 181 layers, 9,429,340 parameters, 9,429,324 gradients, 21.7 GFLOPs
+
+Transferred 493/499 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 1059.9±186.4 MB/s, size: 561.3 KB)
+[K[34m[1mtrain: [0mScanning /Users/risafathima/Documents/safecross/data/pmma_v2/labels/train.cache... 2550 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 2550/2550 1.3Git/s 0.0s
+[34m[1mval: [0mFast image access ✅ (ping: 0.1±0.1 ms, read: 1310.0±300.7 MB/s, size: 591.0 KB)
+[K[34m[1mval: [0mScanning /Users/risafathima/Documents/safecross/data/pmma_v2/labels/val.cache... 400 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 400/400 335.5Mit/s 0.0s
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and determining best 'optimizer' and 'lr0' automatically... 
+[34m[1moptimizer:[0m AdamW(lr=0.00125, momentum=0.9) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+Plotting labels to /Users/risafathima/Documents/safecross/runs/pmma_v2_yolo11s_seed1/labels.jpg... 
+Using 2550 train, 400 val images for fraction=1.0 at imgsz=1280
+Using 0 dataloader workers
+Logging results to [1m/Users/risafathima/Documents/safecross/runs/pmma_v2_yolo11s_seed1[0m
+Starting training for 30 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/torch/autograd/graph.py:1113: UserWarning: scatter_reduce_mps does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:224.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/torch/autograd/graph.py:1113: UserWarning: index_put_with_accumulate_mps does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:224.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Error: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+	<AGXG16XFamilyCommandBuffer: 0x6eeb63d50>
+    label = <none> 
+    device = <AGXG16SDevice: 0x10c649800>
+        name = Apple M4 Pro 
+    commandQueue = <AGXG16XFamilyCommandQueue: 0x14e81aa00>
+        label = <none> 
+        device = <AGXG16SDevice: 0x10c649800>
+            name = Apple M4 Pro 
+    retainedReferences = 1
+[K: 0% ──────────── 0/319  7.8s
+Traceback (most recent call last):
+  File "/Users/risafathima/Documents/safecross/scripts/02_train_yolo.py", line 57, in <module>
+    main()
+  File "/Users/risafathima/Documents/safecross/scripts/02_train_yolo.py", line 48, in main
+    model.train(data=str(data), epochs=args.epochs, imgsz=args.imgsz, batch=args.batch, seed=seed,
+  File "/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/ultralytics/engine/model.py", line 899, in train
+    self.trainer.train()
+  File "/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/ultralytics/engine/trainer.py", line 264, in train
+    self._do_train()
+  File "/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/ultralytics/engine/trainer.py", line 628, in _do_train
+    ("%11s" * 2 + "%11.4g" * (2 + loss_length))
+torch.OutOfMemoryError: MPS command buffer execution failed: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory). This error may have been asynchronously reported, so the stack trace below might be incorrect.
+Using device: mps
+Dataset: pmma_v2_aug.yaml
+New https://pypi.org/project/ultralytics/8.4.216 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics 8.4.211 🚀 Python-3.11.14 torch-2.15.0 MPS (Apple M4 Pro)
+[34m[1mengine/trainer: [0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=8, bgr=0.0, box=7.5, cache=False, cfg=None, channels_last=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, cls_remap=True, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=False, cutmix=0.0, data=/Users/risafathima/Documents/safecross/configs/pmma_v2_aug.yaml, degrees=0.0, deterministic=True, device=mps, dfl=1.5, dgrad=0.5, dis=6.0, distill_model=None, dlam=1.0, dlog=1.0, dnn=False, dropout=0.0, dynamic=False, embed=None, epochs=15, erasing=0.4, exist_ok=True, fliplr=0.5, flipud=0.0, format=torchscript, fraction=1.0, freeze=None, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, imgsz=1280, iou=None, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=300, mixup=0.0, mode=train, model=yolo11s.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=pmma_v2_aug_yolo11s_seed1, nbs=64, nms=None, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=100, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=/Users/risafathima/Documents/safecross/runs, quantize=None, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=/Users/risafathima/Documents/safecross/runs/pmma_v2_aug_yolo11s_seed1, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.5, seed=1, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, tile=False, time=None, tracker=tracktrack.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=8, workspace=None
+Overriding model.yaml nc=80 with nc=4
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]                 
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+  2                  -1  1     26080  ultralytics.nn.modules.block.C3k2            [64, 128, 1, False, 0.25]     
+  3                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+  4                  -1  1    103360  ultralytics.nn.modules.block.C3k2            [128, 256, 1, False, 0.25]    
+  5                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+  6                  -1  1    346112  ultralytics.nn.modules.block.C3k2            [256, 256, 1, True]           
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]              
+  8                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]           
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 
+ 10                  -1  1    990976  ultralytics.nn.modules.block.C2PSA           [512, 512, 1]                 
+ 11                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 12             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 13                  -1  1    443776  ultralytics.nn.modules.block.C3k2            [768, 256, 1, False]          
+ 14                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 15             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 16                  -1  1    127680  ultralytics.nn.modules.block.C3k2            [512, 128, 1, False]          
+ 17                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 18            [-1, 13]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 19                  -1  1    345472  ultralytics.nn.modules.block.C3k2            [384, 256, 1, False]          
+ 20                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+ 21            [-1, 10]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 22                  -1  1   1511424  ultralytics.nn.modules.block.C3k2            [768, 512, 1, True]           
+ 23        [16, 19, 22]  1    820956  ultralytics.nn.modules.head.Detect           [4, 16, None, [128, 256, 512]]
+YOLO11s summary: 181 layers, 9,429,340 parameters, 9,429,324 gradients, 21.7 GFLOPs
+
+Transferred 493/499 items from pretrained weights
+Freezing layer 'model.23.dfl.conv.weight'
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.1±0.1 ms, read: 1469.7±332.1 MB/s, size: 590.7 KB)
+[K[34m[1mtrain: [0mScanning /Users/risafathima/Documents/safecross/data/pmma_v2_aug/labels/train.cache... 5100 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 5100/5100 2.7Git/s 0.0s
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 1514.1±161.8 MB/s, size: 591.0 KB)
+[K[34m[1mval: [0mScanning /Users/risafathima/Documents/safecross/data/pmma_v2/labels/val.cache... 400 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 400/400 419.4Mit/s 0.0s
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and determining best 'optimizer' and 'lr0' automatically... 
+[34m[1moptimizer:[0m AdamW(lr=0.00125, momentum=0.9) with parameter groups 81 weight(decay=0.0), 88 weight(decay=0.0005), 87 bias(decay=0.0)
+Plotting labels to /Users/risafathima/Documents/safecross/runs/pmma_v2_aug_yolo11s_seed1/labels.jpg... 
+Using 5100 train, 400 val images for fraction=1.0 at imgsz=1280
+Using 0 dataloader workers
+Logging results to [1m/Users/risafathima/Documents/safecross/runs/pmma_v2_aug_yolo11s_seed1[0m
+Starting training for 15 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/torch/autograd/graph.py:1113: UserWarning: scatter_reduce_mps does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:224.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/torch/autograd/graph.py:1113: UserWarning: index_put_with_accumulate_mps does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at /Users/runner/work/pytorch/pytorch/aten/src/ATen/Context.cpp:224.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[K       1/15      15.4G       2.02      3.964       1.53        155       1280: 0% ──────────── 0/638  7.7sError: command buffer exited with error status.
+	The Metal Performance Shaders operations encoded on it may not have completed.
+	Error: 
+	(null)
+	Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+	<AGXG16XFamilyCommandBuffer: 0x31c074470>
+    label = <none> 
+    device = <AGXG16SDevice: 0x10f03c800>
+        name = Apple M4 Pro 
+    commandQueue = <AGXG16XFamilyCommandQueue: 0x1650af000>
+        label = <none> 
+        device = <AGXG16SDevice: 0x10f03c800>
+            name = Apple M4 Pro 
+    retainedReferences = 1
+[K       1/15      15.4G       2.02      3.964       1.53        155       1280: 0% ──────────── 1/638 83.7s/it 32.9s<14:48:53
+Traceback (most recent call last):
+  File "/Users/risafathima/Documents/safecross/scripts/02_train_yolo.py", line 57, in <module>
+    main()
+  File "/Users/risafathima/Documents/safecross/scripts/02_train_yolo.py", line 48, in main
+    model.train(data=str(data), epochs=args.epochs, imgsz=args.imgsz, batch=args.batch, seed=seed,
+  File "/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/ultralytics/engine/model.py", line 899, in train
+    self.trainer.train()
+  File "/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/ultralytics/engine/trainer.py", line 264, in train
+    self._do_train()
+  File "/Users/risafathima/Documents/safecross/.venv/lib/python3.11/site-packages/ultralytics/engine/trainer.py", line 628, in _do_train
+    ("%11s" * 2 + "%11.4g" * (2 + loss_length))
+torch.OutOfMemoryError: MPS command buffer execution failed: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory). This error may have been asynchronously reported, so the stack trace below might be incorrect.
