@@ -151,11 +151,10 @@ results/         summary tables, charts and logs from our runs
 - PMMA was filmed in a **parking lot**, on one day, in daylight, from two camera positions close together. "New position" means a new camera position, not a new city or a real road crossing.
 - The crossing, the signal and the pedestrians are **simulated**. Real-road validation would need a city partner.
 - **Not yet run:**
-  - a DPO preference-training step (the script is built: `scripts/27_dpo_explainer.py`);
-  - a blinded human evaluation of the explanations (it is set up).
-- A "what if the camera had not lost this person" question **failed for every model**, including ours, which stuck to its trained yes/no format. DPO is the planned fix.
+  - A DPO preference-training step (the script is implemented: `scripts/27_dpo_explainer.py`).
+  - A blinded human evaluation of the explanations (the evaluation setup is prepared but has not been conducted).
+- A "what if the camera had not lost this person" question **failed for every model**, including ours, which remained constrained by its trained yes/no response format. **DPO is a proposed future improvement** to explore whether preference-based training can improve this type of counterfactual reasoning.
 - **English only.** Arabic explanations are future work.
-
 ---
 
 ## Ethics and privacy
