@@ -1,0 +1,13 @@
+{
+ "frame": "pmma_v3_03493.jpg",
+ "video": "PMMA video 3 (camera position never seen in training)",
+ "model": "pmma_v2_yolo11s_seed0",
+ "total": 11,
+ "counts": {
+  "pedestrian": 6,
+  "wheelchair": 2,
+  "walker": 1,
+  "cane": 2
+ },
+ "aids": 5
+}
